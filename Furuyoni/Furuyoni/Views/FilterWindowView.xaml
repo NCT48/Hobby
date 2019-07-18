@@ -1,0 +1,103 @@
+﻿<metro:MetroWindow x:Class="Furuyoni.Views.FilterWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:viewModel="clr-namespace:Furuyoni.ViewModels"
+        xmlns:view="clr-namespace:Furuyoni.Views"
+        xmlns:common="clr-namespace:Furuyoni.Views.Commons"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:local="clr-namespace:Furuyoni"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance viewModel:MainWindowViewModel}"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="Filter" Height="700" Width="450">
+
+    <interactivity:Interaction.Triggers>
+        <prism:InteractionRequestTrigger SourceObject="{Binding CloseWindowRequest}">
+            <common:CloseWindowAction />
+        </prism:InteractionRequestTrigger>
+    </interactivity:Interaction.Triggers>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+
+            <StackPanel>
+                <Button Margin="5" Command="{Binding EditCheckBoxCommand}" CommandParameter="Owner"/>
+                <ListBox ItemsSource="{Binding EditOwnerFilter}" Margin="5">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Margin="5" Command="{Binding EditCheckBoxCommand}" CommandParameter="Category"/>
+                <ListBox ItemsSource="{Binding EditCategoryFilter}" Margin="5" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Margin="5" Command="{Binding EditCheckBoxCommand}" CommandParameter="Main"/>
+                <ListBox ItemsSource="{Binding EditMainFilter}" Margin="5">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Margin="5" Command="{Binding EditCheckBoxCommand}" CommandParameter="Sub"/>
+                <ListBox ItemsSource="{Binding EditSubFilter}" Margin="5">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Margin="5" Content="OK" Command="{Binding CloseWindowCommand}" CommandParameter="True"/>
+            <Button Margin="5" Content="Cancel" Command="{Binding CloseWindowCommand}" CommandParameter="False"/>
+        </StackPanel>
+
+    </Grid>
+</metro:MetroWindow>
