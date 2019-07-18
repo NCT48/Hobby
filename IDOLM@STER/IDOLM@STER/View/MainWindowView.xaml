@@ -1,0 +1,66 @@
+﻿<metro:MetroWindow x:Class="View.Main.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
+        xmlns:l="http://schemas.livet-mvvm.net/2011/wpf"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+        xmlns:vm="clr-namespace:ViewModels.Main"
+        xmlns:ve="clr-namespace:View.Extention"
+        xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" FontFamily="Meiryo"
+        Title="MainWindow" WindowStyle="None" Topmost="False" ResizeMode="CanResizeWithGrip" 
+        WindowStartupLocation="CenterScreen">
+    <!--Contexts-->
+    <metro:MetroWindow.DataContext>
+        <vm:MainWindowViewModel/>
+    </metro:MetroWindow.DataContext>
+
+    <i:Interaction.Triggers>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="DeviationViewOpen">
+            <l:TransitionInteractionMessageAction WindowType="{x:Type ve:DeviationView}" Mode="NewOrActive" />
+        </l:InteractionMessageTrigger>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="DetailDataViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type ve:DetailDataView}" Mode="Normal" />
+        </l:InteractionMessageTrigger>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="ScatterPlotViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type ve:ScatterPlotView}" Mode="NewOrActive" />
+        </l:InteractionMessageTrigger>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="UnitDeviationViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type ve:UnitDeviationView}" Mode="NewOrActive" />
+        </l:InteractionMessageTrigger>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="FigureSearchViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type ve:FigureSearchView}" Mode="NewOrActive" />
+        </l:InteractionMessageTrigger>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="SimilalitySearchViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type ve:SimilalitySearchView}" Mode="NewOrActive" />
+        </l:InteractionMessageTrigger>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="IdolQuizViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type ve:IdolQuizView}" Mode="NewOrActive" />
+        </l:InteractionMessageTrigger>
+    </i:Interaction.Triggers>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Width="100" Content="Deviation" HorizontalAlignment ="Left" Margin="5" Command="{Binding ShowViewCommand}" CommandParameter="DeviationView"/>
+            <Button Width="100" Content="Scatter" HorizontalAlignment ="Left" Margin="5" Command="{Binding ShowViewCommand}"  CommandParameter="ScatterPlotView"/>
+            <Button Width="100" Content="Unit" HorizontalAlignment ="Left" Margin="5" Command="{Binding ShowViewCommand}"  CommandParameter="UnitDeviationView"/>
+            <Button Width="100" Content="Figure" HorizontalAlignment ="Left" Margin="5" Command="{Binding ShowViewCommand}"  CommandParameter="FigureSearchView"/>
+            <Button Width="100" Content="Similality" HorizontalAlignment ="Left" Margin="5" Command="{Binding ShowViewCommand}"  CommandParameter="SimilalitySearchView"/>
+            <Button Width="100" Content="Quiz" HorizontalAlignment ="Left" Margin="5" Command="{Binding ShowViewCommand}"  CommandParameter="IdolQuizView"/>
+            <TextBox Width="100" Margin="5"  Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+            <CheckBox Margin="5" Content="Ambiguous" IsChecked="{Binding IsAmbiguous}"/>
+            <!--<Button Grid.Row="0" Width="100" Content="Save" HorizontalAlignment ="Left" Margin="10" Command="{Binding OutPutJsonCommand}" />-->
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding IDOLList,Mode=TwoWay}" Margin="5" Grid.Row="1" SelectedItem="{Binding SelectedIDOL, Mode=TwoWay}" IsReadOnly="True">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <ei:CallMethodAction  MethodName="DataGridDoubleClick" TargetObject="{Binding Mode=TwoWay, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </DataGrid>
+    </Grid>
+</metro:MetroWindow>

@@ -1,0 +1,38 @@
+﻿<metro:MetroWindow x:Class="View.Extention.UnitDetailDataView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
+        xmlns:l="http://schemas.livet-mvvm.net/2011/wpf"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+        xmlns:vm="clr-namespace:ViewModels.Extention"
+        xmlns:v="clr-namespace:View.Extention"
+        xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" FontFamily="Meiryo"
+        Title="{Binding Record.Name}" WindowStyle="None" Topmost="False" ResizeMode="CanResizeWithGrip" 
+        WindowStartupLocation="CenterScreen">
+
+    <i:Interaction.Triggers>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="DetailDataViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type v:DetailDataView}" Mode="Normal" />
+        </l:InteractionMessageTrigger>
+    </i:Interaction.Triggers>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Margin="5">
+            <Label Content="{Binding Record.Name}" FontSize="32"/>
+            <Label Content="所属メンバー" />
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding Record.Members}" Background="White" IsReadOnly="True" SelectedItem="{Binding SelectedIdol,Mode=TwoWay}" Grid.Row="1" Margin="5">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <ei:CallMethodAction  MethodName="DataGridDoubleClick" 
+                                          TargetObject="{Binding Mode=TwoWay, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </DataGrid>
+    </Grid>
+</metro:MetroWindow>

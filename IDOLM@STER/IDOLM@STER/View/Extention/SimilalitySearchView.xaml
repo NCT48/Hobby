@@ -1,0 +1,65 @@
+﻿<metro:MetroWindow x:Class="View.Extention.SimilalitySearchView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
+        xmlns:l="http://schemas.livet-mvvm.net/2011/wpf"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+        xmlns:vm="clr-namespace:ViewModels.Extention"
+        xmlns:v="clr-namespace:View.Extention"
+        xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" FontFamily="Meiryo"
+        Title="FigureSearchView" WindowStyle="None" Topmost="False" ResizeMode="CanResizeWithGrip" 
+        WindowStartupLocation="CenterScreen">
+
+    <metro:MetroWindow.DataContext>
+        <vm:SimilalitySearchViewModel/>
+    </metro:MetroWindow.DataContext>
+
+    <i:Interaction.Triggers>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="DetailDataViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type v:DetailDataView}" Mode="Normal" />
+        </l:InteractionMessageTrigger>
+    </i:Interaction.Triggers>
+
+    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="2">
+                <StackPanel Width="Auto" >
+                    <Label  Content="Height" FontSize="20"/>
+                    <Label  Content="Weight" FontSize="20"/>
+                    <Label  Content="Bust" FontSize="20"/>
+                    <Label  Content="Waist" FontSize="20"/>
+                    <Label  Content="Hip" FontSize="20"/>
+                </StackPanel>
+                <StackPanel Width="Auto" >
+                    <TextBox Text="{Binding Height,Mode=TwoWay}" FontSize="20"/>
+                    <TextBox Text="{Binding Weight,Mode=TwoWay}" FontSize="20"/>
+                    <TextBox Text="{Binding Bust,Mode=TwoWay}" FontSize="20"/>
+                    <TextBox Text="{Binding Waist,Mode=TwoWay}" FontSize="20"/>
+                    <TextBox Text="{Binding Hip,Mode=TwoWay}" FontSize="20"/>
+                    <Button Content="Search" Command="{Binding SearchSimilalityCommand}"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="{Binding BMI}" FontSize="24"/>
+                    <Label Content="{Binding Cup}" FontSize="24"/>
+                </StackPanel>
+                <StackPanel Width="Auto" >
+                    <Label Content="体型の近いアイドル" />
+                    <DataGrid ItemsSource="{Binding SimilalityRecord.SimDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True" SelectedItem="{Binding SelectedSim, Mode=TwoWay}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseDoubleClick">
+                                <ei:CallMethodAction  MethodName="DataGridDoubleClick" 
+                                          TargetObject="{Binding Mode=TwoWay, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </DataGrid>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</metro:MetroWindow>

@@ -1,0 +1,84 @@
+﻿<metro:MetroWindow x:Class="View.Extention.FigureSearchView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
+        xmlns:l="http://schemas.livet-mvvm.net/2011/wpf"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+        xmlns:vm="clr-namespace:ViewModels.Extention"
+        xmlns:v="clr-namespace:View.Extention"
+        xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" FontFamily="Meiryo"
+        Title="FigureSearchView" WindowStyle="None" Topmost="False" ResizeMode="CanResizeWithGrip" 
+        WindowStartupLocation="CenterScreen">
+
+    <metro:MetroWindow.DataContext>
+        <vm:FigureSearchViewModel/>
+    </metro:MetroWindow.DataContext>
+
+    <i:Interaction.Triggers>
+        <l:InteractionMessageTrigger Messenger="{Binding Messenger}" MessageKey="UnitDetailDataViewOpen" >
+            <l:TransitionInteractionMessageAction WindowType="{x:Type v:UnitDetailDataView}" Mode="Normal" />
+        </l:InteractionMessageTrigger>
+    </i:Interaction.Triggers>
+
+    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <ComboBox Margin="5" Width="150" ItemsSource="{Binding NameList}" SelectedItem="{Binding SelectedText,Mode=TwoWay}"/>
+                <ComboBox Margin="5" Width="150" ItemsSource="{Binding ComparisonNameList}" SelectedItem="{Binding SelectedComparison,Mode=TwoWay}" 
+                          IsEnabled="{Binding ComparisonEnabled}"/>
+                <ListBox ItemsSource="{Binding CheckedList}"  IsEnabled="{Binding RaddioButtonEnabled}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <RadioButton Content="{Binding Work}" IsChecked="{Binding IsChecked, Mode=TwoWay}" GroupName="Base" 
+                                         Command="{Binding DataContext.SetFilterCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBox}}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="1" >
+                <Label Content="Score:" FontSize="26"/>
+                <Label Content="{Binding Score}" FontSize="26"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="2">
+                <StackPanel Width="Auto" >
+                    <Label Content="{Binding BaseRecord.MasterIDOL.Phonetic}" FontSize="26"/>
+                    <Label Content="{Binding BaseRecord.MasterIDOL.Name}" FontSize="48"/>
+                    <Label Content="{Binding BaseRecord.MasterIDOL.Work}" FontSize="32"/>
+                </StackPanel>
+                <StackPanel Width="Auto" >
+                    <Label Content="体型" />
+                    <DataGrid ItemsSource="{Binding BaseRecord.BodyDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                </StackPanel>
+                <StackPanel Width="Auto" >
+                    <Label Content="偏差値" />
+                    <DataGrid ItemsSource="{Binding BaseRecord.DevDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                </StackPanel>
+
+                <StackPanel Width="Auto" >
+                    <Label Content="{Binding ComparisonRecord.MasterIDOL.Phonetic}" FontSize="26"/>
+                    <Label Content="{Binding ComparisonRecord.MasterIDOL.Name}" FontSize="48"/>
+                    <Label Content="{Binding ComparisonRecord.MasterIDOL.Work}" FontSize="32"/>
+                </StackPanel>
+                <StackPanel Width="Auto" >
+                    <Label Content="体型" />
+                    <DataGrid ItemsSource="{Binding ComparisonRecord.BodyDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                </StackPanel>
+                <StackPanel Width="Auto" >
+                    <Label Content="偏差値" />
+                    <DataGrid ItemsSource="{Binding ComparisonRecord.DevDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</metro:MetroWindow>
