@@ -16,7 +16,7 @@ namespace ViewModels.Extention
         #region クラス
         public class ScatterPlot
         {
-            public Dictionary<string, double> Param { get; set; }
+            public IReadOnlyDictionary<string, double> Param { get; }
             public string Name { get; set; }
             public string Blood { get; set; }
             public WorkType Work { get; set; }
@@ -114,12 +114,12 @@ namespace ViewModels.Extention
         public Dictionary<string, CheckItemData> RadioButtonFilter { get; private set; }
         public List<CheckItemData> CheckBoxFilter { get; private set; }
 
-        private readonly ReactiveProperty<string> allCrearText = new ReactiveProperty<string>();
-        public ReactiveProperty<string> AllCrearText
+        private string allCrearText;
+        public string AllCrearText
         {
             get
             {
-                allCrearText.Value = CheckBoxFilter.All(x => x.IsChecked) ? "Select Clear" : "Select All";
+                allCrearText = CheckBoxFilter.All(x => x.IsChecked) ? "Clear" : "All";
                 return allCrearText;
             }
         }

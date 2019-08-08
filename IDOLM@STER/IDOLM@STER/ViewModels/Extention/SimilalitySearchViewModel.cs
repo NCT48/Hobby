@@ -8,7 +8,6 @@ using Models.Master;
 
 namespace ViewModels.Extention
 {
-
     public class SimilalitySearchViewModel : ViewModel
     {
         #region プロパティ・フィールド
@@ -57,7 +56,8 @@ namespace ViewModels.Extention
             {
                 if (deviation != null)
                 {
-                    var tikaiList = Model.IDOLDeviations.Similarity(deviation).OrderBy(x => x.Score).Where(x => x.Name != deviation.Name).Take(5);
+                    var tikaiList = Model.IDOLDeviations.Where(x => x.HasScore())
+                        .Similarity(deviation).OrderBy(x => x.Score).Where(x => x.Name != deviation.Name).Take(5);
                     SimDatas = tikaiList.Select(x => new SimData(x.Name, x.Score)).ToList();
                 }
             }
@@ -93,9 +93,7 @@ namespace ViewModels.Extention
             var view = new IDOLView(height, weight, bust, waist, hip);
             BMI = "BMI:" + view.BMI;
             Cup = view.Cup;
-            var views = new List<IDOLView>(Model.IDOLList) { view };
-            var devs = views.ToDevitation();
-            var dev = devs.First(x => string.IsNullOrEmpty(x.Name));
+            var dev = Model.IDOLList.Append(view).ToDevitation().First(x => string.IsNullOrEmpty(x.Name));
             SimilalityRecord = new SimilalityData(dev);
             RaisePropertyChanged(nameof(SimilalityRecord));
             RaisePropertyChanged(nameof(BMI));

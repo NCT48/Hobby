@@ -9,7 +9,7 @@
         xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" FontFamily="Meiryo"
         Title="MainWindow" WindowStyle="None" Topmost="False" ResizeMode="CanResizeWithGrip" 
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" >
     <!--Contexts-->
     <metro:MetroWindow.DataContext>
         <vm:MainWindowViewModel/>
@@ -55,12 +55,10 @@
             <CheckBox Margin="5" Content="Ambiguous" IsChecked="{Binding IsAmbiguous}"/>
             <!--<Button Grid.Row="0" Width="100" Content="Save" HorizontalAlignment ="Left" Margin="10" Command="{Binding OutPutJsonCommand}" />-->
         </StackPanel>
-        <DataGrid ItemsSource="{Binding IDOLList,Mode=TwoWay}" Margin="5" Grid.Row="1" SelectedItem="{Binding SelectedIDOL, Mode=TwoWay}" IsReadOnly="True">
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MouseDoubleClick">
-                    <ei:CallMethodAction  MethodName="DataGridDoubleClick" TargetObject="{Binding Mode=TwoWay, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext}" />
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
+        <DataGrid ItemsSource="{Binding IDOLList,Mode=TwoWay}" Margin="5" Grid.Row="1" IsReadOnly="True" IsSynchronizedWithCurrentItem="True">
+            <DataGrid.InputBindings>
+                <MouseBinding MouseAction="LeftDoubleClick" Command="{Binding DoubleClickCommand}" CommandParameter="{Binding IDOLList/}"/>
+            </DataGrid.InputBindings>
         </DataGrid>
     </Grid>
 </metro:MetroWindow>

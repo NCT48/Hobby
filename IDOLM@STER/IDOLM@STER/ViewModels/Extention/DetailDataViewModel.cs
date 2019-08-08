@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using ExtendLinq;
 using Livet;
@@ -38,65 +39,20 @@ namespace ViewModels.Extention
                 SimDatas = tikaiList.Select(x => new SimData(x.Name, x.Score)).ToList();
             }
 
-            RankDatas = new List<RankData>
+            IEnumerable<RankData> rankDatas()
             {
-                new RankData(
-                    nameof(idol.Height),
-                    idol.Height,
-                    deviation?.HeightScore,
-                    Model.IDOLList.Count(x => x.Height > idol.Height) + 1,
-                    Model.IDOLList.Count(x => x.Height != 0)
-                    ),
-                new RankData(
-                    nameof(idol.Weight),
-                    idol.Weight,
-                    deviation?.WeightScore,
-                    idolList.Count(x => x.Weight > idol.Weight) + 1,
-                    Model.IDOLList.Count(x => x.Weight != 0)
-                    ),
-                new RankData(
-                    nameof(idol.Bust),
-                    idol.Bust,
-                    deviation?.BustScore,
-                    idolList.Count(x => x.Bust > idol.Bust) + 1,
-                    Model.IDOLList.Count(x => x.Bust != 0)
-                    ),
-                new RankData(
-                    nameof(idol.Waist),
-                    idol.Waist,
-                    deviation?.WaistScore,
-                    idolList.Count(x => x.Waist > idol.Waist) + 1,
-                    Model.IDOLList.Count(x => x.Waist != 0)
-                    ),
-                new RankData(
-                    nameof(idol.Hip),
-                    idol.Hip,
-                    deviation?.HipScore,
-                    idolList.Count(x => x.Hip > idol.Hip) + 1,
-                    Model.IDOLList.Count(x => x.Hip != 0)
-                    ),
-                new RankData(
-                    nameof(idol.BMI),
-                    idol.BMI,
-                    deviation?.BMIScore,
-                    idolList.Count(x => x.BMI > idol.BMI) + 1,
-                    Model.IDOLList.Count(x => x.BMI != 0)
-                    ),
-                new RankData(
-                    nameof(idol.Under),
-                    idol.Under,
-                    deviation?.UnderScore,
-                    idolList.Count(x => x.Under > idol.Under) + 1,
-                    Model.IDOLList.Count(x => x.Under != 0)
-                    ),
-                new RankData(
-                    nameof(idol.Diffe),
-                    idol.Diffe,
-                    deviation?.DiffScore,
-                    idolList.Count(x => x.Diffe > idol.Diffe) + 1,
-                    Model.IDOLList.Count(x => x.Diffe != 0)
-                    ),
-            };
+                yield return new RankData(nameof(idol.Age), idol, deviation?.AgeScore, x => x.Age);
+                yield return new RankData(nameof(idol.Height), idol, deviation?.HeightScore, x => x.Height);
+                yield return new RankData(nameof(idol.Weight), idol, deviation?.WeightScore, x => x.Weight);
+                yield return new RankData(nameof(idol.Bust), idol, deviation?.BustScore, x => x.Bust);
+                yield return new RankData(nameof(idol.Waist), idol, deviation?.WaistScore, x => x.Waist);
+                yield return new RankData(nameof(idol.Hip), idol, deviation?.HipScore, x => x.Hip);
+                yield return new RankData(nameof(idol.BMI), idol, deviation?.BMIScore, x => x.BMI);
+                yield return new RankData(nameof(idol.Under), idol, deviation?.UnderScore, x => x.Under);
+                yield return new RankData(nameof(idol.Diffe), idol, deviation?.DiffScore, x => x.Diffe);
+            }
+
+            RankDatas = rankDatas().ToList();
 
             UnitList = Model.UnitList
                 .Where(x => x.Members.Any(y => MasterIDOL == y))
@@ -109,16 +65,21 @@ namespace ViewModels.Extention
     #region ランキング
     public class RankData
     {
+        private readonly IdolModel Model = IdolModel.Instance;
         public string Name { get; set; }
         public double Param { get; set; }
         public double? Score { get; set; }
         public string Rank { get; set; }
-        public RankData(string name, double param, double? score, int rank, int count)
+
+        public RankData(string name, IDOLView idol, double? score, Func<IDOLView, double> selector)
         {
             Name = name;
-            Param = param;
+            Param = selector(idol);
             Score = score;
-            if (param == 0)
+            var rank = Model.IDOLList.Count(x => selector(x) > Param) + 1;
+            var count = Model.IDOLList.Count(x => selector(x) != 0);
+
+            if ( Param == 0)
             {
                 Rank = 0 + "/" + 0;
             }
@@ -139,6 +100,7 @@ namespace ViewModels.Extention
     {
         public string Name { get; set; }
         public double Score { get; set; }
+        public double Age { get; set; }
         public double Height { get; set; }
         public double Weight { get; set; }
         public double Bust { get; set; }
@@ -150,6 +112,7 @@ namespace ViewModels.Extention
             Score = score;
             Name = name;
             var idol = IdolModel.Instance.IDOLList.First(x => x.Name == name);
+            Age = idol.Age;
             Height = idol.Height;
             Weight = idol.Weight;
             Bust = idol.Bust;

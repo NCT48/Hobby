@@ -30,10 +30,10 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
             <Button Grid.Row="0" Width="100" Content="Return" HorizontalAlignment ="Left" Margin="5" Command="{Binding ReturnCommand}" />
-            <TextBox Width="100" Margin="5" Text="{Binding FilterDevText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
-            <ComboBox Width="150" Margin="5"  ItemsSource="{Binding UnitCount}" SelectedItem="{Binding NowUnitCount, Mode=TwoWay}"/>
+            <TextBox Width="100" Margin="5" Text="{Binding FilterDevText, UpdateSourceTrigger=PropertyChanged}"/>
+            <ComboBox Width="150" Margin="5"  ItemsSource="{Binding UnitCount}" SelectedItem="{Binding NowUnitCount}"/>
         </StackPanel>
-        <DataGrid ItemsSource="{Binding DevList,Mode=TwoWay}" Margin="5" Grid.Row="1" IsReadOnly="True" SelectedItem="{Binding SelectedDevUnit, Mode=TwoWay}">
+        <DataGrid ItemsSource="{Binding DevList}" Margin="5" Grid.Row="1" IsReadOnly="True" SelectedItem="{Binding SelectedDevUnit}">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseDoubleClick">
                     <ei:CallMethodAction  MethodName="DataGridDevDoubleClick" 

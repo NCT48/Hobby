@@ -14,109 +14,56 @@ namespace ViewModels.Extention
         public class SearchData
         {
             #region プロパティ・フィールド
-            private readonly IdolModel Model = IdolModel.Instance;
-            public IDOLView MasterIDOL { get; set; }
-            public List<RankData> BodyDatas { get; set; }
-            public List<RankData> DevDatas { get; set; }
+            public IDOLView MasterIDOL { get; }
+            public IEnumerable<DataGridValue> BodyDatas { get; }
+            public IEnumerable<DataGridValue> DevDatas { get; }
             #endregion
 
             #region コンストラクタ
             public SearchData(IDOLView idol, IDOLDeviation deviation)
             {
                 MasterIDOL = idol;
-                var idolList = Model.IDOLList;
+                IEnumerable<DataGridValue> bodyDatas()
+                {
+                    yield return new DataGridValue(nameof(idol.Age), idol.Age);
+                    yield return new DataGridValue(nameof(idol.Height), idol.Height);
+                    yield return new DataGridValue(nameof(idol.Weight), idol.Weight);
+                    yield return new DataGridValue(nameof(idol.Bust), idol.Bust);
+                    yield return new DataGridValue(nameof(idol.Waist), idol.Waist);
+                    yield return new DataGridValue(nameof(idol.Hip), idol.Hip);
+                    yield return new DataGridValue(nameof(idol.BMI), idol.BMI);
+                    yield return new DataGridValue(nameof(idol.Under), idol.Under);
+                    yield return new DataGridValue(nameof(idol.Diffe), idol.Diffe);
+                }
+                BodyDatas = idol is null ? throw new ArgumentNullException(nameof(idol)) : bodyDatas();
 
-                BodyDatas = new List<RankData>
-            {
-                new RankData(
-                    nameof(idol.Height),
-                    idol.Height
-                    ),
-                new RankData(
-                    nameof(idol.Weight),
-                    idol.Weight
-                    ),
-                new RankData(
-                    nameof(idol.Bust),
-                    idol.Bust
-                    ),
-                new RankData(
-                    nameof(idol.Waist),
-                    idol.Waist
-                    ),
-                new RankData(
-                    nameof(idol.Hip),
-                    idol.Hip
-                    ),
-                new RankData(
-                    nameof(idol.BMI),
-                    idol.BMI
-                    ),
-                new RankData(
-                    nameof(idol.Under),
-                    idol.Under
-                    ),
-                new RankData(
-                    nameof(idol.Diffe),
-                    idol.Diffe
-                    ),
-            };
-
-                DevDatas = new List<RankData>
-            {
-                new RankData(
-                    nameof(deviation.HeightScore),
-                    deviation.HeightScore
-                    ),
-                new RankData(
-                    nameof(deviation.WeightScore ),
-                    deviation.WeightScore
-                    ),
-                new RankData(
-                    nameof(deviation.BustScore),
-                    deviation.BustScore
-                    ),
-                new RankData(
-                    nameof(deviation.WaistScore),
-                    deviation.WaistScore
-                    ),
-                new RankData(
-                    nameof(deviation.HipScore),
-                    deviation.HipScore
-                    ),
-                new RankData(
-                    nameof(deviation.BMIScore),
-                    deviation.BMIScore
-                    ),
-                new RankData(
-                    nameof(deviation.UnderScore),
-                    deviation.UnderScore
-                    ),
-                new RankData(
-                    nameof(deviation.DiffScore),
-                    deviation.DiffScore
-                    ),
-                new RankData(
-                    nameof(deviation.TotalScore),
-                    deviation.TotalScore
-                    ),
-            };
+                IEnumerable<DataGridValue> devDatas()
+                {
+                    yield return new DataGridValue(nameof(deviation.AgeScore), deviation.AgeScore);
+                    yield return new DataGridValue(nameof(deviation.WeightScore), deviation.WeightScore);
+                    yield return new DataGridValue(nameof(deviation.BustScore), deviation.BustScore);
+                    yield return new DataGridValue(nameof(deviation.WaistScore), deviation.WaistScore);
+                    yield return new DataGridValue(nameof(deviation.HipScore), deviation.HipScore);
+                    yield return new DataGridValue(nameof(deviation.BMIScore), deviation.BMIScore);
+                    yield return new DataGridValue(nameof(deviation.UnderScore), deviation.UnderScore);
+                    yield return new DataGridValue(nameof(deviation.DiffScore), deviation.DiffScore);
+                    yield return new DataGridValue(nameof(deviation.TotalScore), deviation.TotalScore);
+                }
+                DevDatas = deviation is null ? throw new ArgumentNullException(nameof(deviation)) : devDatas().ToList();
             }
             #endregion
 
-            #region 体型
-            public class RankData
+            public class DataGridValue
             {
-                public string Name { get; set; }
-                public double Param { get; set; }
+                public string Param { get; }
+                public double Value { get; }
 
-                public RankData(string name, double param)
+                public DataGridValue(string param, double value)
                 {
-                    Name = name;
                     Param = param;
+                    Value = value;
                 }
             }
-            #endregion
         }
         #endregion
 
@@ -134,7 +81,7 @@ namespace ViewModels.Extention
         public SearchData ComparisonRecord { get; set; }
         public IReadOnlyList<string> NameList { get; set; }
         public IReadOnlyList<string> ComparisonNameList { get; set; }
-        public List<Checked> CheckedList { get; set; }
+        public IReadOnlyList<Checked> CheckedList { get; set; }
         private string selectedText;
         public string SelectedText { get => selectedText; set => SetFilter(value, selectedComparison); }
         private string selectedComparison;
@@ -150,8 +97,8 @@ namespace ViewModels.Extention
             NameList = Model.IDOLList.Where(x => x.HasValue()).Select(x => x.Name).ToList();
             ComparisonNameList = NameList.Prepend(string.Empty).ToList();
             CheckedList = Enum.GetValues(typeof(WorkType)).OfType<WorkType>().Select(x => new Checked() { IsChecked = false, Work = x }).ToList();
-            CheckedList.First().IsChecked = true;
-            selectedText = NameList.First();
+            CheckedList[0].IsChecked = true;
+            selectedText = NameList[0];
             selectedComparison = string.Empty;
             RaddioButtonEnabled = true;
             SetFilter();
@@ -181,11 +128,11 @@ namespace ViewModels.Extention
             var nowWork = CheckedList.First(x => x.IsChecked).Work;
             SetEnabled(nowWork, comparison);
 
-            var comparisonData = GetSimilarity(baseIDOL, baseDev, nowWork, comparison);
-            var compIDOL = Model.IDOLList.First(x => x.Name == comparisonData.Name);
-            var compDev = Model.IDOLDeviations.First(x => x.Name == comparisonData.Name);
+            var (name, score) = GetSimilarity(baseIDOL, baseDev, nowWork, comparison);
+            var compIDOL = Model.IDOLList.First(x => x.Name == name);
+            var compDev = Model.IDOLDeviations.First(x => x.Name == name);
             ComparisonRecord = new SearchData(compIDOL, compDev);
-            Score = comparisonData.Score;
+            Score = score;
 
             selectedText = text;
             selectedComparison = comparison;
@@ -208,15 +155,14 @@ namespace ViewModels.Extention
             RaddioButtonEnabled = string.IsNullOrEmpty(comparison);
         }
 
-        private (string Name, double Score) GetSimilarity(IDOLView idol, IDOLDeviation dev, WorkType nowWork, string comparison)
+        private (string name, double score) GetSimilarity(IDOLView idol, IDOLDeviation dev, WorkType nowWork, string comparison)
         {
             if (string.IsNullOrEmpty(comparison))
             {
                 var workList = GetWorkList(nowWork, idol.Work);
-                return Model.IDOLDeviations.Where(x => x.Name != dev.Name)
-                                           .Similarity(dev)
+                return Model.IDOLDeviations.Similarity(dev)
                                            .OrderBy(x => x.Score)
-                                           .First(x => workList.Any(y => x.Name == y.Name));
+                                           .First(x => workList.Any(y => x.Name == y.Name) && x.Score != 0);
             }
             else
             {
