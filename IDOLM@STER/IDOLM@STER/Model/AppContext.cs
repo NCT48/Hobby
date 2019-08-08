@@ -4,12 +4,13 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Windows;
 using ExtendLinq;
 using Utf8Json;
 
 namespace Models.Master
 {
-    #region アイドルJsonデータ
+    #region アイドルJson
     public class RootobjectIDOL
     {
         public List<IDOLJson> IDOLs { get; set; }
@@ -17,9 +18,9 @@ namespace Models.Master
 
     public class IDOLJson
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Phonetic { get; set; }
+        public string English { get; set; }
         public string Attribute { get; set; }
         public int Age { get; set; }
         public double Height { get; set; }
@@ -33,10 +34,7 @@ namespace Models.Master
         public string BirthPlace { get; set; }
 
         #region コンストラクタ
-        public IDOLJson()
-        {
-
-        }
+        public IDOLJson() { }
 
         public IDOLJson(IDOLView view)
         {
@@ -46,6 +44,7 @@ namespace Models.Master
             }
             Name = view.Name;
             Phonetic = view.Phonetic;
+            English = view.English;
             Attribute = view.Attribute;
             Age = view.Age;
             Height = view.Height;
@@ -60,205 +59,10 @@ namespace Models.Master
         }
         #endregion
     }
+
     #endregion
 
-    #region 画面表示用データ
-    public class IDOLView
-    {
-        #region プロパティ・フィールド
-        public string Name { get; }
-        public string Phonetic { get; }
-        public string Attribute { get; }
-        public int Age { get; }
-        public double Height { get; }
-        public double Weight { get; }
-        public double Bust { get; }
-        public double Waist { get; }
-        public double Hip { get; }
-        public string BirthDay { get; }
-        public string Blood { get; }
-        public WorkType Work { get; }
-        public string BirthPlace { get; }
-        public static IEqualityComparer<IDOLView> ComparerName => new EqualityrName();
-        public static IEqualityComparer<IDOLView> ComparerAge => new EqualityrAge();
-
-        public double BMI => Height == 0 ? 0 : Math.Round(Weight * 10000 / Height / Height, 2, MidpointRounding.AwayFromZero);
-        private double? diffe = null;
-        public double Diffe
-        {
-            get
-            {
-                diffe ??= SetDiffe();
-                return Math.Round(diffe.Value, 2, MidpointRounding.AwayFromZero);
-            }
-        }
-        public double Under => Math.Round(Bust - Diffe, 2, MidpointRounding.AwayFromZero);
-        public string Cup => SetCup();
-        public double Script => Height == 0 ? 0 : Math.Round((Bust * Bust - Waist) / Height, 2, MidpointRounding.AwayFromZero);
-        #endregion
-
-        #region メソッド        
-        //画面に出したくないからメソッド
-        public bool HasValue() => Age * Height * Weight * Bust * Waist * Hip != 0;
-
-        private double SetDiffe()
-        {
-            var hosei = 0.3261;
-            return Height * Bust * Waist != 0 ? Bust - Height * 0.54 + (Height * 0.38 - Waist) * 0.73 + (Height - 158.8) * hosei + 17.5 : 0;
-        }
-
-        private string SetCup()
-        {
-            if (Bust == 0)
-                return "";
-            if (Diffe < 3.75)
-                return "AAAA";
-            if (Diffe < 6.25)
-                return "AAA";
-            if (Diffe < 8.75)
-                return "AA";
-            if (Diffe < 11.25)
-                return "A";
-            if (Diffe < 13.75)
-                return "B";
-            if (Diffe < 16.25)
-                return "C";
-            if (Diffe < 18.75)
-                return "D";
-            if (Diffe < 21.25)
-                return "E";
-            if (Diffe < 23.75)
-                return "F";
-            if (Diffe < 26.25)
-                return "G";
-            if (Diffe < 28.75)
-                return "H";
-            if (Diffe < 31.25)
-                return "I";
-            if (Diffe < 33.75)
-                return "J";
-            if (Diffe < 36.25)
-                return "K";
-            return "L↑";
-        }
-        #endregion
-
-        #region コンストラクタ
-        public IDOLView(double? height, double? weight, double? bust, double? waist, double? hip)
-        {
-            Height = height ?? 0.0;
-            Weight = weight ?? 0.0;
-            Bust = bust ?? 0.0;
-            Waist = waist ?? 0.0;
-            Hip = hip ?? 0.0;
-        }
-
-        public IDOLView(IDOLJson data)
-        {
-            if (data is null)
-            {
-                return;
-            }
-            Name = data.Name;
-            Phonetic = data.Phonetic;
-            Attribute = data.Attribute;
-            Age = data.Age;
-            Height = data.Height;
-            Weight = data.Weight;
-            Bust = data.Bust;
-            Waist = data.Waist;
-            Hip = data.Hip;
-            BirthDay = data.BirthDay;
-            Blood = data.Blood;
-            Work = (WorkType)Enum.Parse(typeof(WorkType), data.Work);
-            BirthPlace = data.BirthPlace;
-        }
-        #endregion
-
-        #region IEqualityComparer
-        class EqualityrName : IEqualityComparer<IDOLView>
-        {
-            public bool Equals(IDOLView x, IDOLView y)
-            {
-                return x.Name == y.Name;
-            }
-
-            public int GetHashCode(IDOLView obj)
-            {
-                return obj.Name.GetHashCode();
-            }
-
-            public EqualityrName()
-            {
-            }
-        }
-
-        class EqualityrAge : IEqualityComparer<IDOLView>
-        {
-            public bool Equals(IDOLView x, IDOLView y)
-            {
-                return x.Age == y.Age;
-            }
-
-            public int GetHashCode(IDOLView obj)
-            {
-                return obj.Age.GetHashCode();
-            }
-        }
-        #endregion
-    }
-
-    public enum WorkType
-    {
-        All,
-        CinderellaGirls,
-        MillionLive,
-        AllStars,
-        DearlyStars,
-        ShinyColors,
-        Same,
-    }
-    #endregion
-
-    #region 偏差値画面用クラス
-    public class IDOLDeviation
-    {
-        public string Name { get; set; }
-        public string Phonetic { get; set; }
-        public double AgeScore { get; set; }
-        public double HeightScore { get; set; }
-        public double WeightScore { get; set; }
-        public double BustScore { get; set; }
-        public double WaistScore { get; set; }
-        public double HipScore { get; set; }
-        public double BMIScore { get; set; }
-        public double UnderScore { get; set; }
-        public double DiffScore { get; set; }
-        public double TotalScore => Score();
-
-        private double Score()
-        {
-            var value = 0.0;
-            value += Eva(AgeScore);
-            value += Eva(HeightScore);
-            value += Eva(WeightScore);
-            value += Eva(BustScore);
-            value += Eva(WaistScore);
-            value += Eva(HipScore);
-            //value += Eva(BMIScore);
-            //value += Eva(UnderScore);
-            //value += Eva(DiffScore);
-            return Math.Round(value, 2, MidpointRounding.AwayFromZero);
-        }
-
-        private double Eva(double score) => Math.Pow(score - 50, 2);
-
-        //画面に出したくないからメソッド
-        public bool HasScore() => AgeScore * HeightScore * WeightScore * BustScore * WaistScore * HipScore != 0;
-    }
-    #endregion
-
-    #region ユニットデータ
+    #region ユニットJson
     public class RootobjectUnit
     {
         public List<UnitJson> Units { get; set; }
@@ -299,30 +103,29 @@ namespace Models.Master
             IDOLList = LoadIDOLData().ToList();
             IDOLDeviations = IDOLList.ToDevitation().ToList();
             UnitList = LoadUnit().ToList();
+            var test = UnRomanaise("Kannippatsu");
+
+            var roman = IDOLList.Select(x => string.Join(" ", UnRomanaise(x.English).Split(' ').Reverse())).ToList();
+            var phone = IDOLList.Select(x => x.Phonetic).ToList();
+
+            var check = roman.Zip(phone, (x, y) => (x, y)).Where(x => x.x != x.y);
+            var impossible = check.Where(x => x.x.Contains("_"));
+            var failure = check.Where(x => !x.x.Contains("_"));
         }
 
-        private List<IDOLView> GetDB()
-        {
-            using var db = new IDOLDbContext();
-            var iDOLs = db.IDOLs.AsEnumerable();
-            return iDOLs.Select(x => new IDOLView(x)).OrderBy(x => x.Work).ThenBy(x => x.Phonetic).ToList();
-        }
-
-        private void SetDB()
-        {
-            using var fs = new FileStream(@"Resource\IDOLData.json", FileMode.Open, FileAccess.Read);
-            var idolJson = JsonSerializer.Deserialize<RootobjectIDOL>(fs);
-
-            using var db = new IDOLDbContext();
-            db.IDOLs.AddRange(idolJson.IDOLs);
-            db.SaveChanges();
-        }
+        private IEnumerable<(string Name, string Similarity, double Score)> SimilarityScore()
+            => IDOLDeviations.Where(x => x.HasScore())
+                             .Select(x => IDOLDeviations.Similarity(x)
+                                                        .Where(y => y.Score != 0)
+                                                        .OrderBy(y => y.Score)
+                                                        .Select(y => (x.Name, Similarity: y.Name, y.Score))
+                                                        .First());
 
         private IEnumerable<IDOLView> LoadIDOLData()
         {
             using var fs = new FileStream(@"Resource\IDOLData.json", FileMode.Open, FileAccess.Read);
             var idolJson = JsonSerializer.Deserialize<RootobjectIDOL>(fs);
-            return idolJson.IDOLs.Select(x => new IDOLView(x)).OrderBy(x => x.Work).ThenBy(x => x.Phonetic);
+            return idolJson.IDOLs.Select((x, i) => new IDOLView(x, i)).OrderBy(x => x.Work).ThenBy(x => x.Phonetic);
         }
 
         private IEnumerable<UnitView> LoadUnit()
@@ -330,9 +133,8 @@ namespace Models.Master
             using var fs = new FileStream(@"Resource\UnitData.json", FileMode.Open, FileAccess.Read);
             var unitJson = JsonSerializer.Deserialize<RootobjectUnit>(fs);
             return unitJson.Units.Select(x => new UnitView(x.Name,
-                                                           x.Members.Join(IDOLList, y => y, z => z.Name, (y, z) => z),
-                                                           x.Members.Join(IDOLDeviations, y => y, z => z.Name, (y, z) => z)
-                                                           ));
+                                                           x.Members.Join(IDOLList, y => y, z => z.Name, (_, z) => z),
+                                                           x.Members.Join(IDOLDeviations, y => y, z => z.Name, (_, z) => z)));
         }
 
         public void SaveJsonIDOL()
@@ -340,14 +142,14 @@ namespace Models.Master
             try
             {
                 var idolJson = new RootobjectIDOL {
-                    IDOLs = IDOLList.Select(x => new IDOLJson(x)).ToList(),
+                    IDOLs = IDOLList.OrderBy(x => x).Select(x => new IDOLJson(x)).ToList(),
                 };
-                using var fs = new FileStream(@"Resource\IDOLData.json", FileMode.OpenOrCreate, FileAccess.Write);
+                using var fs = new FileStream(@"Resource\IDOLData_new.json", FileMode.Create, FileAccess.Write);
                 JsonSerializer.Serialize(fs, idolJson);
             }
             catch (IOException e)
             {
-                System.Windows.MessageBox.Show(e.Message);
+                MessageBox.Show(e.Message);
             }
         }
 
@@ -394,6 +196,212 @@ namespace Models.Master
             }
             sw.WriteLine("END:VCALENDAR");
         }
+
+        private string UnRomanaise(string romana)
+        {
+            var rTemp = new List<char>();
+            var roman = new StringBuilder();
+            foreach (var item in romana.ToUpper())
+            {
+                if (item < 'A' || 'Z' < item)
+                {
+                    if (rTemp.Any())
+                    {
+                        roman.Append(CheckRomanDict(new string(rTemp.ToArray())));
+                        rTemp.Clear();
+                    }
+                    roman.Append(item.ToString());
+                }
+                else if (new char[] { 'A', 'I', 'U', 'E', 'O' }.Contains(item))
+                {
+                    rTemp.Add(item);
+                    roman.Append(CheckRomanDict(new string(rTemp.ToArray())));
+                    rTemp.Clear();
+                }
+                else if (rTemp.Contains('H') && item != 'Y')
+                {
+                    roman.Append("お");
+                    rTemp.Remove('H');
+                    rTemp.Add(item);
+                }
+                else if (rTemp.Contains('N') && item != 'Y')
+                {
+                    roman.Append(CheckRomanDict(new string(rTemp.ToArray())));
+                    rTemp.Clear();
+                    rTemp.Add(item);
+                }
+                else if (rTemp.Contains('M') && item != 'Y')
+                {
+                    roman.Append(CheckRomanDict(new string(rTemp.ToArray())));
+                    rTemp.Clear();
+                    rTemp.Add(item);
+                }
+                else if (rTemp.Contains(item))
+                {
+                    roman.Append('っ');
+                }
+                else
+                {
+                    rTemp.Add(item);
+                }
+
+            }
+            if (rTemp.Any())
+            {
+                roman.Append(CheckRomanDict(new string(rTemp.ToArray())));
+                rTemp.Clear();
+            }
+            return roman.ToString();
+        }
+
+        private string CheckRomanDict(string roman) => RomanDictonary.ContainsKey(roman) ? RomanDictonary[roman] : "_";
+
+        private Dictionary<string, string> RomanDictonary = new Dictionary<string, string> {
+            ["A"] = "あ",
+            ["I"] = "い",
+            ["U"] = "う",
+            ["E"] = "え",
+            ["O"] = "お",
+            ["KA"] = "か",
+            ["KI"] = "き",
+            ["KU"] = "く",
+            ["KE"] = "け",
+            ["KO"] = "こ",
+            ["SA"] = "さ",
+            ["SHI"] = "し",
+            ["SI"] = "し",
+            ["SU"] = "す",
+            ["SE"] = "せ",
+            ["SO"] = "そ",
+            ["TA"] = "た",
+            ["CHI"] = "ち",
+            ["TI"] = "ち",
+            ["TSU"] = "つ",
+            ["TU"] = "つ",
+            ["TE"] = "て",
+            ["TO"] = "と",
+            ["NA"] = "な",
+            ["NI"] = "に",
+            ["NU"] = "ぬ",
+            ["NE"] = "ね",
+            ["NO"] = "の",
+            ["HA"] = "は",
+            ["HI"] = "ひ",
+            ["FU"] = "ふ",
+            ["HU"] = "ふ",
+            ["HE"] = "へ",
+            ["HO"] = "ほ",
+            ["MA"] = "ま",
+            ["MI"] = "み",
+            ["MU"] = "む",
+            ["ME"] = "め",
+            ["MO"] = "も",
+            ["YA"] = "や",
+            ["YU"] = "ゆ",
+            ["YO"] = "よ",
+            ["RA"] = "ら",
+            ["LA"] = "ら",
+            ["RI"] = "り",
+            ["LI"] = "り",
+            ["RU"] = "る",
+            ["LU"] = "る",
+            ["RE"] = "れ",
+            ["LE"] = "れ",
+            ["RO"] = "ろ",
+            ["LO"] = "ろ",
+            ["WA"] = "わ",
+            ["WO"] = "を",
+            ["N"] = "ん",
+            ["M"] = "ん",
+
+            ["GA"] = "が",
+            ["GI"] = "ぎ",
+            ["GU"] = "ぐ",
+            ["GE"] = "げ",
+            ["GO"] = "ご",
+            ["ZA"] = "ざ",
+            ["JI"] = "じ",
+            ["ZI"] = "じ",
+            ["ZU"] = "ず",
+            ["ZE"] = "ぜ",
+            ["ZO"] = "ぞ",
+            ["DA"] = "だ",
+            ["DI"] = "ぢ",
+            ["DU"] = "づ",
+            ["DE"] = "で",
+            ["DO"] = "ど",
+            ["BA"] = "ば",
+            ["BI"] = "び",
+            ["BU"] = "ぶ",
+            ["BE"] = "べ",
+            ["BO"] = "ぼ",
+            ["PA"] = "ぱ",
+            ["PI"] = "ぴ",
+            ["PU"] = "ぷ",
+            ["PE"] = "ぺ",
+            ["PO"] = "ぽ",
+
+            ["KYA"] = "きゃ",
+            ["KYU"] = "きゅ",
+            ["KYO"] = "きょ",
+            ["GYA"] = "ぎゃ",
+            ["GYU"] = "ぎゅ",
+            ["GYO"] = "ぎょ",
+            ["SYA"] = "しゃ",
+            ["SYU"] = "しゅ",
+            ["SYO"] = "しょ",
+            ["SHA"] = "しゃ",
+            ["SHU"] = "しゅ",
+            ["SHE"] = "しぇ",
+            ["SHO"] = "しょ",
+            ["TYA"] = "ちゃ",
+            ["TYU"] = "ちゅ",
+            ["TYO"] = "ちょ",
+            ["CHA"] = "ちゃ",
+            ["CHU"] = "ちゅ",
+            ["CHO"] = "ちょ",
+            ["JA"] = "じゃ",
+            ["JU"] = "じゅ",
+            ["JE"] = "じぇ",
+            ["JO"] = "じょ",
+            ["ZYA"] = "じゃ",
+            ["ZYI"] = "じぃ",
+            ["ZYU"] = "じゅ",
+            ["ZYE"] = "じぇ",
+            ["ZYO"] = "じょ",
+            ["NYA"] = "にゃ",
+            ["NYU"] = "にゅ",
+            ["NYO"] = "にょ",
+            ["HYA"] = "ひゃ",
+            ["HYU"] = "ひゅ",
+            ["HYO"] = "ひょ",
+            ["BYA"] = "びゃ",
+            ["BYU"] = "びゅ",
+            ["BYO"] = "びょ",
+            ["PYA"] = "ぴゃ",
+            ["PYU"] = "ぴゅ",
+            ["PYO"] = "ぴょ",
+            ["FA"] = "ふぁ",
+            ["FI"] = "ふぃ",
+            ["FE"] = "ふぇ",
+            ["FO"] = "ふぉ",
+            ["MYA"] = "みゃ",
+            ["MYU"] = "みゅ",
+            ["MYO"] = "みょ",
+            ["RYA"] = "りゃ",
+            ["RYU"] = "りゅ",
+            ["RYO"] = "りょ",
+
+            ["XA"] = "ぁ",
+            ["XI"] = "ぃ",
+            ["XU"] = "ぅ",
+            ["XE"] = "ぇ",
+            ["XO"] = "ぉ",
+            ["XTU"] = "っ",
+            ["XYA"] = "ゃ",
+            ["XYU"] = "ゅ",
+            ["XYO"] = "ょ",
+        };
     }
     #endregion
 }

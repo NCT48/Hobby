@@ -23,48 +23,57 @@
 
     <ScrollViewer HorizontalScrollBarVisibility="Auto">
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            
-            <StackPanel Orientation="Horizontal" Margin="5">
-                <Button Margin="5" Content="New" Command="{Binding NewQuizCommand}" />
-                <Button Margin="5" Content="Hint" Command="{Binding HintCommand}" />
-                <Button Margin="5" Content="Answer" Command="{Binding AnswerCommand}" />
-            </StackPanel>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
 
             <StackPanel Width="auto" Grid.Row="1">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Button Margin="5" Content="New" Command="{Binding NewQuizCommand}" />
+                    <!--<Button Margin="5" Content="Hint" Command="{Binding HintCommand}" />-->
+                    <Button Margin="5" Content="Answer" Command="{Binding AnswerCommand}" />
+                    <Button Margin="5" Content="Give up" Command="{Binding GiveUpCommand}" />
+                </StackPanel>
                 <StackPanel Width="Auto" Margin="5">
-                    <Label Content="Answer" FontSize="20"/>
-                    <Label Content="{Binding Answer.Phonethic}" FontSize="20" />
-                    <Label Content="{Binding Answer.Name}" FontSize="38" />
+                    <TextBlock Text="{Binding Quiz.Name, StringFormat=Answer {0}}" FontSize="20"/>
+                    <!--<Label Content="{Binding Answer.Phonethic}" FontSize="20" />
+                    <Label Content="{Binding Answer.Name}" FontSize="38" />-->
+                    <TextBox Text="{Binding Answer, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" FontSize="38"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" >
                     <StackPanel Width="Auto" >
                         <Label Content="Age" FontSize="20"/>
-                        <Label Content="{Binding Answer.Age}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.Age}" FontSize="28"/>
                         <Label Content="Height" FontSize="20"/>
-                        <Label Content="{Binding Answer.Height}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.Height}" FontSize="28"/>
                         <Label Content="Weight" FontSize="20"/>
-                        <Label Content="{Binding Answer.Weight}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.Weight}" FontSize="28"/>
                         <Label Content="Bust" FontSize="20"/>
-                        <Label Content="{Binding Answer.Bust}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.Bust}" FontSize="28"/>
                         <Label Content="Waist" FontSize="20"/>
-                        <Label Content="{Binding Answer.Waist}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.Waist}" FontSize="28"/>
                         <Label Content="Hip" FontSize="20"/>
-                        <Label Content="{Binding Answer.Hip}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.Hip}" FontSize="28"/>
                     </StackPanel>
-                    <StackPanel Width="Auto" >
+                    <StackPanel Width="Auto" Visibility="Hidden">
                         <Label Content="BirthPlace" FontSize="20"/>
-                        <Label Content="{Binding Answer.BirthPlace}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.BirthPlace}" FontSize="28"/>
                         <!--<Label Content="BirthDay" FontSize="20"/>
                         <Label Content="{Binding Answer.BirthDay}" FontSize="28"/>-->
                         <Label Content="Blood type" FontSize="20"/>
-                        <Label Content="{Binding Answer.Blood}" FontSize="28"/>
+                        <Label Content="{Binding Quiz.Blood}" FontSize="28"/>
                     </StackPanel>
-                </StackPanel>                
+                </StackPanel>
             </StackPanel>
+
+            <DataGrid Margin="5" Grid.Column="1" VerticalAlignment="Top" ItemsSource="{Binding IDOLList}" SelectedValue="{Binding SelectedName}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDoubleClick">
+                        <ei:CallMethodAction  MethodName="DataGridDoubleClick" TargetObject="{Binding Mode=TwoWay, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </DataGrid>
         </Grid>
     </ScrollViewer>
 </metro:MetroWindow>

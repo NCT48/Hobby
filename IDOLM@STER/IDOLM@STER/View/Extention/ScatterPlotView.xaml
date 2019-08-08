@@ -53,7 +53,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <Button Width="150" Content="{Binding AllCrearText.Value}" HorizontalAlignment ="Left" Margin="5" Command="{Binding AllClearCommand}" />
+            <Button Width="150" Content="{Binding AllCrearText}" HorizontalAlignment ="Left" Margin="5" Command="{Binding AllClearCommand}" />
         </StackPanel>
     </Grid>
 </metro:MetroWindow>

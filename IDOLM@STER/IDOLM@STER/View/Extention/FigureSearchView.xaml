@@ -32,7 +32,8 @@
                 <ComboBox Margin="5" Width="150" ItemsSource="{Binding NameList}" SelectedItem="{Binding SelectedText,Mode=TwoWay}"/>
                 <ComboBox Margin="5" Width="150" ItemsSource="{Binding ComparisonNameList}" SelectedItem="{Binding SelectedComparison,Mode=TwoWay}" 
                           IsEnabled="{Binding ComparisonEnabled}"/>
-                <ListBox ItemsSource="{Binding CheckedList}"  IsEnabled="{Binding RaddioButtonEnabled}">
+                
+                <ListBox ItemsSource="{Binding CheckedList}" IsEnabled="{Binding RaddioButtonEnabled}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <RadioButton Content="{Binding Work}" IsChecked="{Binding IsChecked, Mode=TwoWay}" GroupName="Base" 
@@ -58,11 +59,13 @@
                 </StackPanel>
                 <StackPanel Width="Auto" >
                     <Label Content="体型" />
-                    <DataGrid ItemsSource="{Binding BaseRecord.BodyDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                    <DataGrid ItemsSource="{Binding BaseRecord.BodyDatas}" Background="White" IsReadOnly="True" 
+                              CanUserReorderColumns="False" CanUserSortColumns="False"/>
                 </StackPanel>
                 <StackPanel Width="Auto" >
                     <Label Content="偏差値" />
-                    <DataGrid ItemsSource="{Binding BaseRecord.DevDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                    <DataGrid ItemsSource="{Binding BaseRecord.DevDatas}" Background="White" IsReadOnly="True"
+                              CanUserReorderColumns="False" CanUserSortColumns="False"/>
                 </StackPanel>
 
                 <StackPanel Width="Auto" >
@@ -72,11 +75,13 @@
                 </StackPanel>
                 <StackPanel Width="Auto" >
                     <Label Content="体型" />
-                    <DataGrid ItemsSource="{Binding ComparisonRecord.BodyDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                    <DataGrid ItemsSource="{Binding ComparisonRecord.BodyDatas}" Background="White" IsReadOnly="True"                              
+                              CanUserReorderColumns="False" CanUserSortColumns="False"/>
                 </StackPanel>
                 <StackPanel Width="Auto" >
                     <Label Content="偏差値" />
-                    <DataGrid ItemsSource="{Binding ComparisonRecord.DevDatas}" CanUserSortColumns="False" Background="White" IsReadOnly="True"/>
+                    <DataGrid ItemsSource="{Binding ComparisonRecord.DevDatas}" Background="White" IsReadOnly="True"
+                              CanUserReorderColumns="False" CanUserSortColumns="False"/>
                 </StackPanel>
             </StackPanel>
         </Grid>

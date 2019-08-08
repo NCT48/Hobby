@@ -11,7 +11,7 @@ namespace ExtendLinq
         {
             if (source == null)
             {
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             }
             var ave = 0.0;
             var sum = 0.0;
@@ -42,7 +42,7 @@ namespace ExtendLinq
         {
             if (selector == null)
             {
-                throw new ArgumentNullException("selector");
+                throw new ArgumentNullException(nameof(selector));
             }
             return source.Where(x => selector(x) != 0).Select(selector).AverageDeviation();
         }
@@ -51,7 +51,7 @@ namespace ExtendLinq
         {
             if (selector == null)
             {
-                throw new ArgumentNullException("selector");
+                throw new ArgumentNullException(nameof(selector));
             }
             return source.Where(x => selector(x) != 0).Select(selector).Deviation();
         }
@@ -60,7 +60,7 @@ namespace ExtendLinq
         {
             if (source == null)
             {
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             }
 
             IEnumerable<double> score()
@@ -93,7 +93,7 @@ namespace ExtendLinq
         {
             if (selector == null)
             {
-                throw new ArgumentNullException("selector");
+                throw new ArgumentNullException(nameof(selector));
             }
             return source.Select(selector).Score();
         }
@@ -105,11 +105,11 @@ namespace ExtendLinq
         {
             if (source == null)
             {
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             }
             if (deviation == null)
             {
-                yield break;
+                throw new ArgumentNullException(nameof(deviation));
             }
             foreach (var item in source)
             {
@@ -128,7 +128,7 @@ namespace ExtendLinq
         {
             if (source == null)
             {
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             }
 
             var (ageAverage, ageDeviation) = source.AverageDeviation(x => x.Age);
@@ -143,20 +143,20 @@ namespace ExtendLinq
 
             IEnumerable<IDOLDeviation> deviations()
             {
-                foreach (var item in source)
+                foreach (var idol in source)
                 {
                     yield return new IDOLDeviation {
-                        Name = item.Name,
-                        Phonetic = item.Phonetic,
-                        AgeScore = score(item.Age, ageAverage, ageDeviation),
-                        HeightScore = score(item.Height, heightAverage, heightDeviation),
-                        WeightScore = score(item.Weight, weightAverage, weightDeviation),
-                        BustScore = score(item.Bust, bustAverage, bustDeviation),
-                        WaistScore = score(item.Waist, waistAverage, waistDeviation),
-                        HipScore = score(item.Hip, hipAverage, hipDeviation),
-                        BMIScore = score(item.BMI, bmiAverage, bmiDeviation),
-                        UnderScore = score(item.Under, underAverage, underDeviation),
-                        DiffScore = score(item.Diffe, diffAverage, diffDeviation),
+                        Name = idol.Name,
+                        Phonetic = idol.Phonetic,
+                        AgeScore = score(idol.Age, ageAverage, ageDeviation),
+                        HeightScore = score(idol.Height, heightAverage, heightDeviation),
+                        WeightScore = score(idol.Weight, weightAverage, weightDeviation),
+                        BustScore = score(idol.Bust, bustAverage, bustDeviation),
+                        WaistScore = score(idol.Waist, waistAverage, waistDeviation),
+                        HipScore = score(idol.Hip, hipAverage, hipDeviation),
+                        BMIScore = score(idol.BMI, bmiAverage, bmiDeviation),
+                        UnderScore = score(idol.Under, underAverage, underDeviation),
+                        DiffScore = score(idol.Diffe, diffAverage, diffDeviation),
                     };
                 }
             }
@@ -180,5 +180,11 @@ namespace ExtendLinq
             var index = Guid.NewGuid().GetHashCode() % source.Count();
             return source.ElementAt(Math.Abs(index));
         }
+    }
+
+    public static class OrederBy
+    {
+        public static IOrderedEnumerable<T> OrderBy<T>(this IEnumerable<T> source) => source.OrderBy(x => x);
+        public static IOrderedEnumerable<T> OrderByDescending<T>(this IEnumerable<T> source) => source.OrderByDescending(x => x);
     }
 }

@@ -45,9 +45,9 @@ namespace ViewModels.Extention
         #region プロパティ・フィールド
         private readonly IdolModel Model = IdolModel.Instance;
 
-        public List<UnitDevitation> DevList { get; set; }
-        public List<UnitDevitation> MasterDevList { get; set; }
-        public List<string> UnitCount { get; set; }
+        public IReadOnlyList<UnitDevitation> DevList { get; private set; }
+        public IReadOnlyList<UnitDevitation> MasterDevList { get; }
+        public IReadOnlyList<string> UnitCount { get; }
         private string nowUnitCount;
         public string NowUnitCount { get => nowUnitCount; set => SetDevFilter(filterDevText, value); }
         private string filterDevText;
@@ -58,9 +58,8 @@ namespace ViewModels.Extention
         public UnitDevitationViewModel()
         {
             MasterDevList = DevList = Model.UnitList.Select(SetUnitDevitation).ToList();
-            SelectedDevUnit = DevList.First();
-            UnitCount = new HashSet<int>(MasterDevList.Select(x => x.Member).OrderBy(x => x)).Select(x => x.ToString()).ToList();
-            UnitCount.Insert(0, string.Empty);
+            SelectedDevUnit = DevList[0];
+            UnitCount = new HashSet<int>(MasterDevList.Select(x => x.Member).OrderBy(x => x)).Select(x => x.ToString()).Prepend(string.Empty).ToList();
             filterDevText = string.Empty;
             nowUnitCount = string.Empty;
         }

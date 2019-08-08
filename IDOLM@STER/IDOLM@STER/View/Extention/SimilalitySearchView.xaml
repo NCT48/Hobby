@@ -23,12 +23,7 @@
 
     <ScrollViewer HorizontalScrollBarVisibility="Auto">
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="2">
+            <StackPanel Orientation="Horizontal" Margin="5" >
                 <StackPanel Width="Auto" >
                     <Label  Content="Height" FontSize="20"/>
                     <Label  Content="Weight" FontSize="20"/>
@@ -42,7 +37,7 @@
                     <TextBox Text="{Binding Bust,Mode=TwoWay}" FontSize="20"/>
                     <TextBox Text="{Binding Waist,Mode=TwoWay}" FontSize="20"/>
                     <TextBox Text="{Binding Hip,Mode=TwoWay}" FontSize="20"/>
-                    <Button Content="Search" Command="{Binding SearchSimilalityCommand}"/>
+                    <Button Content="Search" Command="{Binding SearchSimilalityCommand}" Margin="5"/>
                 </StackPanel>
                 <StackPanel>
                     <Label Content="{Binding BMI}" FontSize="24"/>

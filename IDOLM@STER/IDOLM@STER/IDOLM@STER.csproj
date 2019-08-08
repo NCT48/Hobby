@@ -46,9 +46,13 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>preview</LangVersion>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>8.0</LangVersion>
+    <CodeAnalysisRuleSet>IDOLM@STER.ruleset</CodeAnalysisRuleSet>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,7 +62,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>IDOLMASTER.Program</StartupObject>
@@ -219,7 +225,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\AppContext.cs" />
-    <Compile Include="Model\IDOLDbContext.cs" />
+    <Compile Include="Model\IDOLDeviation.cs" />
+    <Compile Include="Model\IDOLView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Model\ExtendLinq.cs" />
     <Compile Include="ViewModels\Extention\DeviationViewModel.cs" />
@@ -331,7 +338,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Resource_4UnitData_1json__JSONSchema="http://json.schemastore.org/2.0.0-csd.2.beta.2018-10-10.json" Resource_4IDOLData_1json__JSONSchema="http://json.schemastore.org/2.0.0-csd.2.beta.2018-10-10.json" />
+      <UserProperties Resource_4UnitData_1json__JSONSchema="http://json-schema.org/draft-04/schema" Resource_4IDOLData_1json__JSONSchema="http://json-schema.org/draft-04/schema" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />

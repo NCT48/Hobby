@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using Livet;
 using Livet.Commands;
@@ -24,18 +25,9 @@ namespace ViewModels.Main
                 SetFilter(filterText);
             }
         }
-        public IReadOnlyList<IDOLView> IDOLList { get; set; }
-        private string filterText;
+        public IReadOnlyList<IDOLView> IDOLList { get; set; } = IdolModel.Instance.IDOLList;
+        private string filterText = string.Empty;
         public string FilterText { get => filterText; set => SetFilter(value); }
-        #endregion
-
-        #region コンストラクタ
-        public MainWindowViewModel()
-        {
-            IDOLList = Model.IDOLList;
-            SelectedIDOL = IDOLList[0];
-            filterText = string.Empty;
-        }
         #endregion
 
         #region 画面オープンボタンクリックイベント
@@ -46,8 +38,8 @@ namespace ViewModels.Main
 
         #region 画面クローズボタンクリックイベント
         private ViewModelCommand _ReturnCommand;
-        public ViewModelCommand ReturnCommand => _ReturnCommand ??= new ViewModelCommand(ReturnComm);
-        public void ReturnComm() => Messenger.Raise(new WindowActionMessage(WindowAction.Close, "Close"));
+        public ViewModelCommand ReturnCommand => _ReturnCommand ??= new ViewModelCommand(Return);
+        public void Return() => Messenger.Raise(new WindowActionMessage(WindowAction.Close, "Close"));
         #endregion
 
         #region 保存ボタンイベント
@@ -70,23 +62,25 @@ namespace ViewModels.Main
         #region フィルタ
         private void SetFilter(string filter)
         {
-            var search = isAmbiguous ? (Func<string, string, bool>)UtilityFunction.AmbiguousSearch : (x, y) => x.Contains(y.Replace(" ", ""));
-            IDOLList = Model.IDOLList.Where(x => search(x.Name, filter) || search(x.Phonetic, filter)).ToList();
+            var search = isAmbiguous ? (Func<string, string, bool>)UtilityFunction.AmbiguousSearch : (x, y) => x.Replace(" ", "").Contains(y.Replace(" ", ""));
+            IDOLList = Model.IDOLList.Where(x => search(x.Name, filter) || search(x.Phonetic, filter) || search(x.English.ToUpper(), filter.ToUpper())).ToList();
             filterText = filter;
             RaisePropertyChanged(nameof(IDOLList));
         }
         #endregion
 
         #region DataGridタブルクリック
-        public IDOLView SelectedIDOL { get; set; }
-        public void DataGridDoubleClick()
+        private ListenerCommand<IDOLView> _DoubleClickCommand;
+        public ListenerCommand<IDOLView> DoubleClickCommand => _DoubleClickCommand ??= new ListenerCommand<IDOLView>(DataGridDoubleClick);
+
+        public void DataGridDoubleClick(IDOLView selectedIDOL)
         {
-            if (SelectedIDOL == null)
+            if (selectedIDOL is null)
             {
                 return;
             }
-            var selectedDev = Model.IDOLDeviations.FirstOrDefault(x => x.Name == SelectedIDOL.Name);
-            using var detailDataViewModel = new Extention.DetailDataViewModel(SelectedIDOL, selectedDev);
+            var selectedDev = Model.IDOLDeviations.FirstOrDefault(x => x.Name == selectedIDOL.Name);
+            using var detailDataViewModel = new Extention.DetailDataViewModel(selectedIDOL, selectedDev);
             Messenger.Raise(new TransitionMessage(detailDataViewModel, "DetailDataViewOpen"));
         }
         #endregion

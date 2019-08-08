@@ -1,26 +1,45 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace ViewModels.Utility
 {
     public static class UtilityFunction
     {
+        public static bool NormalSearch(string target, Regex regex) =>
+            regex is null ? throw new ArgumentNullException(nameof(regex)) : regex.IsMatch(target);
+
+
         public static bool AmbiguousSearch(string target, string filter)
+        {
+            if (filter.All(x => 'A' <= x && x <= 'z'))
+            {
+                return AmbiguousSearchJa(target.ToUpper(), filter.ToUpper());
+            }
+            if (filter.All(x => x < 'A' || 'z' < x))
+            {
+                return AmbiguousSearchJa(ToUpperJapanese(target), ToUpperJapanese(filter));
+            }
+            return false;
+        }
+
+        public static bool AmbiguousSearchJa(string target, string filter)
         {
             if (string.IsNullOrEmpty(target) || string.IsNullOrEmpty(filter))
             {
                 return true;
             }
-            var targetDai = ToUpperJapanese(target);
-            var filterDai = ToUpperJapanese(filter);
+
             int i = 0;
 
-            for (int j = 0; j < targetDai.Length; j++)
+            for (int j = 0; j < target.Length; j++)
             {
-                if (targetDai[j] == filterDai[i])
+                if (target[j] == filter[i])
                 {
                     i++;
                 }
-                if (i == filterDai.Length)
+                if (i == filter.Length)
                 {
                     return true;
                 }
