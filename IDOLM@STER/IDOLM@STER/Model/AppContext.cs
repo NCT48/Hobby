@@ -103,14 +103,6 @@ namespace Models.Master
             IDOLList = LoadIDOLData().ToList();
             IDOLDeviations = IDOLList.ToDevitation().ToList();
             UnitList = LoadUnit().ToList();
-            var test = UnRomanaise("Kannippatsu");
-
-            var roman = IDOLList.Select(x => string.Join(" ", UnRomanaise(x.English).Split(' ').Reverse())).ToList();
-            var phone = IDOLList.Select(x => x.Phonetic).ToList();
-
-            var check = roman.Zip(phone, (x, y) => (x, y)).Where(x => x.x != x.y);
-            var impossible = check.Where(x => x.x.Contains("_"));
-            var failure = check.Where(x => !x.x.Contains("_"));
         }
 
         private IEnumerable<(string Name, string Similarity, double Score)> SimilarityScore()
