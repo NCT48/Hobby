@@ -1,6 +1,6 @@
 ﻿namespace IDOLDataBase
 {
-    public class ShinyColor : IIDOL
+    public class ShinyColors : IIDOL
     {
         public string Name { get; set; }
         public string Phonetic { get; set; }
@@ -19,29 +19,5 @@
         public string Constellation { get; set; }
         public string Handedness { get; set; }
         public string Color { get; set; }
-
-        public ShinyColor() { }
-
-        public ShinyColor(ShinyColor data)
-        {
-            Name = data.Name;
-            Phonetic = data.Phonetic;
-            English = data.English;
-            Age = data.Age;
-            Height = data.Height;
-            Weight = data.Weight;
-            Bust = data.Bust;
-            Waist = data.Waist;
-            Hip = data.Hip;
-            BirthDay = data.BirthDay;
-            Blood = data.Blood;
-            BirthPlace = data.BirthPlace;
-            Hobby = data.Hobby;
-            Talent = data.Talent;
-            Constellation = data.Constellation;
-            Handedness = data.Handedness;
-            Color = data.Color;
-        }
     }
-
 }

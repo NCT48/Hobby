@@ -515,7 +515,7 @@
     },
     {
       "Name": "赤西 瑛梨華",
-      "Phonetic": "赤西 えりか",
+      "Phonetic": "あかにし えりか",
       "English": "Erika Akanishi",
       "Type": "Cu",
       "Age": 16,
@@ -1124,7 +1124,7 @@
     {
       "Name": "乙倉 悠貴",
       "Phonetic": "おとくら ゆうき",
-      "English": "Yuki Otokura",
+      "English": "Yuuki Otokura",
       "Type": "Cu",
       "Age": 13,
       "Height": 164,
@@ -2073,7 +2073,7 @@
     },
     {
       "Name": "岸部 彩華",
-      "Phonetic": "きしば あやか",
+      "Phonetic": "きしべ あやか",
       "English": "Ayaka Kishibe",
       "Type": "Co",
       "Age": 19,
@@ -2091,8 +2091,8 @@
       "Color": ""
     },
     {
-      "Name": "氏家 うじいえ",
-      "Phonetic": "むつみ むつみ",
+      "Name": "氏家 むつみ",
+      "Phonetic": "うじいえ むつみ",
       "English": "Mutsumi Ujiie",
       "Type": "Co",
       "Age": 13,
@@ -3328,7 +3328,7 @@
     {
       "Name": "メアリー コクラン",
       "Phonetic": "めありー こくらん",
-      "English": "Cochran Mary",
+      "English": "Mary Cochran",
       "Type": "Pa",
       "Age": 11,
       "Height": 152,
@@ -3385,7 +3385,7 @@
     {
       "Name": "キャシー グラハム",
       "Phonetic": "きゃしー ぐらはむ",
-      "English": "Graham Cathy",
+      "English": "Cathy Graham",
       "Type": "Pa",
       "Age": 15,
       "Height": 168,
@@ -3555,7 +3555,7 @@
     },
     {
       "Name": "イヴ サンタクロース",
-      "Phonetic": "いゔ サンタクロース",
+      "Phonetic": "いゔ さんたくろーす",
       "English": "Eve Santaclaus",
       "Type": "Pa",
       "Age": 19,
@@ -3609,6 +3609,63 @@
       "Constellation": "双子座",
       "Handedness": "right",
       "Color": "F7A1BA"
+    },
+    {
+      "Name": "リュ ヘナ",
+      "Phonetic": "りゅ へな",
+      "English": "Haena Ryuu",
+      "Type": "Cu",
+      "Age": 16,
+      "Height": 167,
+      "Weight": 51,
+      "Bust": 80,
+      "Waist": 57,
+      "Hip": 85,
+      "BirthDay": "11/09",
+      "Blood": "O",
+      "BirthPlace": "洪川郡",
+      "Hobby": "自撮り,小物作り",
+      "Constellation": "蠍座",
+      "Handedness": "left",
+      "Color": ""
+    },
+    {
+      "Name": "イム ユジン",
+      "Phonetic": "いむ ゆじん",
+      "English": "Yujim Im",
+      "Type": "Pa",
+      "Age": 15,
+      "Height": 165,
+      "Weight": 48,
+      "Bust": 86,
+      "Waist": 58,
+      "Hip": 84,
+      "BirthDay": "08/02",
+      "Blood": "B",
+      "BirthPlace": "ソウル",
+      "Hobby": "遊びに行くこと,足マッサージ",
+      "Constellation": "獅子座",
+      "Handedness": "right",
+      "Color": ""
+    },
+    {
+      "Name": "ジュニー",
+      "Phonetic": "じゅにー",
+      "English": "Juney",
+      "Type": "Co",
+      "Age": 16,
+      "Height": 172,
+      "Weight": 49,
+      "Bust": 77,
+      "Waist": 56,
+      "Hip": 82,
+      "BirthDay": "03/12",
+      "Blood": "AB",
+      "BirthPlace": "シアトル",
+      "Hobby": "海外ドラマ鑑賞,テコンドー",
+      "Constellation": "魚座",
+      "Handedness": "right",
+      "Color": ""
     }
   ]
 }

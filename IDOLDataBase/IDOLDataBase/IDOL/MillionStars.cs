@@ -1,6 +1,6 @@
 ﻿namespace IDOLDataBase
 {
-    public class MillionStar : IIDOL
+    public class MillionStars : IIDOL
     {
         public string Name { get; set; }
         public string Phonetic { get; set; }
@@ -18,34 +18,9 @@
         public string BirthPlace { get; set; }
         public string Hobby { get; set; }
         public string Talent { get; set; }
+        public string Favorite { get; set; }
         public string Constellation { get; set; }
         public string Handedness { get; set; }
         public string Color { get; set; }
-
-        public MillionStar() { }
-
-        public MillionStar(MillionStar data)
-        {
-            Name = data.Name;
-            Phonetic = data.Phonetic;
-            English = data.English;
-            Attribute = data.Attribute;
-            Division = data.Division;
-            Age = data.Age;
-            Height = data.Height;
-            Weight = data.Weight;
-            Bust = data.Bust;
-            Waist = data.Waist;
-            Hip = data.Hip;
-            BirthDay = data.BirthDay;
-            Blood = data.Blood;
-            BirthPlace = data.BirthPlace;
-            Hobby = data.Hobby;
-            Talent = data.Talent;
-            Constellation = data.Constellation;
-            Handedness = data.Handedness;
-            Color = data.Color;
-        }
     }
-
 }

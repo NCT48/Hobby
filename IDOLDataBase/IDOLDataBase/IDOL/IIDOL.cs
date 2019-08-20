@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IDOLDataBase
+﻿namespace IDOLDataBase
 {
     public interface IIDOL
     {
@@ -22,5 +16,4 @@ namespace IDOLDataBase
         string Handedness { get; }
         string Color { get; }
     }
-
 }

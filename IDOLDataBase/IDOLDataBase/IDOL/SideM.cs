@@ -16,26 +16,5 @@
         public string Constellation { get; set; }
         public string Handedness { get; set; }
         public string Color { get; set; }
-
-        public SideM() { }
-
-        public SideM(SideM data)
-        {
-            Name = data.Name;
-            Phonetic = data.Phonetic;
-            English = data.English;
-            Age = data.Age;
-            Height = data.Height;
-            Weight = data.Weight;
-            Foot = data.Foot;
-            BirthDay = data.BirthDay;
-            Blood = data.Blood;
-            BirthPlace = data.BirthPlace;
-            Hobby = data.Hobby;
-            Constellation = data.Constellation;
-            Handedness = data.Handedness;
-            Color = data.Color;
-        }
     }
-
 }

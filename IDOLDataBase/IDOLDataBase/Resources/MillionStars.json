@@ -17,6 +17,7 @@
       "BirthPlace": "東京",
       "Hobby": "可愛い髪留めを集めること",
       "Talent": "歌うこと",
+      "Favorite": "ライブ",
       "Constellation": "蟹座",
       "Handedness": "right",
       "Color": "EA5B76"
@@ -38,6 +39,7 @@
       "BirthPlace": "埼玉",
       "Hobby": "テニス",
       "Talent": "ピアノ",
+      "Favorite": "うどん",
       "Constellation": "乙女座",
       "Handedness": "right",
       "Color": "6495CF"
@@ -59,6 +61,7 @@
       "BirthPlace": "東京",
       "Hobby": "遊びの計画をたてること",
       "Talent": "じゃんけん",
+      "Favorite": "ビーフステーキ",
       "Constellation": "獅子座",
       "Handedness": "left",
       "Color": "FED552"
@@ -80,6 +83,7 @@
       "BirthPlace": "東京",
       "Hobby": "お風呂",
       "Talent": "フェンシング",
+      "Favorite": "アイス",
       "Constellation": "天秤座",
       "Handedness": "right",
       "Color": "92CFBB"
@@ -101,6 +105,7 @@
       "BirthPlace": "ブラジル",
       "Hobby": "パーティー",
       "Talent": "サンバを踊ること",
+      "Favorite": "みんなで騒ぐこと",
       "Constellation": "蠍座",
       "Handedness": "right",
       "Color": "9BCE92"
@@ -122,6 +127,7 @@
       "BirthPlace": "東京",
       "Hobby": "格闘ゲーム",
       "Talent": "料理",
+      "Favorite": "友達との長電話",
       "Constellation": "牡羊座",
       "Handedness": "right",
       "Color": "58A6DC"
@@ -143,6 +149,7 @@
       "BirthPlace": "埼玉",
       "Hobby": "カラオケ",
       "Talent": "人の誕生日を覚えること",
+      "Favorite": "友達",
       "Constellation": "牡羊座",
       "Handedness": "right",
       "Color": "454341"
@@ -164,6 +171,7 @@
       "BirthPlace": "愛知",
       "Hobby": "漫画あつめ",
       "Talent": "演技",
+      "Favorite": "焼きマシュマロ,ウミウシ",
       "Constellation": "水瓶座",
       "Handedness": "right",
       "Color": "5ABFB7"
@@ -185,6 +193,7 @@
       "BirthPlace": "東京",
       "Hobby": "バイオリン",
       "Talent": "アジリティのハンドラー",
+      "Favorite": "紅茶,クッキー",
       "Constellation": "魚座",
       "Handedness": "right",
       "Color": "ED90BA"
@@ -206,6 +215,7 @@
       "BirthPlace": "埼玉",
       "Hobby": "スキップ",
       "Talent": "インラインスケート",
+      "Favorite": "プリン",
       "Constellation": "射手座",
       "Handedness": "left",
       "Color": "EB613F"
@@ -227,6 +237,7 @@
       "BirthPlace": "神奈川",
       "Hobby": "オンラインゲーム",
       "Talent": "タイピング",
+      "Favorite": "かわいいもの",
       "Constellation": "双子座",
       "Handedness": "right",
       "Color": "7E6CA8"
@@ -248,6 +259,7 @@
       "BirthPlace": "東京",
       "Hobby": "物を作ること",
       "Talent": "目を閉じたまま歩ける",
+      "Favorite": "ハト",
       "Constellation": "魚座",
       "Handedness": "right",
       "Color": "FFF03C"
@@ -269,6 +281,7 @@
       "BirthPlace": "東京",
       "Hobby": "読書",
       "Talent": "ペン回し",
+      "Favorite": "おはぎ",
       "Constellation": "魚座",
       "Handedness": "right",
       "Color": "C7B83C"
@@ -290,6 +303,7 @@
       "BirthPlace": "茨城",
       "Hobby": "ハリネズミの飼育",
       "Talent": "一晩寝ると元気になれる",
+      "Favorite": "友達,アイドル仲間",
       "Constellation": "山羊座",
       "Handedness": "right",
       "Color": "7F6575"
@@ -311,6 +325,7 @@
       "BirthPlace": "東京",
       "Hobby": "アイドルのデータ集め",
       "Talent": "アイドルの変装を見破れる",
+      "Favorite": "ファミレスのデザート",
       "Constellation": "双子座",
       "Handedness": "right",
       "Color": "B54461"
@@ -332,6 +347,7 @@
       "BirthPlace": "千葉",
       "Hobby": "ボルダリング",
       "Talent": "常人にできないポージングができる",
+      "Favorite": "ダンス",
       "Constellation": "獅子座",
       "Handedness": "right",
       "Color": "E9739B"
@@ -353,6 +369,7 @@
       "BirthPlace": "東京",
       "Hobby": "アニメ鑑賞",
       "Talent": "早起き",
+      "Favorite": "おかあさん",
       "Constellation": "射手座",
       "Handedness": "right",
       "Color": "F7E78E"
@@ -374,13 +391,14 @@
       "BirthPlace": "東京",
       "Hobby": "ファンに喜んでもらうこと",
       "Talent": "口げんか",
+      "Favorite": "かわいい扇子",
       "Constellation": "蠍座",
       "Handedness": "left",
       "Color": "BEE3E3"
     },
     {
-      "Name": "スチュアート エミリー",
-      "Phonetic": "すちゅあーと えみりー",
+      "Name": "エミリー スチュアート",
+      "Phonetic": "えみりー すちゅあーと",
       "English": "Emily Stewart",
       "Attribute": "Da",
       "Division": "Princess",
@@ -395,6 +413,7 @@
       "BirthPlace": "イギリス",
       "Hobby": "かるた遊び",
       "Talent": "日本舞踊",
+      "Favorite": "抹茶",
       "Constellation": "山羊座",
       "Handedness": "right",
       "Color": "554171"
@@ -416,6 +435,7 @@
       "BirthPlace": "東京",
       "Hobby": "お気に入りの絵本を探すこと",
       "Talent": "記憶力,集中力が高い",
+      "Favorite": "ぬいぐるみ",
       "Constellation": "山羊座",
       "Handedness": "right",
       "Color": "AFA690"
@@ -437,6 +457,7 @@
       "BirthPlace": "愛媛",
       "Hobby": "ショッピング",
       "Talent": "ダンス",
+      "Favorite": "わさび",
       "Constellation": "獅子座",
       "Handedness": "right",
       "Color": "E25A9B"
@@ -458,6 +479,7 @@
       "BirthPlace": "北海道",
       "Hobby": "ガーデニング",
       "Talent": "天気を当てること",
+      "Favorite": "おばあちゃん",
       "Constellation": "蟹座",
       "Handedness": "right",
       "Color": "D1342C"
@@ -479,6 +501,7 @@
       "BirthPlace": "神奈川",
       "Hobby": "なんでも歌にすること",
       "Talent": "合唱",
+      "Favorite": "屋上で歌うこと",
       "Constellation": "獅子座",
       "Handedness": "right",
       "Color": "F5AD3B"
@@ -500,6 +523,7 @@
       "BirthPlace": "大阪",
       "Hobby": "銭湯＆温泉巡り",
       "Talent": "スタミナがある",
+      "Favorite": "友達とおしゃべり",
       "Constellation": "水瓶座",
       "Handedness": "right",
       "Color": "788BC5"
@@ -521,6 +545,7 @@
       "BirthPlace": "東京",
       "Hobby": "カフェでアパレル誌チェック",
       "Talent": "人の名前と顔を忘れない",
+      "Favorite": "憧れの目で見られること",
       "Constellation": "天秤座",
       "Handedness": "right",
       "Color": "F19557"
@@ -542,6 +567,7 @@
       "BirthPlace": "山口",
       "Hobby": "北米ドラマ鑑賞",
       "Talent": "麻雀",
+      "Favorite": "日本酒",
       "Constellation": "双子座",
       "Handedness": "right",
       "Color": "F1BECB"
@@ -563,6 +589,7 @@
       "BirthPlace": "香川",
       "Hobby": "探検",
       "Talent": "石投げ",
+      "Favorite": "アスレチックランド",
       "Constellation": "牡牛座",
       "Handedness": "right",
       "Color": "EE762E"
@@ -584,6 +611,7 @@
       "BirthPlace": "千葉",
       "Hobby": "献血",
       "Talent": "息を止めること",
+      "Favorite": "猫",
       "Constellation": "乙女座",
       "Handedness": "right",
       "Color": "7278A8"
@@ -605,6 +633,7 @@
       "BirthPlace": "東京",
       "Hobby": "囲碁,将棋",
       "Talent": "視力が高い",
+      "Favorite": "サンドイッチ",
       "Constellation": "牡牛座",
       "Handedness": "right",
       "Color": "D7A96B"
@@ -626,6 +655,7 @@
       "BirthPlace": "東京",
       "Hobby": "格闘技観戦",
       "Talent": "バイクの運転",
+      "Favorite": "焼肉",
       "Constellation": "牡羊座",
       "Handedness": "right",
       "Color": "ECEB70"
@@ -647,6 +677,7 @@
       "BirthPlace": "神奈川",
       "Hobby": "手品",
       "Talent": "バトントワリング",
+      "Favorite": "クロスワードパズル",
       "Constellation": "水瓶座",
       "Handedness": "right",
       "Color": "99B7DC"
@@ -668,6 +699,7 @@
       "BirthPlace": "東京",
       "Hobby": "アロマテラピー",
       "Talent": "ポーカーフェイス",
+      "Favorite": "お風呂",
       "Constellation": "乙女座",
       "Handedness": "right",
       "Color": "B63B40"
@@ -689,6 +721,7 @@
       "BirthPlace": "広島",
       "Hobby": "ヨガエクササイズ",
       "Talent": "メイク",
+      "Favorite": "可愛くてセクシーな服",
       "Constellation": "蠍座",
       "Handedness": "right",
       "Color": "F19591"
@@ -710,6 +743,7 @@
       "BirthPlace": "東京",
       "Hobby": "野球",
       "Talent": "変化球",
+      "Favorite": "アイドル",
       "Constellation": "乙女座",
       "Handedness": "left",
       "Color": "AEB49C"
@@ -731,6 +765,7 @@
       "BirthPlace": "長野",
       "Hobby": "登山",
       "Talent": "肺活量が大きい",
+      "Favorite": "ドライブ",
       "Constellation": "牡牛座",
       "Handedness": "right",
       "Color": "6BB6B0"
@@ -752,6 +787,7 @@
       "BirthPlace": "東京",
       "Hobby": "かわいいシール集め",
       "Talent": "演技や台詞の暗記",
+      "Favorite": "ホットケーキ",
       "Constellation": "蠍座",
       "Handedness": "right",
       "Color": "EFB864"
@@ -773,6 +809,7 @@
       "BirthPlace": "福岡",
       "Hobby": "なし",
       "Talent": "ギター",
+      "Favorite": "パンクロック",
       "Constellation": "天秤座",
       "Handedness": "left",
       "Color": "D7385F"
@@ -794,6 +831,7 @@
       "BirthPlace": "石川",
       "Hobby": "庭園,甘味処の散策",
       "Talent": "着物の着付け,三味線",
+      "Favorite": "和スイーツ",
       "Constellation": "双子座",
       "Handedness": "right",
       "Color": "EBE1FF"
@@ -815,6 +853,7 @@
       "BirthPlace": "東京",
       "Hobby": "乗馬",
       "Talent": "合唱,ゴルフ",
+      "Favorite": "洋菓子,子ども",
       "Constellation": "牡牛座",
       "Handedness": "right",
       "Color": "274079"
