@@ -1,47 +1,27 @@
 ﻿namespace IDOLDataBase
 {
-    public class DearlyStar : IIDOL
+    public class DearlyStars : IWomanIdol
     {
-        public string Name { get; set; }
-        public string Phonetic { get; set; }
-        public string English { get; set; }
-        public string Type { get; set; }
-        public int Age { get; set; }
-        public double Height { get; set; }
-        public double Weight { get; set; }
-        public double Bust { get; set; }
-        public double Waist { get; set; }
-        public double Hip { get; set; }
-        public string BirthDay { get; set; }
-        public string Blood { get; set; }
-        public string BirthPlace { get; set; }
-        public string Hobby { get; set; }
-        public string Constellation { get; set; }
-        public string Handedness { get; set; }
-        public string Color { get; set; }
+        public string Name { get; private set; }
+        public string Phonetic { get; private set; }
+        public string English { get; private set; }
+        public string Type { get; private set; }
+        public int Age { get; private set; }
+        public double Height { get; private set; }
+        public double Weight { get; private set; }
+        public double Bust { get; private set; }
+        public double Waist { get; private set; }
+        public double Hip { get; private set; }
+        public string BirthDay { get; private set; }
+        public string Blood { get; private set; }
+        public string BirthPlace { get; private set; }
+        public string Hobby { get; private set; }
+        public string Constellation { get; private set; }
+        public string Handedness { get; private set; }
+        public string Color { get; private set; }
 
-        public DearlyStar() { }
-
-        public DearlyStar(DearlyStar data)
-        {
-            Name = data.Name;
-            Phonetic = data.Phonetic;
-            English = data.English;
-            Type = data.Type;
-            Age = data.Age;
-            Height = data.Height;
-            Weight = data.Weight;
-            Bust = data.Bust;
-            Waist = data.Waist;
-            Hip = data.Hip;
-            BirthDay = data.BirthDay;
-            Blood = data.Blood;
-            BirthPlace = data.BirthPlace;
-            Hobby = data.Hobby;
-            Constellation = data.Constellation;
-            Handedness = data.Handedness;
-            Color = data.Color;
-        }
+        public double Diff { get; private set; }
+        public string Cup { get; private set; }
+        public double Under { get; private set; }
     }
-
 }
