@@ -3,9 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Utf8Json;
 
 namespace IDOLDataBase
@@ -44,9 +41,46 @@ namespace IDOLDataBase
                         var propertyInfo = t.GetType().GetProperty(data.Key);
                         propertyInfo.SetValue(t, Convert.ChangeType(data.Value, propertyInfo.PropertyType));
                     }
+                    if (t is IWomanIdol tw)
+                    {
+                        BustDifferenceGenerator(ref tw);
+                    }
                     yield return t;
                 }
             }
+        }
+
+        private static void BustDifferenceGenerator<T>(ref T t) where T : IWomanIdol
+        {
+            var diff = t.GetType().GetProperty("Diff");
+            var under = t.GetType().GetProperty("Under");
+            var cup = t.GetType().GetProperty("Cup");
+
+            var hosei = 0.3261;
+            var d = t.Height * t.Bust * t.Waist == 0 ? 0 : t.Bust - t.Height * 0.54 + (t.Height * 0.38 - t.Waist) * 0.73 + (t.Height - 158.8) * hosei + 17.5;
+
+            diff.SetValue(t, Math.Round(d, 0, MidpointRounding.AwayFromZero));
+            under.SetValue(t, Math.Round(t.Bust - d, 0, MidpointRounding.AwayFromZero));
+            cup.SetValue(t, t.Bust == 0 ? string.Empty : SetCup(d));
+        }
+
+        private static string SetCup(double diff)
+        {
+            return diff < 3.75 ? "AAAA"
+                : diff < 6.25 ? "AAA"
+                : diff < 8.75 ? "AA"
+                : diff < 11.25 ? "A"
+                : diff < 13.75 ? "B"
+                : diff < 16.25 ? "C"
+                : diff < 18.75 ? "D"
+                : diff < 21.25 ? "E"
+                : diff < 23.75 ? "F"
+                : diff < 26.25 ? "G"
+                : diff < 28.75 ? "H"
+                : diff < 31.25 ? "I"
+                : diff < 33.75 ? "J"
+                : diff < 36.25 ? "K"
+                : "L↑";
         }
     }
 

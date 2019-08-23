@@ -57,7 +57,7 @@
     <Compile Include="IDOL\AllStars.cs" />
     <Compile Include="IDOL\CinderellaGirls.cs" />
     <Compile Include="IDOL\DearlyStars.cs" />
-    <Compile Include="IDOL\IIDOL.cs" />
+    <Compile Include="IDOL\Interface.cs" />
     <Compile Include="IDOL\MillionStars.cs" />
     <Compile Include="IDOLDataBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

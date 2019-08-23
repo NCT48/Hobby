@@ -16,4 +16,14 @@
         string Handedness { get; }
         string Color { get; }
     }
+
+    public interface IWomanIdol : IIDOL
+    {
+        double Bust { get; }
+        double Waist { get; }
+        double Hip { get; }
+        double Diff { get; }
+        string Cup { get; }
+        double Under { get; }
+    }
 }

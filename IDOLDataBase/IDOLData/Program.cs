@@ -11,7 +11,10 @@ namespace IDOLData
     {
         static void Main(string[] args)
         {
-            OutOutCSV(IDOLDB.IDOLList);
+            foreach (var idol in IDOLDB.IDOLList.OfType<IWomanIdol>())
+            {
+                Console.WriteLine(idol.Name + ", " + idol.Cup);
+            }
         }
 
         private static void OutOutCSV(IReadOnlyList<IIDOL> db)
@@ -19,7 +22,6 @@ namespace IDOLData
             static void Header(StreamWriter sw, Type type)
             {
                 var header = type.GetProperties();
-
                 foreach (var h in header)
                 {
                     sw.Write(h.Name);

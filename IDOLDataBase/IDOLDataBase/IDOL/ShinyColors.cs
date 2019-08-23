@@ -1,23 +1,27 @@
 ﻿namespace IDOLDataBase
 {
-    public class ShinyColors : IIDOL
+    public class ShinyColors : IWomanIdol
     {
-        public string Name { get; set; }
-        public string Phonetic { get; set; }
-        public string English { get; set; }
-        public int Age { get; set; }
-        public double Height { get; set; }
-        public double Weight { get; set; }
-        public double Bust { get; set; }
-        public double Waist { get; set; }
-        public double Hip { get; set; }
-        public string BirthDay { get; set; }
-        public string Blood { get; set; }
-        public string BirthPlace { get; set; }
-        public string Hobby { get; set; }
-        public string Talent { get; set; }
-        public string Constellation { get; set; }
-        public string Handedness { get; set; }
-        public string Color { get; set; }
+        public string Name { get; private set; }
+        public string Phonetic { get; private set; }
+        public string English { get; private set; }
+        public int Age { get; private set; }
+        public double Height { get; private set; }
+        public double Weight { get; private set; }
+        public double Bust { get; private set; }
+        public double Waist { get; private set; }
+        public double Hip { get; private set; }
+        public string BirthDay { get; private set; }
+        public string Blood { get; private set; }
+        public string BirthPlace { get; private set; }
+        public string Hobby { get; private set; }
+        public string Talent { get; private set; }
+        public string Constellation { get; private set; }
+        public string Handedness { get; private set; }
+        public string Color { get; private set; }
+
+        public double Diff { get; private set; }
+        public string Cup { get; private set; }
+        public double Under { get; private set; }
     }
 }
