@@ -426,7 +426,7 @@
       "Height": 165,
       "Weight": 56,
       "Bust": 87,
-      "Waist": 560,
+      "Waist": 56,
       "Hip": 86,
       "BirthDay": "03/17",
       "Blood": "A",
@@ -437,5 +437,43 @@
       "Handedness": "left",
       "Color": "FFC639"
     },
+    {
+      "Name": "七草 にちか",
+      "Phonetic": "ななくさ にちか",
+      "English": "Nichika Nanakusa",
+      "Age": 16,
+      "Height": 158,
+      "Weight": 48,
+      "Bust": 82,
+      "Waist": 55,
+      "Hip": 84,
+      "BirthDay": "07/26",
+      "Blood": "A",
+      "BirthPlace": "埼玉",
+      "Hobby": "音楽鑑賞",
+      "Talent": "家事",
+      "Constellation": "獅子座",
+      "Handedness": "right",
+      "Color": "A5CFB6"
+    },
+    {
+      "Name": "緋田 美琴",
+      "Phonetic": "あけた みこと",
+      "English": "Mikoto Aketa",
+      "Age": 24,
+      "Height": 170,
+      "Weight": 54,
+      "Bust": 85,
+      "Waist": 57,
+      "Hip": 85,
+      "BirthDay": "09/08",
+      "Blood": "B",
+      "BirthPlace": "北海道",
+      "Hobby": "作詞作曲",
+      "Talent": "ダンスの振り付け",
+      "Constellation": "乙女座",
+      "Handedness": "right",
+      "Color": "760E10"
+    }
   ]
 }
