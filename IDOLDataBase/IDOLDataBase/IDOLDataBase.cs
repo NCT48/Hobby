@@ -10,7 +10,8 @@ namespace IDOLDataBase
     public static class IDOLDB
     {
         private static IDOLList idolList;
-        public static IDOLList IDOLList => idolList ?? (idolList = Initialaize());
+
+        public static IDOLList IDOLList => idolList ??= Initialaize();
 
         private static IDOLList Initialaize()
         {
@@ -28,9 +29,8 @@ namespace IDOLDataBase
         {
             Dictionary<string, object> jsonDictionary;
             using (var fs = new FileStream($@"Resources\{typeof(T).Name}.json", FileMode.Open, FileAccess.Read))
-            {
                 jsonDictionary = JsonSerializer.Deserialize<dynamic>(fs);
-            }
+
             foreach (var lists in jsonDictionary.Values.Cast<List<object>>())
             {
                 foreach (var datas in lists.Cast<Dictionary<string, object>>())
@@ -42,9 +42,8 @@ namespace IDOLDataBase
                         propertyInfo.SetValue(t, Convert.ChangeType(data.Value, propertyInfo.PropertyType));
                     }
                     if (t is IWomanIdol tw)
-                    {
                         BustDifferenceGenerator(ref tw);
-                    }
+
                     yield return t;
                 }
             }
