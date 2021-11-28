@@ -16,15 +16,16 @@ public static partial class Strategy
 
     public static IEnumerable<OutPutData> GetResults(string strategyName)
     {
+        var strategy = ExecuteStrategy(strategyName);
         foreach (var _ in Enumerable.Repeat(0, 1000))
         {
-            yield return ExecuteStrategy(strategyName);
+            yield return strategy();
         }
     }
 
-    private static OutPutData ExecuteStrategy(string strategyName) => strategyName switch
+    private static Func<OutPutData> ExecuteStrategy(string strategyName) => strategyName switch
     {
-        nameof(SmithySteroid) => SmithySteroid(),
+        nameof(SmithySteroid) => SmithySteroid,
         _ => throw new InvalidOperationException(nameof(strategyName)),
     };
 }

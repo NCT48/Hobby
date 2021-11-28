@@ -32,19 +32,25 @@ public class MainWindowViewModel : BindableBase
         var histogram = new SortedList<int, int>();
         var min = int.MaxValue;
         var max = int.MinValue;
-        var r = Strategy.GetResults(SelectedStrategy).ToArray();
-        foreach (var turn in Strategy.GetResults(SelectedStrategy).Select(x => x.Trun))
+        var sum = 0.0;
+        var count = 0;
+
+        var rslt = Strategy.GetResults(SelectedStrategy).ToArray();
+        foreach (var turn in rslt.Select(x => x.Trun))
         {
             if (min > turn)
                 min = turn;
             if (max < turn)
                 max = turn;
-
+            sum += turn;
+            count++;
             if (!histogram.ContainsKey(turn))
                 histogram.Add(turn, 0);
 
             histogram[turn]++;
         }
+        var average = sum / count;
+        var stdDev = rslt.Sum(x => Math.Pow(x.Trun - average, 2)) / count;
 
         SeriesCollection = new SeriesCollection
         {

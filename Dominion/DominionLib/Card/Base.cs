@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DominionLib.Card;
 
-public enum ExpansionType
+internal enum ExpansionType
 {
     Normal,
     Intrigue,
@@ -26,29 +26,29 @@ public enum ExpansionType
     Promos,
 }
 
-public interface ICard
+internal interface ICard
 {
     string Name { get; }
     int Cost { get; }
     ExpansionType Expansion { get; }
 }
 
-public interface ITreasure
+internal interface ITreasure
 {
     int Money { get; }
 }
 
-public interface IVictory
+internal interface IVictory
 {
     int Point { get; }
 }
 
-public interface IAction
+internal interface IAction
 {
     void Action();
 }
 
-public interface IDuration
+internal interface IDuration
 {
     void Duration();
 }

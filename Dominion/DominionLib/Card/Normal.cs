@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace DominionLib.Card;
 
-public class NormalList
+internal class NormalList
 {
     public static readonly Smithy Smithy = new();
 }
 
-public class Smithy : ICard, IAction
+internal class Smithy : ICard, IAction
 {
     public string Name => "鍛冶屋";
     public int Cost => 3;

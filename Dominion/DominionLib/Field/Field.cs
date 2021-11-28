@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DominionLib.Field;
 
-public class FieldData
+internal class FieldData
 {
     public static readonly FieldData Instance = new();
 
