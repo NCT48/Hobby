@@ -152,4 +152,5 @@ namespace Furuyoni.Model
     public class None : CardType { public None(CardJson _) { } }
     public class Reaction : CardType { public Reaction(CardJson _) { } }
     public class Fullpower : CardType { public Fullpower(CardJson _) { } }
+    public class Concept : CardType { public Concept(CardJson _) { } }
 }
