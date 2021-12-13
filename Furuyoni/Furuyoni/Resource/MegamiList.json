@@ -1,0 +1,806 @@
+{
+    "OriginMegami": [
+        {
+            "Name": "ユリナ",
+            "Normal": [
+                "na_01_yurina_o_n_1.png",
+                "na_01_yurina_o_n_2.png",
+                "na_01_yurina_o_n_3.png",
+                "na_01_yurina_o_n_4_s2.png",
+                "na_01_yurina_o_n_5.png",
+                "na_01_yurina_o_n_5_s5.png",
+                "na_01_yurina_o_n_6.png",
+                "na_01_yurina_o_n_7.png"
+            ],
+            "Special": [
+                "na_01_yurina_o_s_1.png",
+                "na_01_yurina_o_s_2_s5.png",
+                "na_01_yurina_o_s_3_s2.png",
+                "na_01_yurina_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "サイネ",
+            "Normal": [
+                "na_02_saine_o_n_1_s6_2.png",
+                "na_02_saine_o_n_2.png",
+                "na_02_saine_o_n_3_s6_2.png",
+                "na_02_saine_o_n_4_s6_2.png",
+                "na_02_saine_o_n_5_s5.png",
+                "na_02_saine_o_n_6_s3.png",
+                "na_02_saine_o_n_7.png"
+            ],
+            "Special": [
+                "na_02_saine_o_s_1_s2.png",
+                "na_02_saine_o_s_2_s2.png",
+                "na_02_saine_o_s_3_s6_2.png",
+                "na_02_saine_o_s_4_s2.png"
+            ]
+        },
+        {
+            "Name": "ヒミカ",
+            "Normal": [
+                "na_03_himika_o_n_1.png",
+                "na_03_himika_o_n_2_s4.png",
+                "na_03_himika_o_n_3.png",
+                "na_03_himika_o_n_4.png",
+                "na_03_himika_o_n_5.png",
+                "na_03_himika_o_n_6_s5.png",
+                "na_03_himika_o_n_7.png"
+            ],
+            "Special": [
+                "na_03_himika_o_s_1.png",
+                "na_03_himika_o_s_2.png",
+                "na_03_himika_o_s_3.png",
+                "na_03_himika_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "トコヨ",
+            "Normal": [
+                "na_04_tokoyo_o_n_1_s2.png",
+                "na_04_tokoyo_o_n_2.png",
+                "na_04_tokoyo_o_n_3.png",
+                "na_04_tokoyo_o_n_4.png",
+                "na_04_tokoyo_o_n_5.png",
+                "na_04_tokoyo_o_n_6.png",
+                "na_04_tokoyo_o_n_7_s6_2.png"
+            ],
+            "Special": [
+                "na_04_tokoyo_o_s_1.png",
+                "na_04_tokoyo_o_s_2.png",
+                "na_04_tokoyo_o_s_3_s2.png",
+                "na_04_tokoyo_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "オボロ",
+            "Normal": [
+                "na_05_oboro_o_n_1.png",
+                "na_05_oboro_o_n_2_s2.png",
+                "na_05_oboro_o_n_3.png",
+                "na_05_oboro_o_n_4_s3.png",
+                "na_05_oboro_o_n_5.png",
+                "na_05_oboro_o_n_6.png",
+                "na_05_oboro_o_n_7.png"
+            ],
+            "Special": [
+                "na_05_oboro_o_s_1.png",
+                "na_05_oboro_o_s_2_s3.png",
+                "na_05_oboro_o_s_3.png",
+                "na_05_oboro_o_s_4_s3.png"
+            ]
+        },
+        {
+            "Name": "ユキヒ",
+            "Normal": [
+                "na_06_yukihi_o_n_1.png",
+                "na_06_yukihi_o_n_2.png",
+                "na_06_yukihi_o_n_3.png",
+                "na_06_yukihi_o_n_4.png",
+                "na_06_yukihi_o_n_5.png",
+                "na_06_yukihi_o_n_6.png",
+                "na_06_yukihi_o_n_7.png"
+            ],
+            "Special": [
+                "na_06_yukihi_o_s_1.png",
+                "na_06_yukihi_o_s_2.png",
+                "na_06_yukihi_o_s_3.png",
+                "na_06_yukihi_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "シンラ",
+            "Normal": [
+                "na_07_shinra_o_n_1.png",
+                "na_07_shinra_o_n_2.png",
+                "na_07_shinra_o_n_3.png",
+                "na_07_shinra_o_n_4.png",
+                "na_07_shinra_o_n_5.png",
+                "na_07_shinra_o_n_6_s3.png",
+                "na_07_shinra_o_n_7.png"
+            ],
+            "Special": [
+                "na_07_shinra_o_s_1_s6.png",
+                "na_07_shinra_o_s_2_s2.png",
+                "na_07_shinra_o_s_3.png",
+                "na_07_shinra_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "ハガネ",
+            "Normal": [
+                "na_08_hagane_o_n_1_s2.png",
+                "na_08_hagane_o_n_2.png",
+                "na_08_hagane_o_n_3.png",
+                "na_08_hagane_o_n_4_s6_2.png",
+                "na_08_hagane_o_n_5.png",
+                "na_08_hagane_o_n_6.png",
+                "na_08_hagane_o_n_7.png",
+                "na_08_hagane_o_s_1.png"
+            ],
+            "Special": [
+                "na_08_hagane_o_s_1_s5.png",
+                "na_08_hagane_o_s_2.png",
+                "na_08_hagane_o_s_3.png",
+                "na_08_hagane_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "チカゲ",
+            "Normal": [
+                "na_09_chikage_o_n_1.png",
+                "na_09_chikage_o_n_2.png",
+                "na_09_chikage_o_n_3_s5.png",
+                "na_09_chikage_o_n_4.png",
+                "na_09_chikage_o_n_5.png",
+                "na_09_chikage_o_n_6.png",
+                "na_09_chikage_o_n_7.png"
+            ],
+            "Special": [
+                "na_09_chikage_o_s_1.png",
+                "na_09_chikage_o_s_2.png",
+                "na_09_chikage_o_s_3.png",
+                "na_09_chikage_o_s_4.png"
+            ],
+            "Ex": [
+                "na_09_chikage_o_p_1.png",
+                "na_09_chikage_o_p_2.png",
+                "na_09_chikage_o_p_3.png",
+                "na_09_chikage_o_p_4.png"
+            ]
+        },
+        {
+            "Name": "クルル",
+            "Normal": [
+                "na_10_kururu_o_n_1.png",
+                "na_10_kururu_o_n_2.png",
+                "na_10_kururu_o_n_3.png",
+                "na_10_kururu_o_n_4.png",
+                "na_10_kururu_o_n_5.png",
+                "na_10_kururu_o_n_6.png",
+                "na_10_kururu_o_n_7.png"
+            ],
+            "Special": [
+                "na_10_kururu_o_s_1.png",
+                "na_10_kururu_o_s_2_s2.png",
+                "na_10_kururu_o_s_3_s5.png",
+                "na_10_kururu_o_s_4.png"
+            ],
+            "Ex": [
+                "na_10_kururu_o_s_3_ex1.png"
+            ]
+        },
+        {
+            "Name": "サリヤ",
+            "Normal": [
+                "na_11_thallya_o_n_1.png",
+                "na_11_thallya_o_n_2.png",
+                "na_11_thallya_o_n_3.png",
+                "na_11_thallya_o_n_4.png",
+                "na_11_thallya_o_n_5.png",
+                "na_11_thallya_o_n_6.png",
+                "na_11_thallya_o_n_7.png"
+            ],
+            "Special": [
+                "na_11_thallya_o_s_1.png",
+                "na_11_thallya_o_s_2.png",
+                "na_11_thallya_o_s_3_s3.png",
+                "na_11_thallya_o_s_4_s3.png"
+            ],
+            "Ex": [
+                "na_11_thallya_o_tf_1_s2.png",
+                "na_11_thallya_o_tf_2.png",
+                "na_11_thallya_o_tf_3.png"
+            ]
+        },
+        {
+            "Name": "ライラ",
+            "Normal": [
+                "na_12_raira_o_n_1_s2.png",
+                "na_12_raira_o_n_2.png",
+                "na_12_raira_o_n_3.png",
+                "na_12_raira_o_n_4.png",
+                "na_12_raira_o_n_5.png",
+                "na_12_raira_o_n_6.png",
+                "na_12_raira_o_n_7.png"
+            ],
+            "Special": [
+                "na_12_raira_o_s_1.png",
+                "na_12_raira_o_s_2.png",
+                "na_12_raira_o_s_3_s4.png",
+                "na_12_raira_o_s_4_s5.png"
+            ],
+            "Ex": [
+                "na_12_raira_o_s_3_ex1.png",
+                "na_12_raira_o_s_3_ex2.png",
+                "na_12_raira_o_s_3_ex3.png"
+            ]
+        },
+        {
+            "Name": "ウツロ",
+            "Normal": [
+                "na_13_utsuro_o_n_1.png",
+                "na_13_utsuro_o_n_2.png",
+                "na_13_utsuro_o_n_3.png",
+                "na_13_utsuro_o_n_4.png",
+                "na_13_utsuro_o_n_5.png",
+                "na_13_utsuro_o_n_6.png",
+                "na_13_utsuro_o_n_7.png"
+            ],
+            "Special": [
+                "na_13_utsuro_o_s_1.png",
+                "na_13_utsuro_o_s_2.png",
+                "na_13_utsuro_o_s_3.png",
+                "na_13_utsuro_o_s_4_s5.png"
+            ]
+        },
+        {
+            "Name": "ホノカ",
+            "Normal": [
+                "na_14_honoka_o_n_1.png",
+                "na_14_honoka_o_n_2_s5.png",
+                "na_14_honoka_o_n_3.png",
+                "na_14_honoka_o_n_4.png",
+                "na_14_honoka_o_n_5.png",
+                "na_14_honoka_o_n_6_s4.png",
+                "na_14_honoka_o_n_7.png"
+            ],
+            "Special": [
+                "na_14_honoka_o_s_1.png",
+                "na_14_honoka_o_s_2.png",
+                "na_14_honoka_o_s_3_s4.png",
+                "na_14_honoka_o_s_4.png"
+            ],
+            "Ex": [
+                "na_14_honoka_o_n_1_ex1.png",
+                "na_14_honoka_o_n_1_ex2.png",
+                "na_14_honoka_o_n_1_ex3.png",
+                "na_14_honoka_o_n_4_ex1.png",
+                "na_14_honoka_o_n_5_ex1.png",
+                "na_14_honoka_o_s_1_ex1_s5.png",
+                "na_14_honoka_o_s_1_ex2.png"
+            ]
+        },
+        {
+            "Name": "コルヌ",
+            "Normal": [
+                "na_15_korunu_o_n_1.png",
+                "na_15_korunu_o_n_2.png",
+                "na_15_korunu_o_n_3.png",
+                "na_15_korunu_o_n_4.png",
+                "na_15_korunu_o_n_5.png",
+                "na_15_korunu_o_n_6.png",
+                "na_15_korunu_o_n_7_s6.png"
+            ],
+            "Special": [
+                "na_15_korunu_o_s_1.png",
+                "na_15_korunu_o_s_2.png",
+                "na_15_korunu_o_s_3.png",
+                "na_15_korunu_o_s_4_s6.png"
+            ]
+        },
+        {
+            "Name": "ヤツハ",
+            "Normal": [
+                "na_16_yatsuha_o_n_1_s5.png",
+                "na_16_yatsuha_o_n_2_s5.png",
+                "na_16_yatsuha_o_n_3.png",
+                "na_16_yatsuha_o_n_4.png",
+                "na_16_yatsuha_o_n_5.png",
+                "na_16_yatsuha_o_n_6.png",
+                "na_16_yatsuha_o_n_7.png"
+            ],
+            "Special": [
+                "na_16_yatsuha_o_s_1.png",
+                "na_16_yatsuha_o_s_2_s6_2.png",
+                "na_16_yatsuha_o_s_3.png",
+                "na_16_yatsuha_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "ハツミ",
+            "Normal": [
+                "na_17_hatsumi_o_n_1.png",
+                "na_17_hatsumi_o_n_2.png",
+                "na_17_hatsumi_o_n_3.png",
+                "na_17_hatsumi_o_n_4.png",
+                "na_17_hatsumi_o_n_5.png",
+                "na_17_hatsumi_o_n_6.png",
+                "na_17_hatsumi_o_n_7.png"
+            ],
+            "Special": [
+                "na_17_hatsumi_o_s_1.png",
+                "na_17_hatsumi_o_s_2.png",
+                "na_17_hatsumi_o_s_3.png",
+                "na_17_hatsumi_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "ミズキ",
+            "Normal": [
+                "na_18_mizuki_o_n_1.png",
+                "na_18_mizuki_o_n_2_s6.png",
+                "na_18_mizuki_o_n_3.png",
+                "na_18_mizuki_o_n_4.png",
+                "na_18_mizuki_o_n_5.png",
+                "na_18_mizuki_o_n_6_s6.png",
+                "na_18_mizuki_o_n_7.png"
+            ],
+            "Special": [
+                "na_18_mizuki_o_s_1.png",
+                "na_18_mizuki_o_s_2.png",
+                "na_18_mizuki_o_s_3_ex1.png",
+                "na_18_mizuki_o_s_4.png"
+            ],
+            "Ex": [
+                "na_18_mizuki_o_t_1.png",
+                "na_18_mizuki_o_t_2.png",
+                "na_18_mizuki_o_t_3_s6_2.png"
+            ]
+        },
+        {
+            "Name": "メグミ",
+            "Normal": [
+                "na_19_megumi_o_n_1.png",
+                "na_19_megumi_o_n_2.png",
+                "na_19_megumi_o_n_3.png",
+                "na_19_megumi_o_n_4.png",
+                "na_19_megumi_o_n_5.png",
+                "na_19_megumi_o_n_6.png",
+                "na_19_megumi_o_n_7.png"
+            ],
+            "Special": [
+                "na_19_megumi_o_s_1.png",
+                "na_19_megumi_o_s_2.png",
+                "na_19_megumi_o_s_3.png",
+                "na_19_megumi_o_s_4.png"
+            ]
+        },
+        {
+            "Name": "カナヱ",
+            "Normal": [
+                "na_20_kanawe_o_n_1.png",
+                "na_20_kanawe_o_n_2.png",
+                "na_20_kanawe_o_n_3.png",
+                "na_20_kanawe_o_n_4.png",
+                "na_20_kanawe_o_n_5_s6_2.png",
+                "na_20_kanawe_o_n_6.png",
+                "na_20_kanawe_o_n_7_s7.png"
+            ],
+            "Special": [
+                "na_20_kanawe_o_s_1_s6_2.png",
+                "na_20_kanawe_o_s_2_s7.png",
+                "na_20_kanawe_o_s_3_s7.png",
+                "na_20_kanawe_o_s_4.png"
+            ],
+            "Ex": [
+                "na_20_kanawe_o_p_1.png",
+                "na_20_kanawe_o_p_1_w.png",
+                "na_20_kanawe_o_p_2.png",
+                "na_20_kanawe_o_p_2_w.png",
+                "na_20_kanawe_o_p_3.png",
+                "na_20_kanawe_o_p_3_w.png",
+                "na_20_kanawe_o_p_4.png",
+                "na_20_kanawe_o_p_4_w.png",
+                "na_20_kanawe_o_p_5.png",
+                "na_20_kanawe_o_p_5_w.png",
+                "na_20_kanawe_o_p_6.png",
+                "na_20_kanawe_o_p_6_w.png"
+            ]
+        },
+        {
+            "Name": "カムヰ",
+            "Normal": [
+                "na_21_kamuwi_o_n_1.png",
+                "na_21_kamuwi_o_n_2.png",
+                "na_21_kamuwi_o_n_3.png",
+                "na_21_kamuwi_o_n_4.png",
+                "na_21_kamuwi_o_n_5.png",
+                "na_21_kamuwi_o_n_6.png",
+                "na_21_kamuwi_o_n_7.png"
+            ],
+            "Special": [
+                "na_21_kamuwi_o_s_1.png",
+                "na_21_kamuwi_o_s_2.png",
+                "na_21_kamuwi_o_s_3.png",
+                "na_21_kamuwi_o_s_4.png"
+            ],
+            "Ex": [
+                "na_21_kamuwi_o_s_1_ex1.png"
+            ]
+        },
+        {
+            "Name": "レンリ",
+            "Normal": [
+                "na_22_renri_o_n_1.png",
+                "na_22_renri_o_n_2.png",
+                "na_22_renri_o_n_3.png",
+                "na_22_renri_o_n_4.png",
+                "na_22_renri_o_n_5.png",
+                "na_22_renri_o_n_6.png",
+                "na_22_renri_o_n_7.png"
+            ],
+            "Special": [
+                "na_22_renri_o_s_1.png",
+                "na_22_renri_o_s_2.png",
+                "na_22_renri_o_s_3.png",
+                "na_22_renri_o_s_4.png"
+            ],
+            "Ex": [
+                "na_22_renri_o_s_4_ex1.png",
+                "na_22_kiriko_o_s_4.png"
+            ]
+        }
+    ],
+    "AnotherMegami": [
+        {
+            "Name": "ユリナ",
+            "Base": "第一章",
+            "Origin": [
+                "na_01_yurina_o_n_1.png",
+                "na_01_yurina_o_n_6.png",
+                "na_01_yurina_o_s_2_s5.png"
+            ],
+            "Another": [
+                "na_01_yurina_a1_n_1.png",
+                "na_01_yurina_a1_n_6.png",
+                "na_01_yurina_a1_s_2_s5.png"
+            ]
+        },
+        {
+            "Name": "サイネ",
+            "Base": "第二章",
+            "Origin": [
+                "na_02_saine_o_n_3_s6_2.png",
+                "na_02_saine_o_n_6_s3.png",
+                "na_02_saine_o_s_2_s2.png"
+            ],
+            "Normal": [
+                "na_02_saine_a1_n_3.png",
+                "na_02_saine_a1_n_6.png"
+            ],
+            "Special": [
+                "na_02_saine_a1_s_2_s6_2.png"
+            ]
+        },
+        {
+            "Name": "サイネ",
+            "Base": "徒神",
+            "Origin": [
+                "na_02_saine_o_n_2.png",
+                "na_02_saine_o_n_7.png",
+                "na_02_saine_o_s_3_s6_2.png"
+            ],
+            "Normal": [
+                "na_02_saine_a2_n_2.png",
+                "na_02_saine_a2_n_7.png"
+            ],
+            "Special": [
+                "na_02_saine_a2_s_3_s6_2.png"
+            ]
+        },
+        {
+            "Name": "ヒミカ",
+            "Base": "原初",
+            "Origin": [
+                "na_03_himika_o_n_2_s4.png",
+                "na_03_himika_o_n_5.png",
+                "na_03_himika_o_s_2.png"
+            ],
+            "Normal": [
+                "na_03_himika_a1_n_2.png",
+                "na_03_himika_a1_n_5.png"
+            ],
+            "Special": [
+                "na_03_himika_a1_s_2_s6_2.png"
+            ]
+        },
+        {
+            "Name": "トコヨ",
+            "Base": "旅芸人",
+            "Origin": [
+                "na_04_tokoyo_o_n_1_s2.png",
+                "na_04_tokoyo_o_n_5.png",
+                "na_04_tokoyo_o_s_2.png"
+            ],
+            "Normal": [
+                "na_04_tokoyo_a1_n_1.png",
+                "na_04_tokoyo_a1_n_5_s3.png"
+            ],
+            "Special": [
+                "na_04_tokoyo_a1_s_2_s3.png"
+            ]
+        },
+        {
+            "Name": "トコヨ",
+            "Base": "徒神",
+            "Origin": [
+                "na_04_tokoyo_o_n_2.png",
+                "na_04_tokoyo_o_s_2.png",
+                "na_04_tokoyo_o_s_3_s2.png"
+            ],
+            "Normal": [
+                "na_04_tokoyo_a2_n_2.png"
+            ],
+            "Special": [
+                "na_04_tokoyo_a2_s_2.png",
+                "na_04_tokoyo_a2_s_3.png"
+            ]
+        },
+        {
+            "Name": "オボロ",
+            "Base": "第三章",
+            "Origin": [
+                "na_05_oboro_o_n_2_s2.png",
+                "na_05_oboro_o_n_3.png",
+                "na_05_oboro_o_s_4_s3.png"
+            ],
+            "Normal": [
+                "na_05_oboro_a1_n_2.png",
+                "na_05_oboro_a1_n_3_s5.png"
+            ],
+            "Special": [
+                "na_05_oboro_a1_s_4.png"
+            ],
+            "Ex": [
+                "na_05_oboro_a1_s_4_ex1_s5.png"
+            ]
+        },
+        {
+            "Name": "ユキヒ",
+            "Base": "社交界",
+            "Origin": [
+                "na_06_yukihi_o_n_2.png",
+                "na_06_yukihi_o_n_4.png",
+                "na_06_yukihi_o_s_2.png"
+            ],
+            "Normal": [
+                "na_06_yukihi_a1_n_2.png",
+                "na_06_yukihi_a1_n_4.png"
+            ],
+            "Special": [
+                "na_06_yukihi_a1_s_2.png"
+            ]
+        },
+        {
+            "Name": "シンラ",
+            "Base": "教主",
+            "Origin": [
+                "na_07_shinra_o_n_2.png",
+                "na_07_shinra_o_n_7.png",
+                "na_07_shinra_o_s_3.png"
+            ],
+            "Normal": [
+                "na_07_shinra_a1_n_2.png",
+                "na_07_shinra_a1_n_7.png"
+            ],
+            "Special": [
+                "na_07_shinra_a1_s_3.png"
+            ]
+        },
+        {
+            "Name": "ハガネ",
+            "Base": "鍛冶師",
+            "Origin": [
+                "na_08_hagane_o_n_1_s2.png",
+                "na_08_hagane_o_n_2.png",
+                "na_08_hagane_o_s_1_s5.png"
+            ],
+            "Normal": [
+                "na_08_hagane_a1_n_1.png",
+                "na_08_hagane_a1_n_2.png"
+            ],
+            "Special": [
+                "na_08_hagane_a1_s_1.png"
+            ],
+            "Ex": [
+                "na_08_hagane_a1_s_1_ex1.png"
+            ]
+        },
+        {
+            "Name": "チカゲ",
+            "Base": "第四章",
+            "Origin": [
+                "na_09_chikage_o_n_5.png",
+                "na_09_chikage_o_n_6.png",
+                "na_09_chikage_o_s_4.png"
+            ],
+            "Normal": [
+                "na_09_chikage_a1_n_5.png",
+                "na_09_chikage_a1_n_6.png"
+            ],
+            "Special": [
+                "na_09_chikage_a1_s_4_s6_2.png"
+            ]
+        },
+        {
+            "Name": "クルル",
+            "Base": "探索者",
+            "Origin": [
+                "na_10_kururu_o_n_1.png",
+                "na_10_kururu_o_n_6.png",
+                "na_10_kururu_o_s_4.png",
+                "na_10_kururu_o_s_3_ex1.png"
+            ],
+            "Normal": [
+                "na_10_kururu_a1_n_1.png",
+                "na_10_kururu_a1_n_3.png"
+            ],
+            "Special": [
+                "na_10_kururu_a1_s_3.png"
+            ],
+            "Ex": [
+                "na_10_kururu_a1_s_3_ex1.png"
+            ]
+        },
+        {
+            "Name": "クルル",
+            "Base": "徒神",
+            "Origin": [
+                "na_10_kururu_o_n_1.png",
+                "na_10_kururu_o_n_2.png",
+                "na_10_kururu_o_s_4.png"
+            ],
+            "Normal": [
+                "na_10_kururu_a2_n_1.png",
+                "na_10_kururu_a2_n_2.png"
+            ],
+            "Special": [
+                "na_10_kururu_a2_s_4.png"
+            ]
+        },
+        {
+            "Name": "サリヤ",
+            "Base": "帰還",
+            "Origin": [
+                "na_11_thallya_o_n_5.png",
+                "na_11_thallya_o_s_1.png",
+                "na_11_thallya_o_s_2.png",
+                "na_11_thallya_o_tf_1_s2.png",
+                "na_11_thallya_o_tf_3.png"
+            ],
+            "Normal": [
+                "na_11_thallya_a1_n_5.png"
+            ],
+            "Special": [
+                "na_11_thallya_a1_s_1.png",
+                "na_11_thallya_a1_s_2.png"
+            ],
+            "Ex": [
+                "na_11_thallya_a1_tf_1.png",
+                "na_11_thallya_a1_tf_3_s6.png",
+                "na_11_thallya_a1_tf_4.png"
+            ]
+        },
+        {
+            "Name": "ライラ",
+            "Base": "祈祷師",
+            "Origin": [
+                "na_12_raira_o_n_2.png",
+                "na_12_raira_o_n_6.png",
+                "na_12_raira_o_s_3_s4.png",
+                "na_12_raira_o_s_3_ex1.png",
+                "na_12_raira_o_s_3_ex2.png",
+                "na_12_raira_o_s_3_ex3.png"
+            ],
+            "Normal": [
+                "na_12_raira_a1_n_2_s6.png",
+                "na_12_raira_a1_n_6.png"
+            ],
+            "Special": [
+                "na_12_raira_a1_s_3.png"
+            ],
+            "Ex": [
+                "na_12_raira_a1_st_s6.png"
+            ]
+        },
+        {
+            "Name": "ウツロ",
+            "Base": "終章",
+            "Origin": [
+                "na_13_utsuro_o_n_2.png",
+                "na_13_utsuro_o_s_4_s5.png"
+            ],
+            "Normal": [
+                "na_13_utsuro_a1_n_2.png"
+            ],
+            "Special": [
+                "na_13_utsuro_a1_s_1_s4.png"
+            ],
+            "Ex": [
+                "na_13_utsuro_a1_s_1_ex1.png",
+                "na_13_utsuro_a1_s_1_ex2.png",
+                "na_13_utsuro_a1_s_1_ex3.png",
+                "na_13_utsuro_a1_s_1_ex4.png"
+            ]
+        },
+        {
+            "Name": "ホノカ",
+            "Base": "桜花拝",
+            "Origin": [
+                "na_14_honoka_o_n_1.png",
+                "na_14_honoka_o_n_1_ex1.png",
+                "na_14_honoka_o_n_1_ex2.png",
+                "na_14_honoka_o_n_1_ex3.png",
+                "na_14_honoka_o_s_1.png"
+            ],
+            "Normal": [
+                "na_14_honoka_a1_n_1.png"
+            ],
+            "Special": [
+                "na_14_honoka_a1_s_1_s7.png"
+            ],
+            "Ex": [
+                "na_14_honoka_a1_n_1_ex1.png",
+                "na_14_honoka_a1_s_1_ex1.png",
+                "na_14_honoka_a1_s_1_ex2.png",
+                "na_14_honoka_a1_s_1_ex3_s6_2.png",
+                "na_14_honoka_a1_s_1_ex4.png",
+                "na_14_honoka_a1_s_1_ex5.png"
+            ]
+        },
+        {
+            "Name": "ヤツハ",
+            "Base": "完全態",
+            "Origin": [
+                "na_16_yatsuha_o_s_1.png",
+                "na_16_yatsuha_o_s_2_s6_2.png",
+                "na_16_yatsuha_o_s_3.png",
+                "na_16_yatsuha_o_s_4.png"
+            ],
+            "Special": [
+                "na_16_yatsuha_a1_s_4.png"
+            ],
+            "Ex": [
+                "na_16_yatsuha_a1_n_1_ex1.png",
+                "na_16_yatsuha_a1_n_2_ex1.png",
+                "na_16_yatsuha_a1_n_3_ex1.png",
+                "na_16_yatsuha_a1_n_4_ex1.png",
+                "na_16_yatsuha_a1_n_5_ex1.png",
+                "na_16_yatsuha_a1_n_6_ex1.png",
+                "na_16_yatsuha_a1_n_7_ex1.png"
+            ]
+        },
+        {
+            "Name": "ハツミ",
+            "Base": "徒神",
+            "Origin": [
+                "na_17_hatsumi_o_n_4.png",
+                "na_17_hatsumi_o_s_1.png",
+                "na_17_hatsumi_o_s_4.png"
+            ],
+            "Normal": [
+                "na_17_hatsumi_a1_n_4.png"
+            ],
+            "Special": [
+                "na_17_hatsumi_a1_s_1.png",
+                "na_17_hatsumi_a1_s_4.png"
+            ],
+            "Ex": [
+                "na_17_hatsumi_a1_di1.png",
+                "na_17_hatsumi_a1_di2.png"
+            ]
+        }
+    ]
+}
