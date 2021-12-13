@@ -31,7 +31,7 @@ namespace Furuyoni.Model
         public string Sub { get; set; }
         public string Text { get; set; }
         public string Cost { get; set; }
-        public List<int> Range { get; set; }
+        public string Range { get; set; }
         public string Damage { get; set; }
         public int Charge { get; set; }
 
@@ -58,7 +58,7 @@ namespace Furuyoni.Model
             switch (card.Main)
             {
                 case Atack a:
-                    Range = a.Range;
+                    Range = string.Join(",", a.Range);
                     Damage = a.AuraDamage + "/" + a.LifeDamage;
                     break;
                 case Grant g:
@@ -79,7 +79,8 @@ namespace Furuyoni.Model
         private static IReadOnlyList<Card> ReadFuruyoniJson()
         {
             using var sr = new StreamReader(@"Resource\CardList.json", Encoding.UTF8);
-            return JsonConvert.DeserializeObject<RootObject>(sr.ReadToEnd()).Cards.Select(x => new Card(x)).ToList();
+            var rootObject = JsonConvert.DeserializeObject<RootObject>(sr.ReadToEnd());
+            return rootObject.Cards.Select(x => new Card(x)).ToList();
         }
     }
 
@@ -132,7 +133,7 @@ namespace Furuyoni.Model
 
         public Atack(CardJson cj)
         {
-            Range = cj.Range;
+            Range = cj.Range.Split(',').Select(x => int.TryParse(x, out var value) ? value : -1).ToList();
             var damage = cj.Damage.Split('/');
             AuraDamage = damage[0];
             LifeDamage = damage[1];
@@ -150,5 +151,6 @@ namespace Furuyoni.Model
     public class Unknown : CardType { public Unknown(CardJson _) { } }
     public class None : CardType { public None(CardJson _) { } }
     public class Reaction : CardType { public Reaction(CardJson _) { } }
-    public class FullPower : CardType { public FullPower(CardJson _) { } }
+    public class Fullpower : CardType { public Fullpower(CardJson _) { } }
+    public class Concept : CardType { public Concept(CardJson _) { } }
 }
