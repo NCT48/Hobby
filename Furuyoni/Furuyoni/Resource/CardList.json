@@ -1,6 +1,7 @@
 ﻿{
   "Cards": [
     {
+      "ID": "na_01_yurina_o_n_1",
       "Name": "斬",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -11,6 +12,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_01_yurina_o_n_2",
       "Name": "一閃",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -21,6 +23,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_01_yurina_o_n_3",
       "Name": "柄打ち",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -31,6 +34,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_01_yurina_o_n_4_s2",
       "Name": "居合",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -41,6 +45,7 @@
       "Damage": "4/3"
     },
     {
+      "ID": "na_01_yurina_o_n_5",
       "Name": "気迫",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -49,6 +54,7 @@
       "Text": "あなたは集中力を1得る。\nこのターンあなたが次に行う他のメガミによる切札でない《攻撃》は対応不可(通常札)と距離拡大(近1)を得る。"
     },
     {
+      "ID": "na_01_yurina_o_n_6",
       "Name": "圧気",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -58,6 +64,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_01_yurina_o_n_7",
       "Name": "気炎万丈",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -67,6 +74,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_01_yurina_o_s_1",
       "Name": "月影落",
       "Owner": "ユリナ",
       "Category": "Special",
@@ -78,6 +86,7 @@
       "Damage": "4/4"
     },
     {
+      "ID": "na_01_yurina_o_s_2_s5",
       "Name": "浦波嵐",
       "Owner": "ユリナ",
       "Category": "Special",
@@ -89,6 +98,7 @@
       "Damage": "2/-"
     },
     {
+      "ID": "na_01_yurina_o_s_3_s2",
       "Name": "浮舟宿",
       "Owner": "ユリナ",
       "Category": "Special",
@@ -98,6 +108,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_01_yurina_o_s_4",
       "Name": "天音揺波の底力",
       "Owner": "ユリナ",
       "Category": "Special",
@@ -109,6 +120,7 @@
       "Damage": "5/5"
     },
     {
+      "ID": "na_01_yurina_a1_n_1",
       "Name": "乱打",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -119,6 +131,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_01_yurina_a1_n_6",
       "Name": "癇癪玉",
       "Owner": "ユリナ",
       "Category": "Normal",
@@ -128,6 +141,7 @@
       "Charge": 1
     },
     {
+      "ID": "na_01_yurina_a1_s_2_s5",
       "Name": "不完全浦波嵐",
       "Owner": "ユリナ",
       "Category": "Special",
@@ -139,6 +153,7 @@
       "Damage": "3/-"
     },
     {
+      "ID": "na_02_saine_o_n_1_s6_2",
       "Name": "八方振り",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -149,6 +164,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_02_saine_o_n_2",
       "Name": "薙斬り",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -159,6 +175,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_02_saine_o_n_3_s6_2",
       "Name": "石突",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -169,6 +186,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_02_saine_o_n_4_s6_2",
       "Name": "見切り",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -177,6 +195,7 @@
       "Text": "【常時】八相―あなたのオーラが1以下ならば、このカードを《対応》を持つかのように相手の《攻撃》に割り込んで使用できる。\n間合⇔ダスト:◇1"
     },
     {
+      "ID": "na_02_saine_o_n_5_s5",
       "Name": "圏域",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -186,6 +205,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_02_saine_o_n_6_s3",
       "Name": "衝音晶",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -195,6 +215,7 @@
       "Charge": 1
     },
     {
+      "ID": "na_02_saine_o_n_7",
       "Name": "無音壁",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -204,6 +225,7 @@
       "Charge": 5
     },
     {
+      "ID": "na_02_saine_o_s_1_s2",
       "Name": "律動弧戟",
       "Owner": "サイネ",
       "Category": "Special",
@@ -213,6 +235,7 @@
       "Cost": "6"
     },
     {
+      "ID": "na_02_saine_o_s_2_s2",
       "Name": "響鳴共振",
       "Owner": "サイネ",
       "Category": "Special",
@@ -222,6 +245,7 @@
       "Cost": "8"
     },
     {
+      "ID": "na_02_saine_o_s_3_s6_2",
       "Name": "音無砕氷",
       "Owner": "サイネ",
       "Category": "Special",
@@ -233,6 +257,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_02_saine_o_s_4_s2",
       "Name": "氷雨細音の果ての果て",
       "Owner": "サイネ",
       "Category": "Special",
@@ -244,6 +269,7 @@
       "Damage": "5/5"
     },
     {
+      "ID": "na_02_saine_a1_n_3",
       "Name": "氷の音",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -252,6 +278,7 @@
       "Text": "相/オーラ→ダスト:◇1\nこのカードを対応で使用したならば、さらに相/オーラ→ダスト:◇1"
     },
     {
+      "ID": "na_02_saine_a1_n_6",
       "Name": "伴奏",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -261,6 +288,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_02_saine_a1_s_2_s6_2",
       "Name": "二重奏：弾奏氷瞑",
       "Owner": "サイネ",
       "Category": "Special",
@@ -270,6 +298,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_02_saine_a2_n_2",
       "Name": "裏斬り",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -280,6 +309,7 @@
       "Damage": "1/3"
     },
     {
+      "ID": "na_02_saine_a2_n_7",
       "Name": "遺響壁",
       "Owner": "サイネ",
       "Category": "Normal",
@@ -289,6 +319,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_02_saine_a2_s_3_s6_2",
       "Name": "絶唱絶華",
       "Owner": "サイネ",
       "Category": "Special",
@@ -300,6 +331,7 @@
       "Damage": "2/-"
     },
     {
+      "ID": "na_03_himika_o_n_1",
       "Name": "シュート",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -310,6 +342,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_03_himika_o_n_2_s4",
       "Name": "ラピッドファイア",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -320,6 +353,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_03_himika_o_n_3",
       "Name": "マグナムカノン",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -330,6 +364,7 @@
       "Damage": "3/2"
     },
     {
+      "ID": "na_03_himika_o_n_4",
       "Name": "フルバースト",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -340,6 +375,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_03_himika_o_n_5",
       "Name": "バックステップ",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -348,6 +384,7 @@
       "Text": "カードを1枚引く。\nダスト→間合:◇1"
     },
     {
+      "ID": "na_03_himika_o_n_6_s5",
       "Name": "バックドラフト",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -356,6 +393,7 @@
       "Text": "相手を畏縮させる。\n連火―このカードがこのターンに使用した3枚目以降のカードならば、このターンにあなたが次に行う他のメガミによるオーラへのダメージが「-」でない《攻撃》を+1/+1する。"
     },
     {
+      "ID": "na_03_himika_o_n_7",
       "Name": "スモーク",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -365,6 +403,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_03_himika_o_s_1",
       "Name": "レッドバレット",
       "Owner": "ヒミカ",
       "Category": "Special",
@@ -376,6 +415,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_03_himika_o_s_2",
       "Name": "クリムゾンゼロ",
       "Owner": "ヒミカ",
       "Category": "Special",
@@ -387,6 +427,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_03_himika_o_s_3",
       "Name": "スカーレットイマジン",
       "Owner": "ヒミカ",
       "Category": "Special",
@@ -396,6 +437,7 @@
       "Cost": "3"
     },
     {
+      "ID": "na_03_himika_o_s_4",
       "Name": "ヴァーミリオンフィールド",
       "Owner": "ヒミカ",
       "Category": "Special",
@@ -405,6 +447,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_03_himika_a1_n_2",
       "Name": "火炎流",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -415,6 +458,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_03_himika_a1_n_5",
       "Name": "殺意",
       "Owner": "ヒミカ",
       "Category": "Normal",
@@ -423,6 +467,7 @@
       "Text": "あなたの手札が０枚ならば、相/オーラ→ダスト:◇2"
     },
     {
+      "ID": "na_03_himika_a1_s_2_s6_2",
       "Name": "炎天・紅緋弥香",
       "Owner": "ヒミカ",
       "Category": "Special",
@@ -434,6 +479,7 @@
       "Damage": "X/X"
     },
     {
+      "ID": "na_04_tokoyo_o_n_1_s2",
       "Name": "梳流し",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -444,6 +490,7 @@
       "Damage": "-/1"
     },
     {
+      "ID": "na_04_tokoyo_o_n_2",
       "Name": "雅打ち",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -454,6 +501,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_04_tokoyo_o_n_3",
       "Name": "跳ね兎",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -462,6 +510,7 @@
       "Text": "現在の間合が3以下ならば、ダスト→間合:◇2"
     },
     {
+      "ID": "na_04_tokoyo_o_n_4",
       "Name": "詩舞",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -470,6 +519,7 @@
       "Text": "集中力を1得て、以下から1つを選ぶ。\n・自/フレア→自/オーラ:◇1\n・自/オーラ→間合:◇1"
     },
     {
+      "ID": "na_04_tokoyo_o_n_5",
       "Name": "要返し",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -478,6 +528,7 @@
       "Text": "捨て札か伏せ札からカードを2枚まで選ぶ。それらのカードを好きな順で山札の底に置く。\nダスト→自/オーラ:◇2"
     },
     {
+      "ID": "na_04_tokoyo_o_n_6",
       "Name": "風舞台",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -487,6 +538,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_04_tokoyo_o_n_7_s6_2",
       "Name": "晴舞台",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -496,6 +548,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_04_tokoyo_o_s_1",
       "Name": "久遠ノ花",
       "Owner": "トコヨ",
       "Category": "Special",
@@ -507,6 +560,7 @@
       "Damage": "-/1"
     },
     {
+      "ID": "na_04_tokoyo_o_s_2",
       "Name": "千歳ノ鳥",
       "Owner": "トコヨ",
       "Category": "Special",
@@ -518,6 +572,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_04_tokoyo_o_s_3_s2",
       "Name": "無窮ノ風",
       "Owner": "トコヨ",
       "Category": "Special",
@@ -529,6 +584,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_04_tokoyo_o_s_4",
       "Name": "常世ノ月",
       "Owner": "トコヨ",
       "Category": "Special",
@@ -538,6 +594,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_04_tokoyo_a1_n_1",
       "Name": "奏流し",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -548,6 +605,7 @@
       "Damage": "-/1"
     },
     {
+      "ID": "na_04_tokoyo_a1_n_5_s3",
       "Name": "陽の音",
       "Owner": "トコヨ",
       "Category": "Normal",
@@ -557,6 +615,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_04_tokoyo_a1_s_2_s3",
       "Name": "二重奏：吹弾陽明",
       "Owner": "トコヨ",
       "Category": "Special",
@@ -566,6 +625,40 @@
       "Cost": "1"
     },
     {
+      "ID": "na_04_tokoyo_a2_n_2",
+      "Name": "畏掠め",
+      "Owner": "トコヨ",
+      "Category": "Normal",
+      "Main": "Atack",
+      "Sub": "Reaction",
+      "Text": "【常時】相手の集中カが0ならば、この《攻撃》のダメージはあなたが選ぶ。\n【攻撃後】境地ーあなたの集中カが2ならば、対応した切札でない《攻撃》は-X/-Yとなる。Xはこの《攻撃》で与えたオーラへのダメージ、Yはライフへのダメージに等しい。",
+      "Range": "2,3",
+      "Damage": "2/1"
+    },
+    {
+      "ID": "na_04_tokoyo_a2_s_2",
+      "Name": "悠久ノ雪",
+      "Owner": "トコヨ",
+      "Category": "Special",
+      "Main": "Atack",
+      "Sub": "None",
+      "Text": "【攻撃後】相手がオーラへのダメージを選んだなら、相/フレア→自/オーラ:◇1\n再起:相手の集中力が1である。",
+      "Cost": "1",
+      "Range": "3,4,5",
+      "Damage": "1/1"
+    },
+    {
+      "ID": "na_04_tokoyo_a2_s_3",
+      "Name": "徒寄ノ八重桜",
+      "Owner": "トコヨ",
+      "Category": "Special",
+      "Main": "Action",
+      "Sub": "None",
+      "Text": "あなたは基本動作《纏い》を5回行う。\n【使用済】あなたのカードの矢印効果があなたのオーラへと桜花結晶を動かすならば、その間だけオーラの上限を8として扱う。\n【使用済】あなたの開始フェイズの開始時にあなたのオーラが6以上ならば、攻撃『適正距離0-8、-/1』を行う。'",
+      "Cost": "4"
+    },
+    {
+      "ID": "na_05_oboro_o_n_1",
       "Name": "鋼糸",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -576,6 +669,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_05_oboro_o_n_2_s2",
       "Name": "影菱",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -586,6 +680,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_05_oboro_o_n_3",
       "Name": "斬撃乱舞",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -596,6 +691,7 @@
       "Damage": "3/2"
     },
     {
+      "ID": "na_05_oboro_o_n_4_s3",
       "Name": "忍歩",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -604,6 +700,7 @@
       "Text": "設置\nダスト→間合:◇1\nこのカードを伏せ札から使用したならば、伏せ札から設置を持つカードを1枚使用してもよい。"
     },
     {
+      "ID": "na_05_oboro_o_n_5",
       "Name": "誘導",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -612,6 +709,7 @@
       "Text": "設置\n以下から1つを選ぶ\n・間合→相/オーラ:◇1\n・相/オーラ→相/フレア:◇1"
     },
     {
+      "ID": "na_05_oboro_o_n_6",
       "Name": "分身の術",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -620,6 +718,7 @@
       "Text": "伏せ札から《全力》でないカードを1枚選び、そのカードを使用する。その後、そのカードが捨て札にあるならば、捨て札からもう1回使用する。\n《攻撃》カードが使用されたならばそれらの《攻撃》は対応不可を得る(2回ともに対応不可を得る)。"
     },
     {
+      "ID": "na_05_oboro_o_n_7",
       "Name": "生体活性",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -629,6 +728,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_05_oboro_o_s_1",
       "Name": "熊介",
       "Owner": "オボロ",
       "Category": "Special",
@@ -640,6 +740,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_05_oboro_o_s_2_s3",
       "Name": "鳶影",
       "Owner": "オボロ",
       "Category": "Special",
@@ -649,6 +750,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_05_oboro_o_s_3",
       "Name": "虚魚",
       "Owner": "オボロ",
       "Category": "Special",
@@ -658,6 +760,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_05_oboro_o_s_4_s3",
       "Name": "壬蔓",
       "Owner": "オボロ",
       "Category": "Special",
@@ -669,6 +772,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_05_oboro_a1_n_2",
       "Name": "手裏剣",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -679,6 +783,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_05_oboro_a1_n_3_s5",
       "Name": "不意打ち",
       "Owner": "オボロ",
       "Category": "Normal",
@@ -689,6 +794,7 @@
       "Damage": "4/3"
     },
     {
+      "ID": "na_05_oboro_a1_s_4",
       "Name": "神代枝",
       "Owner": "オボロ",
       "Category": "Special",
@@ -698,6 +804,7 @@
       "Cost": "0"
     },
     {
+      "ID": "na_06_yukihi_o_n_1",
       "Name": "しこみばり/ふくみばり",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -708,6 +815,7 @@
       "Damage": "3/1|1/2"
     },
     {
+      "ID": "na_06_yukihi_o_n_2",
       "Name": "しこみび/ねこだまし",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -718,6 +826,7 @@
       "Damage": "1/1|1/1"
     },
     {
+      "ID": "na_06_yukihi_o_n_3",
       "Name": "ふりはらい/たぐりよせ",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -728,6 +837,7 @@
       "Damage": "1/1|1/1"
     },
     {
+      "ID": "na_06_yukihi_o_n_4",
       "Name": "ふりまわし/つきさし",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -738,6 +848,7 @@
       "Damage": "5/-|-/2"
     },
     {
+      "ID": "na_06_yukihi_o_n_5",
       "Name": "かさまわし",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -746,6 +857,7 @@
       "Text": "(このカードは使用しても効果はない)\n【常時】あなたが傘の開閉を行った時、このカードを手札から公開してもよい。そうした場合、\nダスト→自/オーラ:◇1"
     },
     {
+      "ID": "na_06_yukihi_o_n_6",
       "Name": "ひきあし/もぐりこみ",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -754,6 +866,7 @@
       "Text": "ダスト→間合:◇1|間合→ダスト:◇1"
     },
     {
+      "ID": "na_06_yukihi_o_n_7",
       "Name": "えんむすび",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -762,6 +875,7 @@
       "Text": "【展開時】間合→ダスト:◇1\n【破棄時】ダスト→間合:◇1\n【常時】あなたの傘が開いているならば、このカードの矢印は逆になる。"
     },
     {
+      "ID": "na_06_yukihi_o_s_1",
       "Name": "はらりゆき",
       "Owner": "ユキヒ",
       "Category": "Special",
@@ -773,6 +887,7 @@
       "Damage": "3/1|0/0"
     },
     {
+      "ID": "na_06_yukihi_o_s_2",
       "Name": "ゆらりび",
       "Owner": "ユキヒ",
       "Category": "Special",
@@ -784,6 +899,7 @@
       "Damage": "0/0|4/5"
     },
     {
+      "ID": "na_06_yukihi_o_s_3",
       "Name": "どろりうら",
       "Owner": "ユキヒ",
       "Category": "Special",
@@ -794,6 +910,7 @@
       "Charge": 7
     },
     {
+      "ID": "na_06_yukihi_o_s_4",
       "Name": "くるりみ",
       "Owner": "ユキヒ",
       "Category": "Special",
@@ -803,6 +920,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_06_yukihi_a1_n_2",
       "Name": "ちからぞえ/おどしつけ",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -813,6 +931,7 @@
       "Damage": "2/1|1/2"
     },
     {
+      "ID": "na_06_yukihi_a1_n_4",
       "Name": "よこいと/たていと",
       "Owner": "ユキヒ",
       "Category": "Normal",
@@ -823,6 +942,7 @@
       "Damage": "1/1|0/0"
     },
     {
+      "ID": "na_06_yukihi_a1_s_2",
       "Name": "ひらりおり",
       "Owner": "ユキヒ",
       "Category": "Special",
@@ -833,6 +953,7 @@
       "Charge": 1
     },
     {
+      "ID": "na_07_shinra_o_n_1",
       "Name": "立論",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -843,6 +964,7 @@
       "Damage": "2/-"
     },
     {
+      "ID": "na_07_shinra_o_n_2",
       "Name": "反論",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -853,6 +975,7 @@
       "Damage": "1/-"
     },
     {
+      "ID": "na_07_shinra_o_n_3",
       "Name": "詭弁",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -863,6 +986,7 @@
       "Damage": "-/1"
     },
     {
+      "ID": "na_07_shinra_o_n_4",
       "Name": "引用",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -871,6 +995,7 @@
       "Text": "相手の手札を見て、《攻撃》カードを1枚選んでもよい。そうした場合、そのカードを使用するか伏せ札にする。その後、そのカードが《全力》を持つなら現在のフェイズを終了する。"
     },
     {
+      "ID": "na_07_shinra_o_n_5",
       "Name": "煽動",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -879,6 +1004,7 @@
       "Text": "計略を実行し、次の計略を準備する。\n神算:ダスト→間合:◇1\n鬼謀:間合→相/オーラ:◇1"
     },
     {
+      "ID": "na_07_shinra_o_n_6_s3",
       "Name": "壮語",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -888,6 +1014,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_07_shinra_o_n_7",
       "Name": "論破",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -897,6 +1024,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_07_shinra_o_s_1_s6",
       "Name": "完全論破",
       "Owner": "シンラ",
       "Category": "Special",
@@ -906,6 +1034,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_07_shinra_o_s_2_s2",
       "Name": "皆式理解",
       "Owner": "シンラ",
       "Category": "Special",
@@ -915,6 +1044,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_07_shinra_o_s_3",
       "Name": "天地反駁",
       "Owner": "シンラ",
       "Category": "Special",
@@ -925,6 +1055,7 @@
       "Charge": 5
     },
     {
+      "ID": "na_07_shinra_o_s_4",
       "Name": "森羅判証",
       "Owner": "シンラ",
       "Category": "Special",
@@ -935,6 +1066,7 @@
       "Charge": 6
     },
     {
+      "ID": "na_07_shinra_a1_n_2",
       "Name": "真言",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -943,6 +1075,7 @@
       "Text": "このカードを対応で使用したならば、計略を実行し、次の計略を準備する。\n神算:相手の山札が３枚以上ならば、相手のライフに１ダメージを与える。\n鬼謀:相手の山札が３枚以下ならば、相手のオーラに２ダメージを与える。"
     },
     {
+      "ID": "na_07_shinra_a1_n_7",
       "Name": "使徒",
       "Owner": "シンラ",
       "Category": "Normal",
@@ -952,6 +1085,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_07_shinra_a1_s_3",
       "Name": "全知経典",
       "Owner": "シンラ",
       "Category": "Special",
@@ -963,6 +1097,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_08_hagane_o_n_1_s2",
       "Name": "遠心撃",
       "Owner": "ハガネ",
       "Category": "Normal",
@@ -973,6 +1108,7 @@
       "Damage": "5/3"
     },
     {
+      "ID": "na_08_hagane_o_n_2",
       "Name": "砂風塵",
       "Owner": "ハガネ",
       "Category": "Normal",
@@ -983,6 +1119,7 @@
       "Damage": "1/-"
     },
     {
+      "ID": "na_08_hagane_o_n_3",
       "Name": "大地砕き",
       "Owner": "ハガネ",
       "Category": "Normal",
@@ -993,6 +1130,7 @@
       "Damage": "2/-"
     },
     {
+      "ID": "na_08_hagane_o_n_4_s6_2",
       "Name": "超反動",
       "Owner": "ハガネ",
       "Category": "Normal",
@@ -1001,6 +1139,7 @@
       "Text": "現在の間合に応じて以下を行う\n5以上…間合→自/フレア:◇1\n4以下…相/フレア→間合:◇1"
     },
     {
+      "ID": "na_08_hagane_o_n_5",
       "Name": "円舞錬",
       "Owner": "ハガネ",
       "Category": "Normal",
@@ -1009,6 +1148,7 @@
       "Text": "遠心\n相手のフレアが3以上ならば、相フレア→自/オーラ:◇2"
     },
     {
+      "ID": "na_08_hagane_o_n_6",
       "Name": "鐘鳴らし",
       "Owner": "ハガネ",
       "Category": "Normal",
@@ -1017,6 +1157,7 @@
       "Text": "遠心 以下から1つを選ぶ。\n・このターンにあなたが次に行う《攻撃》は対応不可を得る。\n・このターンにあなたの次に行う《攻撃》はオーラへのダメージが3以上ならば+0/+1、そうでないならば+2/+0となる。"
     },
     {
+      "ID": "na_08_hagane_o_n_7",
       "Name": "引力場",
       "Owner": "ハガネ",
       "Category": "Normal",
@@ -1026,6 +1167,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_08_hagane_o_s_1_s5",
       "Name": "大天空クラッシュ",
       "Owner": "ハガネ",
       "Category": "Special",
@@ -1037,6 +1179,7 @@
       "Damage": "X/Y"
     },
     {
+      "ID": "na_08_hagane_o_s_2",
       "Name": "大破鐘メガロベル",
       "Owner": "ハガネ",
       "Category": "Special",
@@ -1046,6 +1189,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_08_hagane_o_s_3",
       "Name": "大重力アトラクト",
       "Owner": "ハガネ",
       "Category": "Special",
@@ -1055,6 +1199,7 @@
       "Cost": "5"
     },
     {
+      "ID": "na_08_hagane_o_s_4",
       "Name": "大山脈リスペクト",
       "Owner": "ハガネ",
       "Category": "Special",
@@ -1064,6 +1209,35 @@
       "Cost": "4"
     },
     {
+      "ID": "na_08_hagane_a1_n_1",
+      "Name": "炉火",
+      "Owner": "ハガネ",
+      "Category": "Normal",
+      "Main": "Action",
+      "Sub": "None",
+      "Text": "現在の間合が3以上なら、\n間合→自/フレア:◇\n間合→相/フレア:◇1"
+    },
+    {
+      "ID": "na_08_hagane_a1_n_2",
+      "Name": "旋回起",
+      "Owner": "ハガネ",
+      "Category": "Normal",
+      "Main": "Action",
+      "Sub": "None",
+      "Text": "現在の間合がターン開姶時の間合から2以上変化しているならば、カードを1枚引き、あなたは集中カを1得る。"
+    },
+    {
+      "ID": "na_08_hagane_a1_s_1",
+      "Name": "大錬成マテリアル",
+      "Owner": "ハガネ",
+      "Category": "Special",
+      "Main": "Action",
+      "Sub": "None",
+      "Text": "終端\nこのカードがあなたのカードならば、以下の効果を解決する。\n金床にカードがあるならダストから金床に桜花結晶をーつ置く。金床にカードがないならば、手札から他のメガミの《攻撃》カードを1枚選び金床に置いてもよい。\nあなたの追加札から「錬成攻撃」を山札の底に1枚置く。\n再起:この夕ーンにあなたが「錬成攻撃」を使用している。",
+      "Cost": "4"
+    },
+    {
+      "ID": "na_09_chikage_o_n_1",
       "Name": "飛苦無",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1074,6 +1248,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_09_chikage_o_n_2",
       "Name": "毒針",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1084,6 +1259,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_09_chikage_o_n_3_s5",
       "Name": "遁術",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1094,6 +1270,7 @@
       "Damage": "1/-"
     },
     {
+      "ID": "na_09_chikage_o_n_4",
       "Name": "首切り",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1104,6 +1281,7 @@
       "Damage": "2/3"
     },
     {
+      "ID": "na_09_chikage_o_n_5",
       "Name": "毒霧",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1112,6 +1290,7 @@
       "Text": "毒袋から「麻痺毒」「幻覚毒」「弛緩毒」のいずれか1枚を選び、そのカードを相手の手札に加える。"
     },
     {
+      "ID": "na_09_chikage_o_n_6",
       "Name": "抜き足",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1121,6 +1300,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_09_chikage_o_n_7",
       "Name": "泥濘",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1130,6 +1310,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_09_chikage_o_s_1",
       "Name": "滅灯の魂毒",
       "Owner": "チカゲ",
       "Category": "Special",
@@ -1138,6 +1319,7 @@
       "Text": "毒袋から「滅灯毒」1枚を選び、そのカードを相手の山札の一番上に置く。"
     },
     {
+      "ID": "na_09_chikage_o_s_2",
       "Name": "叛旗の纏毒",
       "Owner": "チカゲ",
       "Category": "Special",
@@ -1148,6 +1330,7 @@
       "Charge": 5
     },
     {
+      "ID": "na_09_chikage_o_s_3",
       "Name": "流転の霞毒",
       "Owner": "チカゲ",
       "Category": "Special",
@@ -1159,6 +1342,7 @@
       "Damage": "1/2"
     },
     {
+      "ID": "na_09_chikage_o_s_4",
       "Name": "闇昏千影の生きる道",
       "Owner": "チカゲ",
       "Category": "Special",
@@ -1169,6 +1353,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_09_chikage_a1_n_5",
       "Name": "仕掛け番傘",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1179,6 +1364,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_09_chikage_a1_n_6",
       "Name": "奮迅",
       "Owner": "チカゲ",
       "Category": "Normal",
@@ -1187,6 +1373,7 @@
       "Text": "相手の手札が2枚以上あるならば、あなたは集中力を1得る。\n間合⇔ダスト:◇1"
     },
     {
+      "ID": "na_09_chikage_a1_s_4_s6_2",
       "Name": "残滓の絆毒",
       "Owner": "チカゲ",
       "Category": "Special",
@@ -1198,6 +1385,7 @@
       "Damage": "4/X"
     },
     {
+      "ID": "na_10_kururu_o_n_1",
       "Name": "えれきてる",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1206,6 +1394,7 @@
       "Text": "機巧(行行行対対):相手のライフに1ダメージを与える。"
     },
     {
+      "ID": "na_10_kururu_o_n_2",
       "Name": "あくせらー",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1214,6 +1403,7 @@
       "Text": "機巧(行行付):あなたの手札から《全力》カードを1枚選び、そのカードを使用してもよい。(フェイズは終了しない)"
     },
     {
+      "ID": "na_10_kururu_o_n_3",
       "Name": "くるるーん",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1222,6 +1412,7 @@
       "Text": "【常時】このカードは対応でしか使用できない。\n以下から2つまでを選び、任意の順に行う。(同じものを2回選ぶことはできない)\n・カードを1枚引く。\n・伏せ札1枚を山札の底に置く。\n・相手は手札を1枚捨て札にする。"
     },
     {
+      "ID": "na_10_kururu_o_n_4",
       "Name": "とるねーど",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1230,6 +1421,7 @@
       "Text": "機巧(攻攻):相手のオーラに5ダメージを与える。\n機巧(付付): 相手のライフに1ダメージを与える。"
     },
     {
+      "ID": "na_10_kururu_o_n_5",
       "Name": "りげいなー",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1238,6 +1430,7 @@
       "Text": "機巧(攻対):あなたの使用済の切札を1枚選んでもよい。そのカードを消費を支払わずに使用する。(《全力》カードでもよい)\nあなたの集中力は0になる。"
     },
     {
+      "ID": "na_10_kururu_o_n_6",
       "Name": "もじゅるー",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1247,6 +1440,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_10_kururu_o_n_7",
       "Name": "りふれくた",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1256,6 +1450,7 @@
       "Charge": 0
     },
     {
+      "ID": "na_10_kururu_o_s_1",
       "Name": "どれーんでびる",
       "Owner": "クルル",
       "Category": "Special",
@@ -1265,6 +1460,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_10_kururu_o_s_2_s2",
       "Name": "びっぐごーれむ",
       "Owner": "クルル",
       "Category": "Special",
@@ -1274,6 +1470,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_10_kururu_o_s_3_s5",
       "Name": "いんだすとりあ",
       "Owner": "クルル",
       "Category": "Special",
@@ -1283,6 +1480,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_10_kururu_o_s_4",
       "Name": "神渉装置：枢式",
       "Owner": "クルル",
       "Category": "Special",
@@ -1292,6 +1490,7 @@
       "Cost": "3"
     },
     {
+      "ID": "na_10_kururu_a1_n_1",
       "Name": "あならいず",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1300,6 +1499,7 @@
       "Text": "機巧(行対付):あなたの任意の伏せ札１枚または相手の無作為な伏せ札１枚を捨て札にする。そのカードが《攻撃》ならば相手のライフに1ダメージを与える。そうでなければ相手は手札を１枚伏せ札にする。"
     },
     {
+      "ID": "na_10_kururu_a1_n_3",
       "Name": "だうじんぐ",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1308,6 +1508,7 @@
       "Text": "相手の山札の上から１枚を捨て札にする。その後、相手の捨て札を１枚選ぶ。\n機巧(攻XY):そのカードを使用する。Xは選んだカードのカードタイプに、Yはサブタイプに等しい。"
     },
     {
+      "ID": "na_10_kururu_a1_s_3",
       "Name": "らすとりさーち",
       "Owner": "クルル",
       "Category": "Special",
@@ -1317,6 +1518,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_10_kururu_a2_n_1",
       "Name": "ぶらすたー",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1327,6 +1529,7 @@
       "Damage": "0/0"
     },
     {
+      "ID": "na_10_kururu_a2_n_2",
       "Name": "れーるがん",
       "Owner": "クルル",
       "Category": "Normal",
@@ -1337,6 +1540,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_10_kururu_a2_s_4",
       "Name": "こねくとだいぶ",
       "Owner": "クルル",
       "Category": "Special",
@@ -1346,6 +1550,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_11_thallya_o_n_1",
       "Name": "Burning Steam",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1356,6 +1561,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_11_thallya_o_n_2",
       "Name": "Waving Edge",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1366,6 +1572,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_11_thallya_o_n_3",
       "Name": "Shield Charge",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1376,6 +1583,7 @@
       "Damage": "3/2"
     },
     {
+      "ID": "na_11_thallya_o_n_4",
       "Name": "Steam Cannon",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1386,6 +1594,7 @@
       "Damage": "3/3"
     },
     {
+      "ID": "na_11_thallya_o_n_5",
       "Name": "Stunt",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1394,6 +1603,7 @@
       "Text": "相手を畏縮させる。\n自/オーラ→自/フレア:◇2"
     },
     {
+      "ID": "na_11_thallya_o_n_6",
       "Name": "Roaring",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1402,6 +1612,7 @@
       "Text": "コストとして、あなたのマシンにある造花結晶を2つ燃焼済にしてもよい。そうした場合、あなたは集中力を1得て、相手は集中力を1失い、相手を畏縮させる。\nコストとして、集中力を2支払ってもよい。そうした場合、あなたの燃焼済の造花結晶を3つ回復する。"
     },
     {
+      "ID": "na_11_thallya_o_n_7",
       "Name": "Turbo Switch",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1410,6 +1621,7 @@
       "Text": "燃焼\n騎動を行う。"
     },
     {
+      "ID": "na_11_thallya_o_s_1",
       "Name": "Alpha-Edge",
       "Owner": "サリヤ",
       "Category": "Special",
@@ -1421,6 +1633,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_11_thallya_o_s_2",
       "Name": "Omega-Burst",
       "Owner": "サリヤ",
       "Category": "Special",
@@ -1430,6 +1643,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_11_thallya_o_s_3_s3",
       "Name": "Thallya's Masterpiece",
       "Owner": "サリヤ",
       "Category": "Special",
@@ -1439,6 +1653,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_11_thallya_o_s_4_s3",
       "Name": "Julia's BlackBox",
       "Owner": "サリヤ",
       "Category": "Special",
@@ -1448,6 +1663,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_11_thallya_a1_n_5",
       "Name": "Quick Change",
       "Owner": "サリヤ",
       "Category": "Normal",
@@ -1457,6 +1673,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_11_thallya_a1_s_1",
       "Name": "BlackBox Neo",
       "Owner": "サリヤ",
       "Category": "Special",
@@ -1466,6 +1683,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_11_thallya_a1_s_2",
       "Name": "OMNIS-Blaster",
       "Owner": "サリヤ",
       "Category": "Special",
@@ -1477,6 +1695,7 @@
       "Damage": "X/X"
     },
     {
+      "ID": "na_12_raira_o_n_1_s2",
       "Name": "獣爪",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1487,6 +1706,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_12_raira_o_n_2",
       "Name": "風雷撃",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1497,6 +1717,7 @@
       "Damage": "X/2"
     },
     {
+      "ID": "na_12_raira_o_n_3",
       "Name": "流転爪",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1507,6 +1728,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_12_raira_o_n_4",
       "Name": "風走り",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1515,6 +1737,7 @@
       "Text": "現在の間合が3以上なら、間合→ダスト:◇2"
     },
     {
+      "ID": "na_12_raira_o_n_5",
       "Name": "風雷の知恵",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1523,6 +1746,7 @@
       "Text": "風神ゲージと雷神ゲージの合計が4以上ならば、あなたの捨て札にある他のメガミのカード1枚を選び、山札の一番上に置いてもよい。\n風神ゲージか雷神ゲージを1上げる。"
     },
     {
+      "ID": "na_12_raira_o_n_6",
       "Name": "呼び声",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1531,6 +1755,7 @@
       "Text": "相手を畏縮させ、以下から1つを選ぶ。\n・風神ゲージと雷神ゲージを1ずつ上げる。\n・手札を全て伏せ札にし、雷神ゲージを2倍にする。"
     },
     {
+      "ID": "na_12_raira_o_n_7",
       "Name": "空駆け",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1539,6 +1764,7 @@
       "Text": "間合⇔ダスト:◇3"
     },
     {
+      "ID": "na_12_raira_o_s_1",
       "Name": "雷螺風神爪",
       "Owner": "ライラ",
       "Category": "Special",
@@ -1550,6 +1776,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_12_raira_o_s_2",
       "Name": "天雷召喚陣",
       "Owner": "ライラ",
       "Category": "Special",
@@ -1559,6 +1786,7 @@
       "Cost": "6"
     },
     {
+      "ID": "na_12_raira_o_s_3_s4",
       "Name": "風魔招来孔",
       "Owner": "ライラ",
       "Category": "Special",
@@ -1568,6 +1796,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_12_raira_o_s_4_s5",
       "Name": "円環輪廻旋",
       "Owner": "ライラ",
       "Category": "Special",
@@ -1578,6 +1807,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_12_raira_a1_n_2_s6",
       "Name": "暴風",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1588,6 +1818,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_12_raira_a1_n_6",
       "Name": "大嵐",
       "Owner": "ライラ",
       "Category": "Normal",
@@ -1597,6 +1828,7 @@
       "Charge": "0"
     },
     {
+      "ID": "na_12_raira_a1_s_3",
       "Name": "陣風祭天儀",
       "Owner": "ライラ",
       "Category": "Special",
@@ -1606,6 +1838,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_13_utsuro_o_n_1",
       "Name": "円月",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1616,6 +1849,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_13_utsuro_o_n_2",
       "Name": "黒き波動",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1626,6 +1860,7 @@
       "Damage": "1/2"
     },
     {
+      "ID": "na_13_utsuro_o_n_3",
       "Name": "刈取り",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1636,6 +1871,7 @@
       "Damage": "-/0"
     },
     {
+      "ID": "na_13_utsuro_o_n_4",
       "Name": "重圧",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1644,6 +1880,7 @@
       "Text": "相手は相手のオーラ、フレア、ライフのいずれかから桜花結晶を1つダストへ移動させる。\n灰塵―ダストが12以上ならば、相手を畏縮させる。"
     },
     {
+      "ID": "na_13_utsuro_o_n_5",
       "Name": "影の翅",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1652,6 +1889,7 @@
       "Text": "このターン中、現在の間合は2増加し、達人の間合は2大きくなる。"
     },
     {
+      "ID": "na_13_utsuro_o_n_6",
       "Name": "影の壁",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1660,6 +1898,7 @@
       "Text": "対応した《攻撃》は+0/-1となる。"
     },
     {
+      "ID": "na_13_utsuro_o_n_7",
       "Name": "遺灰呪",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1669,6 +1908,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_13_utsuro_o_s_1",
       "Name": "灰滅",
       "Owner": "ウツロ",
       "Category": "Special",
@@ -1678,6 +1918,7 @@
       "Cost": "24"
     },
     {
+      "ID": "na_13_utsuro_o_s_2",
       "Name": "虚偽",
       "Owner": "ウツロ",
       "Category": "Special",
@@ -1688,6 +1929,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_13_utsuro_o_s_3",
       "Name": "終末",
       "Owner": "ウツロ",
       "Category": "Special",
@@ -1698,6 +1940,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_13_utsuro_o_s_4_s5",
       "Name": "魔食",
       "Owner": "ウツロ",
       "Category": "Special",
@@ -1707,6 +1950,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_13_utsuro_a1_n_2",
       "Name": "蝕みの塵",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -1717,6 +1961,7 @@
       "Damage": "2/0"
     },
     {
+      "ID": "na_13_utsuro_a1_s_1_s4",
       "Name": "残響装置：枢式",
       "Owner": "ウツロ",
       "Category": "Special",
@@ -1727,6 +1972,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_14_honoka_o_n_1",
       "Name": "精霊式",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1737,6 +1983,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_14_honoka_o_n_2_s5",
       "Name": "桜吹雪",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1747,6 +1994,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_14_honoka_o_n_3",
       "Name": "義旗共振",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1757,6 +2005,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_14_honoka_o_n_4",
       "Name": "桜の翅",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1765,6 +2014,7 @@
       "Text": "ダスト⇔間合:◇2\nこの「桜の翅」を追加札の「再生」と交換する。"
     },
     {
+      "ID": "na_14_honoka_o_n_5",
       "Name": "桜花のお守り",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1773,6 +2023,7 @@
       "Text": "あなたは手札を1枚選び、それを伏せ札にしてもよい。そうした場合、対応した切札でない《攻撃》を打ち消す。\n開花―この「桜花のお守り」を追加札の「仄かなる輝き」と交換してもよい。そうした場合、その「仄かなる輝き」を山札の底に置いてもよい。"
     },
     {
+      "ID": "na_14_honoka_o_n_6_s4",
       "Name": "指揮",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1782,6 +2033,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_14_honoka_o_n_7",
       "Name": "追い風",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1791,6 +2043,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_14_honoka_o_s_1",
       "Name": "胸に想いを",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -1800,6 +2053,7 @@
       "Cost": "5"
     },
     {
+      "ID": "na_14_honoka_o_s_2",
       "Name": "この旗の名の下に",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -1811,6 +2065,7 @@
       "Damage": "3/2"
     },
     {
+      "ID": "na_14_honoka_o_s_3_s4",
       "Name": "四季はまた廻り来る",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -1820,6 +2075,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_14_honoka_o_s_4",
       "Name": "満天の花道で",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -1830,6 +2086,7 @@
       "Charge": 5
     },
     {
+      "ID": "na_14_honoka_a1_n_1",
       "Name": "桜の双剣",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -1840,6 +2097,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_14_honoka_a1_s_1_s7",
       "Name": "ひとり目覚めて",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -1849,6 +2107,7 @@
       "Cost": "3"
     },
     {
+      "ID": "na_15_korunu_o_n_1",
       "Name": "雪刃",
       "Owner": "コルヌ",
       "Category": "Normal",
@@ -1859,6 +2118,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_15_korunu_o_n_2",
       "Name": "旋回刃",
       "Owner": "コルヌ",
       "Category": "Normal",
@@ -1869,6 +2129,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_15_korunu_o_n_3",
       "Name": "剣の舞",
       "Owner": "コルヌ",
       "Category": "Normal",
@@ -1879,6 +2140,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_15_korunu_o_n_4",
       "Name": "雪渡り",
       "Owner": "コルヌ",
       "Category": "Normal",
@@ -1887,6 +2149,7 @@
       "Text": "間合↔ダスト:◇1\n相手のオーラの空きがないならば、ダスト→間合:◇1を行ってもよい。"
     },
     {
+      "ID": "na_15_korunu_o_n_5",
       "Name": "絶対零度",
       "Owner": "コルヌ",
       "Category": "Normal",
@@ -1895,6 +2158,7 @@
       "Text": "相手はオーラの空きがなくなるまで凍結する。"
     },
     {
+      "ID": "na_15_korunu_o_n_6",
       "Name": "かじかみ",
       "Owner": "コルヌ",
       "Category": "Normal",
@@ -1904,6 +2168,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_15_korunu_o_n_7_s6",
       "Name": "霜の茨",
       "Owner": "コルヌ",
       "Category": "Normal",
@@ -1913,6 +2178,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_15_korunu_o_s_1",
       "Name": "コンルルヤンペ",
       "Owner": "コルヌ",
       "Category": "Special",
@@ -1924,6 +2190,7 @@
       "Damage": "2/3"
     },
     {
+      "ID": "na_15_korunu_o_s_2",
       "Name": "レタルレラ",
       "Owner": "コルヌ",
       "Category": "Special",
@@ -1933,6 +2200,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_15_korunu_o_s_3",
       "Name": "ウパシトゥム",
       "Owner": "コルヌ",
       "Category": "Special",
@@ -1944,6 +2212,7 @@
       "Damage": "0/-"
     },
     {
+      "ID": "na_15_korunu_o_s_4_s6",
       "Name": "ポルチャルトー",
       "Owner": "コルヌ",
       "Category": "Special",
@@ -1954,6 +2223,7 @@
       "Charge": 5
     },
     {
+      "ID": "na_16_yatsuha_o_n_1_s5",
       "Name": "星の爪",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -1964,6 +2234,7 @@
       "Damage": "3/2"
     },
     {
+      "ID": "na_16_yatsuha_o_n_2_s5",
       "Name": "昏い咢",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -1974,6 +2245,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_16_yatsuha_o_n_3",
       "Name": "鏡の悪魔",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -1984,6 +2256,7 @@
       "Damage": "5/3"
     },
     {
+      "ID": "na_16_yatsuha_o_n_4",
       "Name": "幻影歩法",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -1992,6 +2265,7 @@
       "Text": "あなたは集中力を１得る。\n以下から１つ選ぶ。\n・このターン中、現在の間合は１増加し、達人の間合は１大きくなる。\n・このターン中、現在の間合は１減少し、達人の間合は１小さくなる。"
     },
     {
+      "ID": "na_16_yatsuha_o_n_5",
       "Name": "意志",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -2000,6 +2274,7 @@
       "Text": "以下のどちらかまたは両方を行う。\n・自/オーラ↔自/フレア:◇1\n・相/オーラ↔相/フレア:◇1"
     },
     {
+      "ID": "na_16_yatsuha_o_n_6",
       "Name": "契約",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -2008,6 +2283,7 @@
       "Text": "相/フレア→自/オーラ:◇1\n次の終了フェイズに相手のフレアがあなたのフレア以下ならば、自/オーラ→相/フレア:◇1"
     },
     {
+      "ID": "na_16_yatsuha_o_n_7",
       "Name": "寄花",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -2017,6 +2293,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_16_yatsuha_o_s_1",
       "Name": "双葉鏡の祟り神",
       "Owner": "ヤツハ",
       "Category": "Special",
@@ -2026,6 +2303,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_16_yatsuha_o_s_2_s6_2",
       "Name": "四葉鏡のわらべ唄",
       "Owner": "ヤツハ",
       "Category": "Special",
@@ -2035,6 +2313,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_16_yatsuha_o_s_3",
       "Name": "六葉鏡の星の海",
       "Owner": "ヤツハ",
       "Category": "Special",
@@ -2046,6 +2325,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_16_yatsuha_o_s_4",
       "Name": "八葉鏡の向こう側",
       "Owner": "ヤツハ",
       "Category": "Special",
@@ -2056,6 +2336,7 @@
       "Charge": 5
     },
     {
+      "ID": "na_16_yatsuha_a1_s_4",
       "Name": "八葉鏡の徒桜",
       "Owner": "ヤツハ",
       "Category": "Special",
@@ -2067,6 +2348,7 @@
       "Damage": "1/0"
     },
     {
+      "ID": "na_17_hatsumi_o_n_1",
       "Name": "水雷球",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2077,6 +2359,7 @@
       "Damage": "0/0"
     },
     {
+      "ID": "na_17_hatsumi_o_n_2",
       "Name": "水流",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2087,6 +2370,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_17_hatsumi_o_n_3",
       "Name": "強酸",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2097,6 +2381,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_17_hatsumi_o_n_4",
       "Name": "海囁",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2105,6 +2390,7 @@
       "Text": "現在の間合が4以下ならば、ダスト→間合:◇1\n逆風ならば、この矢印効果の左側を相手のフレアに変更する。"
     },
     {
+      "ID": "na_17_hatsumi_o_n_5",
       "Name": "準備万端",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2113,6 +2399,7 @@
       "Text": "ダスト→自/オーラ:◇3\nあなたは手札を1枚選び、それを山札の一番上に置いてもよい。"
     },
     {
+      "ID": "na_17_hatsumi_o_n_6",
       "Name": "羅針盤",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2122,6 +2409,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_17_hatsumi_o_n_7",
       "Name": "波呼び",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2131,6 +2419,7 @@
       "Charge": 1
     },
     {
+      "ID": "na_17_hatsumi_o_s_1",
       "Name": "イサナ海域",
       "Owner": "ハツミ",
       "Category": "Special",
@@ -2142,6 +2431,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_17_hatsumi_o_s_2",
       "Name": "オヨギビ砲火",
       "Owner": "ハツミ",
       "Category": "Special",
@@ -2153,6 +2443,7 @@
       "Damage": "2/2"
     },
     {
+      "ID": "na_17_hatsumi_o_s_3",
       "Name": "カラハリ灯台",
       "Owner": "ハツミ",
       "Category": "Special",
@@ -2162,6 +2453,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_17_hatsumi_o_s_4",
       "Name": "ミオビキ航路",
       "Owner": "ハツミ",
       "Category": "Special",
@@ -2171,6 +2463,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_17_hatsumi_a1_n_4",
       "Name": "潜雷",
       "Owner": "ハツミ",
       "Category": "Normal",
@@ -2180,6 +2473,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_17_hatsumi_a1_s_1",
       "Name": "サギリ海域",
       "Owner": "ハツミ",
       "Category": "Special",
@@ -2190,6 +2484,7 @@
       "Charge": 4
     },
     {
+      "ID": "na_17_hatsumi_a1_s_4",
       "Name": "ワダナカ航路",
       "Owner": "ハツミ",
       "Category": "Special",
@@ -2200,6 +2495,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_18_mizuki_o_n_1",
       "Name": "陣頭",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -2210,6 +2506,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_18_mizuki_o_n_2_s6",
       "Name": "反抗",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -2220,6 +2517,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_18_mizuki_o_n_3",
       "Name": "撃ち落とし",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -2230,6 +2528,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_18_mizuki_o_n_4",
       "Name": "号令",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -2238,6 +2537,7 @@
       "Text": "徴兵を1回行う。\nあなたが直前のターンに対応しているならば、集中力を1得る。"
     },
     {
+      "ID": "na_18_mizuki_o_n_5",
       "Name": "防壁",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -2246,6 +2546,7 @@
       "Text": "終端\nこのカードがこのターンであなたが行う最初の対応ならば、対応した切り札でも《全力》でもない《攻撃》を打ち消す。"
     },
     {
+      "ID": "na_18_mizuki_o_n_6_s6",
       "Name": "制圧前進",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -2254,6 +2555,7 @@
       "Text": "以下を3回選ぶ。同じものを複数回選んでもよい。\n・徴兵を1回行う。\n・基本動作《前進》を行う。\n・基本動作《縺い》を行う。"
     },
     {
+      "ID": "na_18_mizuki_o_n_7",
       "Name": "戦場",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -2263,6 +2565,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_18_mizuki_o_s_1",
       "Name": "天主八竜閣",
       "Owner": "ミズキ",
       "Category": "Special",
@@ -2273,6 +2576,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_18_mizuki_o_s_2",
       "Name": "三重膝丸櫓",
       "Owner": "ミズキ",
       "Category": "Special",
@@ -2284,6 +2588,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_18_mizuki_o_s_3_ex1",
       "Name": "大手楯無門",
       "Owner": "ミズキ",
       "Category": "Special",
@@ -2293,6 +2598,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_18_mizuki_o_s_4",
       "Name": "山城水津城の鬨の声",
       "Owner": "ミズキ",
       "Category": "Special",
@@ -2303,6 +2609,7 @@
       "Charge": 5
     },
     {
+      "ID": "na_19_megumi_o_n_1",
       "Name": "空閃",
       "Owner": "メグミ",
       "Category": "Normal",
@@ -2313,6 +2620,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_19_megumi_o_n_2",
       "Name": "打擲",
       "Owner": "メグミ",
       "Category": "Normal",
@@ -2323,6 +2631,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_19_megumi_o_n_3",
       "Name": "殻打ち",
       "Owner": "メグミ",
       "Category": "Normal",
@@ -2333,6 +2642,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_19_megumi_o_n_4",
       "Name": "竿穿ち",
       "Owner": "メグミ",
       "Category": "Normal",
@@ -2343,6 +2653,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_19_megumi_o_n_5",
       "Name": "葦",
       "Owner": "メグミ",
       "Category": "Normal",
@@ -2352,6 +2663,7 @@
       "Charge": 1
     },
     {
+      "ID": "na_19_megumi_o_n_6",
       "Name": "鳳仙花",
       "Owner": "メグミ",
       "Category": "Normal",
@@ -2361,6 +2673,7 @@
       "Charge": 1
     },
     {
+      "ID": "na_19_megumi_o_n_7",
       "Name": "野茨",
       "Owner": "メグミ",
       "Category": "Normal",
@@ -2370,6 +2683,7 @@
       "Charge": 0
     },
     {
+      "ID": "na_19_megumi_o_s_1",
       "Name": "因果律の根",
       "Owner": "メグミ",
       "Category": "Special",
@@ -2381,6 +2695,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_19_megumi_o_s_2",
       "Name": "可能性の枝",
       "Owner": "メグミ",
       "Category": "Special",
@@ -2392,6 +2707,7 @@
       "Cost": "3"
     },
     {
+      "ID": "na_19_megumi_o_s_3",
       "Name": "野茨",
       "Owner": "メグミ",
       "Category": "Special",
@@ -2402,6 +2718,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_19_megumi_o_s_4",
       "Name": "瀧河希の掌",
       "Owner": "メグミ",
       "Category": "Special",
@@ -2412,6 +2729,7 @@
       "Cost": "3"
     },
     {
+      "ID": "na_20_kanawe_o_n_1",
       "Name": "空想",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -2422,6 +2740,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_20_kanawe_o_n_2",
       "Name": "脚本家",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -2432,6 +2751,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_20_kanawe_o_n_3",
       "Name": "演出家",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -2442,6 +2762,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_20_kanawe_o_n_4",
       "Name": "断行",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -2450,14 +2771,7 @@
       "Text": "基本動作《纏い》を1回行ってもよい。その後、《纏い》以外の基本動作を1回行ってもよい。\n【全力化】追加札または達成済から構想カードを1枚準備してもよい。相手を萎縮させる。"
     },
     {
-      "Name": "残光",
-      "Owner": "カナヱ",
-      "Category": "Normal",
-      "Main": "Action",
-      "Sub": "None",
-      "Text": "相手の手札を見てその中から1枚を選び、それを山札の底に置く。相手は集中カを1尋る。"
-    },
-    {
+      "ID": "na_20_kanawe_o_n_5_s6_2\",",
       "Name": "残光",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -2466,7 +2780,8 @@
       "Text": "現在の幕の色が紫または緑ならば、相手の手札を見てその中から1枚を選び、それを山札の底に置く。相手は集中カを1尋る。"
     },
     {
-      "Name": "残光",
+      "ID": "na_20_kanawe_o_n_6",
+      "Name": "即興",
       "Owner": "カナヱ",
       "Category": "Normal",
       "Main": "Action",
@@ -2474,6 +2789,7 @@
       "Text": "手札から他のメガミの全力でない《攻撃》カードをー枚使用してもよい。このカードが対応している《攻撃》があるならば、使用されたカードはそれに対応しているものと扱う。その後、現在の幕の色が緑かつそのカードが捨て札にあるならば、そのカードを手札に戻す。"
     },
     {
+      "ID": "na_20_kanawe_o_n_7_s7",
       "Name": "封殺",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -2483,6 +2799,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_20_kanawe_o_s_1_s6_2",
       "Name": "たまゆらふみ",
       "Owner": "カナヱ",
       "Category": "Special",
@@ -2492,6 +2809,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_20_kanawe_o_s_2_s7",
       "Name": "ほかげきらぼし",
       "Owner": "カナヱ",
       "Category": "Special",
@@ -2501,6 +2819,7 @@
       "Cost": "Ｘ"
     },
     {
+      "ID": "na_20_kanawe_o_s_3_s7",
       "Name": "あたらよちよに",
       "Owner": "カナヱ",
       "Category": "Special",
@@ -2512,6 +2831,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_20_kanawe_o_s_4",
       "Name": "はらからのあまつそら",
       "Owner": "カナヱ",
       "Category": "Special",
@@ -2521,6 +2841,7 @@
       "Cost": "Ｘ"
     },
     {
+      "ID": "na_21_kamuwi_o_n_1",
       "Name": "紅刃",
       "Owner": "カムヰ",
       "Category": "Normal",
@@ -2531,6 +2852,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_21_kamuwi_o_n_2",
       "Name": "散華刃",
       "Owner": "カムヰ",
       "Category": "Normal",
@@ -2541,6 +2863,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_21_kamuwi_o_n_3",
       "Name": "四剣乱刃",
       "Owner": "カムヰ",
       "Category": "Normal",
@@ -2551,6 +2874,7 @@
       "Damage": "3/1"
     },
     {
+      "ID": "na_21_kamuwi_o_n_4",
       "Name": "切り払い",
       "Owner": "カムヰ",
       "Category": "Normal",
@@ -2561,6 +2885,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_21_kamuwi_o_n_5",
       "Name": "棘縫い",
       "Owner": "カムヰ",
       "Category": "Normal",
@@ -2569,6 +2894,7 @@
       "Text": "現在の間合に応じて以下を行う。\n5以上…間合→ダスト:◇2\n2以上4以下…この夕ーンにあなたが次に行う他のメガミによる切札でない《攻撃》は+1/+0となり、対応不可(通常札)を得る。1以下…ダスト→間合:◇2"
     },
     {
+      "ID": "na_21_kamuwi_o_n_6",
       "Name": "血晶乱流",
       "Owner": "カムヰ",
       "Category": "Normal",
@@ -2577,6 +2903,7 @@
       "Text": "以下から異なる2つを選び、上から順に行う\n・攻撃『適正距離5-9、4/1』を行う。\n・現在の間合が5以上ならば間合→ダスト:◇2\n・攻撃『適正距離2-4、2/2』を行う。\n・ダスト→自/オーラ:◇2"
     },
     {
+      "ID": "na_21_kamuwi_o_n_7",
       "Name": "地飛沫",
       "Owner": "カムヰ",
       "Category": "Normal",
@@ -2586,6 +2913,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_21_kamuwi_o_s_1",
       "Name": "灯",
       "Owner": "カムヰ",
       "Category": "Special",
@@ -2595,6 +2923,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_21_kamuwi_o_s_2",
       "Name": "阡",
       "Owner": "カムヰ",
       "Category": "Special",
@@ -2605,6 +2934,7 @@
       "Cost": "3"
     },
     {
+      "ID": "na_21_kamuwi_o_s_3",
       "Name": "尸",
       "Owner": "カムヰ",
       "Category": "Special",
@@ -2616,6 +2946,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_21_kamuwi_o_s_4",
       "Name": "理",
       "Owner": "カムヰ",
       "Category": "Special",
@@ -2625,6 +2956,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_22_renri_o_n_1",
       "Name": "嘘突き",
       "Owner": "レンリ",
       "Category": "Normal",
@@ -2635,6 +2967,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_22_renri_o_n_2",
       "Name": "都度討ち",
       "Owner": "レンリ",
       "Category": "Normal",
@@ -2645,6 +2978,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_22_renri_o_n_3",
       "Name": "玄塗り",
       "Owner": "レンリ",
       "Category": "Normal",
@@ -2655,6 +2989,7 @@
       "Damage": "1/2"
     },
     {
+      "ID": "na_22_renri_o_n_4",
       "Name": "煽り殺陣",
       "Owner": "レンリ",
       "Category": "Normal",
@@ -2663,6 +2998,7 @@
       "Text": "相手を萎縮させる。\nこの夕ーン中に相手が反証に失敗しているならば、あなたの捨て札にある偽証を持つカード1枚を選び、手札に戻してもよい。"
     },
     {
+      "ID": "na_22_renri_o_n_5",
       "Name": "雲喰い",
       "Owner": "レンリ",
       "Category": "Normal",
@@ -2671,6 +3007,7 @@
       "Text": "偽証\nあなたの捨て札と付与札に通常札が合計3枚以上あるならば、相手は手札を1枚伏せ札にする。伏せ札にしようとした上で行えないならば、相手を畏縮させる。\n【常時】この偽証に反証されてこのカードが本物だったならば、相手は焦燥を1回でなく2回受ける。"
     },
     {
+      "ID": "na_22_renri_o_n_6",
       "Name": "魚吊り",
       "Owner": "レンリ",
       "Category": "Normal",
@@ -2679,6 +3016,7 @@
       "Text": "偽証(偽証は対応で行えない)\n間合→ダスト:◇1"
     },
     {
+      "ID": "na_22_renri_o_n_7",
       "Name": "惹き騙り",
       "Owner": "レンリ",
       "Category": "Normal",
@@ -2688,6 +3026,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_22_renri_o_s_1",
       "Name": "ルルララリ",
       "Owner": "レンリ",
       "Category": "Special",
@@ -2699,6 +3038,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_22_renri_o_s_2",
       "Name": "ラナラロミレリラ",
       "Owner": "レンリ",
       "Category": "Special",
@@ -2708,6 +3048,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_22_renri_o_s_3",
       "Name": "オリレテラレル",
       "Owner": "レンリ",
       "Category": "Special",
@@ -2717,6 +3058,7 @@
       "Cost": "2"
     },
     {
+      "ID": "na_22_renri_o_s_4",
       "Name": "夜山恋離のなれの果て",
       "Owner": "レンリ",
       "Category": "Special",
@@ -2726,6 +3068,7 @@
       "Charge": 2
     },
     {
+      "ID": "na_05_oboro_a1_s_4_ex1_s5",
       "Name": "最後の結晶",
       "Owner": "オボロ",
       "Category": "Special",
@@ -2735,6 +3078,16 @@
       "Cost": "2"
     },
     {
+      "ID": "na_08_hagane_a1_s_1_ex1",
+      "Name": "錬成攻撃",
+      "Owner": "ハガネ",
+      "Category": "Normal",
+      "Main": "Unknown",
+      "Sub": "Unknown",
+      "Text": "【常時】このカードは名前、使用者とこの効果を除き金床にあるカードの複製になる。このカードが手札にあるなら相手の効果で選ベず、手札か伏せ札にないなら再構成以外で山札や手札に戻らない。このカードは封印されない。金床にある桜花結晶の個数に応じて以下の効果を得る。\n0以上…+1/+0となり、距離拡大(遠1)を得る。\n1以上…+1/+1となり、距離拡大(遠1)を得る。\n2以上…+1/+1となり、距離拡大(遠1)を得て、打ち消されない。"
+    },
+    {
+      "ID": "na_09_chikage_o_p_1",
       "Name": "麻痺毒",
       "Owner": "チカゲ",
       "Category": "Poison",
@@ -2743,6 +3096,7 @@
       "Text": "【常時】このターン中にあなたが基本動作を行ったならば、このカードは使用できない。\nこのカードを相手の毒袋に戻す。その後、このフェイズを終了する。"
     },
     {
+      "ID": "na_09_chikage_o_p_2",
       "Name": "幻覚毒",
       "Owner": "チカゲ",
       "Category": "Poison",
@@ -2751,6 +3105,7 @@
       "Text": "このカードを相手の毒袋に戻す。\n自/フレア→ダスト:◇2"
     },
     {
+      "ID": "na_09_chikage_o_p_3",
       "Name": "弛緩毒",
       "Owner": "チカゲ",
       "Category": "Poison",
@@ -2760,6 +3115,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_09_chikage_o_p_4",
       "Name": "滅灯毒",
       "Owner": "チカゲ",
       "Category": "Poison",
@@ -2768,6 +3124,7 @@
       "Text": "自/オーラ→ダスト:◇3"
     },
     {
+      "ID": "na_10_kururu_o_s_3_ex1",
       "Name": "でゅーぷりぎあ",
       "Owner": "クルル",
       "Category": "Normal",
@@ -2776,6 +3133,7 @@
       "Text": "【常時】このカードはあなたの「いんだすとりあ」に封印されたカードの複製となる。ただし、名前は変更されない。(「いんだすとりあ」が未使用なら複製とならないので、使用できない)"
     },
     {
+      "ID": "na_10_kururu_a1_s_3_ex1",
       "Name": "ぐらんがりばー",
       "Owner": "クルル",
       "Category": "Special",
@@ -2786,6 +3144,7 @@
       "Charge": 0
     },
     {
+      "ID": "na_11_thallya_o_tf_1_s2",
       "Name": "Form:YAKSHA",
       "Owner": "サリヤ",
       "Category": "TransForm",
@@ -2795,6 +3154,7 @@
       "Charge": 0
     },
     {
+      "ID": "na_11_thallya_o_tf_2",
       "Name": "Form:NAGA",
       "Owner": "サリヤ",
       "Category": "TransForm",
@@ -2803,6 +3163,7 @@
       "Text": "【変形時】相手のフレアが3つ以上ならば、フレアが2になるように桜花結晶をダストへと移動させる。\n【追加基本動作:Gamma-Ray】相手の山札の一番上のカードを相手の捨て札に置く。"
     },
     {
+      "ID": "na_11_thallya_o_tf_3",
       "Name": "Form:GARUDA",
       "Owner": "サリヤ",
       "Category": "TransForm",
@@ -2811,6 +3172,7 @@
       "Text": "【変形時】カードを2枚引く。このターンの間、手札の上限がなくなる。\n【追加基本動作:Delta-Wing】現在の間合が7以下ならば、ダスト→間合:◇1"
     },
     {
+      "ID": "na_11_thallya_a1_tf_1",
       "Name": "Form:KINNARI",
       "Owner": "サリヤ",
       "Category": "TransForm",
@@ -2819,6 +3181,7 @@
       "Text": "【変形時】相手は山札を全て伏せ札にする。\n【常時:Zeta-Voice】相手が山札を再構成したとき、その解決後に《攻撃》『適正距離2,4,6、2/2』を行ってもよい。"
     },
     {
+      "ID": "na_11_thallya_a1_tf_3_s6",
       "Name": "Form:ASURA",
       "Owner": "サリヤ",
       "Category": "TransForm",
@@ -2827,6 +3190,7 @@
       "Text": "【変形時】相手は伏せ札から1枚を選び、捨て札にする。これをもう1回繰り返す。\n【追加基本動作:Sigma-Drive】《攻撃》『適正距離3,5、3/2【攻撃後】あなたは萎縮する。』を行う。この基本動作は1ターンに1回だけ行える。"
     },
     {
+      "ID": "na_11_thallya_a1_tf_4",
       "Name": "Form:DEVA",
       "Owner": "サリヤ",
       "Category": "TransForm",
@@ -2835,6 +3199,7 @@
       "Text": "【変形時】あなたの燃焼済の造花結晶を2つ回復し、基本動作《纏い》を行う。\n【常時:Phi-Cycle】相手の捨て札にあるカードの枚数が0ではない2の倍数になるたびに、あなたは集中力を1得る。"
     },
     {
+      "ID": "na_12_raira_o_s_3_ex1",
       "Name": "風魔旋風",
       "Owner": "ライラ",
       "Category": "Special",
@@ -2846,6 +3211,7 @@
       "Damage": "1/2"
     },
     {
+      "ID": "na_12_raira_o_s_3_ex2",
       "Name": "風魔纏廻",
       "Owner": "ライラ",
       "Category": "Special",
@@ -2855,6 +3221,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_12_raira_o_s_3_ex3",
       "Name": "風魔天狗道",
       "Owner": "ライラ",
       "Category": "Special",
@@ -2864,6 +3231,7 @@
       "Cost": "4"
     },
     {
+      "ID": "na_12_raira_a1_st_s6",
       "Name": "嵐の力",
       "Owner": "ライラ",
       "Category": "None",
@@ -2872,6 +3240,7 @@
       "Text": "風1:間合⇔ダスト:◇1\n風2:カードを1枚引き、手札を1枚伏せ札にする。\n風3:あなたは集中力1を得て、相手は集中力1を失う。\n雷1:このターンにあなたが次に行う攻撃は+1/+0となる。\n雷2:《攻撃》『適正距離0-4、1/1』を行う。\n雷3:このターンにあなたが次に行うオーラへのダメージが「-」でない攻撃は+0/+1となる。"
     },
     {
+      "ID": "na_13_utsuro_a1_s_1_ex1",
       "Name": "望我",
       "Owner": "ウツロ",
       "Category": "Special",
@@ -2881,6 +3250,7 @@
       "Cost": "6"
     },
     {
+      "ID": "na_13_utsuro_a1_s_1_ex2",
       "Name": "万象乖ク殲滅の影",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -2891,6 +3261,7 @@
       "Damage": "-/0"
     },
     {
+      "ID": "na_13_utsuro_a1_s_1_ex3",
       "Name": "我ヲ亡クシテ静寂ヲ往ク",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -2899,6 +3270,7 @@
       "Text": "あなたは《前進》以外の基本動作を5回まで行ってもよい。\n攻撃『適正距離4-10、3/2』を行う。\n攻撃『適正距離5-10、1/1』を行う。\n攻撃『適正距離6-10、1/1』を行う。"
     },
     {
+      "ID": "na_13_utsuro_a1_s_1_ex4",
       "Name": "終焉、来タレ",
       "Owner": "ウツロ",
       "Category": "Normal",
@@ -2908,6 +3280,7 @@
       "Charge": 1
     },
     {
+      "ID": "na_14_honoka_o_n_1_ex1",
       "Name": "守護霊式",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -2918,6 +3291,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_14_honoka_o_n_1_ex2",
       "Name": "突撃霊式",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -2928,6 +3302,7 @@
       "Damage": "3/2"
     },
     {
+      "ID": "na_14_honoka_o_n_1_ex3",
       "Name": "神霊ヲウカ",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -2938,6 +3313,7 @@
       "Damage": "4/3"
     },
     {
+      "ID": "na_14_honoka_o_n_4_ex1",
       "Name": "仄かなる輝き",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -2948,6 +3324,7 @@
       "Damage": "1/2"
     },
     {
+      "ID": "na_14_honoka_o_n_5_ex1",
       "Name": "再生",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -2956,6 +3333,7 @@
       "Text": "ダスト→自/オーラ:◇1\nダスト→自/フレア:◇1\nこの「再生」を追加札の「桜の翅」と交換する。"
     },
     {
+      "ID": "na_14_honoka_o_s_1_ex1_s5",
       "Name": "両手に華を",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -2965,6 +3343,7 @@
       "Cost": "0"
     },
     {
+      "ID": "na_14_honoka_o_s_1_ex2",
       "Name": "そして新たな幕開けを",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -2974,6 +3353,7 @@
       "Cost": "5"
     },
     {
+      "ID": "na_14_honoka_a1_n_1_ex1",
       "Name": "影の両手",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -2984,6 +3364,7 @@
       "Damage": "1/0"
     },
     {
+      "ID": "na_14_honoka_a1_s_1_ex1",
       "Name": "標をたどり",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -2992,6 +3373,7 @@
       "Text": "異なる基本動作を合計2回まで行う。開花ーダストに応じてこの「標をたどり」を以下のカードと交換しそれを未使用に戻す。\n0………「桜花眩く輝かん」\n1以上…「ふたり震える手を取ろう」"
     },
     {
+      "ID": "na_14_honoka_a1_s_1_ex2",
       "Name": "影面見向き",
       "Owner": "ホノカ",
       "Category": "Normal",
@@ -3000,6 +3382,7 @@
       "Text": "相手は相手のフレア、ライフのいずれかから桜花結唯を1つダストへ移動させる。開花ーダストに応じてこの「影面見向き」を以下のカードと交換し、それを未使用に戻す。\n12以上…「旧き虚路を歩みゆく」\n11以下…「ふたり震える手を取ろう」"
     },
     {
+      "ID": "na_14_honoka_a1_s_1_ex3_s6_2",
       "Name": "桜花眩く輝かん",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -3011,6 +3394,7 @@
       "Cost": "1"
     },
     {
+      "ID": "na_14_honoka_a1_s_1_ex4",
       "Name": "ふたり震える手を取ろう",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -3020,6 +3404,7 @@
       "Cost": "5"
     },
     {
+      "ID": "na_14_honoka_a1_s_1_ex5",
       "Name": "旧き虚路を歩みゆく",
       "Owner": "ホノカ",
       "Category": "Special",
@@ -3029,6 +3414,7 @@
       "Cost": "3"
     },
     {
+      "ID": "na_16_yatsuha_a1_n_1_ex1",
       "Name": "星辰の鉤爪",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -3039,6 +3425,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_16_yatsuha_a1_n_2_ex1",
       "Name": "深淵の大口",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -3049,6 +3436,7 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_16_yatsuha_a1_n_3_ex1",
       "Name": "本当の怪物",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -3059,6 +3447,7 @@
       "Damage": "4/1"
     },
     {
+      "ID": "na_16_yatsuha_a1_n_4_ex1",
       "Name": "幻影連携",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -3067,6 +3456,7 @@
       "Text": "以下から1つを選ぶ。\n・このターン中、現在の間合は１増加し、達人の間合は１大きくなる。\n・このターン中、現在の間合は１減少し、達人の間合は１小さくなる。\nその後、攻撃『適正距離3-5、2/1』を行う〝。"
     },
     {
+      "ID": "na_16_yatsuha_a1_n_5_ex1",
       "Name": "決意",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -3075,6 +3465,7 @@
       "Text": "以下のどちらかまたは両方を行う。\n・自/オーラ⇔自/フレア:◇1\n・対応した切札でない《攻撃》のオーラへのダメージがX以下ならば、その《攻撃》を打ち消す。Xは鏡映数に1を足した値に等しい。"
     },
     {
+      "ID": "na_16_yatsuha_a1_n_6_ex1",
       "Name": "盟約",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -3083,6 +3474,7 @@
       "Text": "以下から1つを選ぶ。\n相/オーラ⇔自/フレア:◇1\n相/フレア→自/オーラ:◇1"
     },
     {
+      "ID": "na_16_yatsuha_a1_n_7_ex1",
       "Name": "徒寄花",
       "Owner": "ヤツハ",
       "Category": "Normal",
@@ -3092,6 +3484,7 @@
       "Charge": 3
     },
     {
+      "ID": "na_18_mizuki_o_t_1",
       "Name": "槍兵",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -3102,6 +3495,7 @@
       "Damage": "1/1"
     },
     {
+      "ID": "na_18_mizuki_o_t_2",
       "Name": "盾兵",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -3110,6 +3504,7 @@
       "Text": "終端\n対応した《全力》でない《攻撃》は-1/+0となる。"
     },
     {
+      "ID": "na_18_mizuki_o_t_3_s6_2",
       "Name": "騎兵",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -3118,6 +3513,7 @@
       "Text": "終端\n【展開中】相手の《攻撃》は対応不可を失う。【破棄時】あなたは集中力を1得る。"
     },
     {
+      "ID": "na_18_mizuki_o_s_3_ex1",
       "Name": "闘神",
       "Owner": "ミズキ",
       "Category": "Normal",
@@ -3128,6 +3524,25 @@
       "Damage": "2/1"
     },
     {
+      "ID": "na_17_hatsumi_a1_di1",
+      "Name": "潜水前進",
+      "Owner": "ハツミ",
+      "Category": "None",
+      "Main": "None",
+      "Sub": "None",
+      "Text": "このターン中、現在の間合は1減少し、達人の間合は1小さくなる。\nその後、これを公開させた《攻撃》があるならば直ちに間合を判定する。それが外れたならば《攻撃》を失敗として解決せずに終了し、次の夕ーンにあなたは順風となる。\n《攻撃》が通常札によるものならば捨て札に、切札によるものならば使用済になる。失敗した《攻撃》への対応はできない。"
+    },
+    {
+      "ID": "na_17_hatsumi_a1_di2",
+      "Name": "潜水後退",
+      "Owner": "ハツミ",
+      "Category": "None",
+      "Main": "None",
+      "Sub": "None",
+      "Text": "このターン中、現在の間合は1増加し、達人の間合は1大きくなる。\nその後、これを公開させた《攻撃》があるならば直ちに間合を判定する。それが外れたならば《攻撃》を失敗として解決せずに終了し、次の夕ーンにあなたは順風となる。\n《攻撃》が通常札によるものならば捨て札に、切札によるものならば使用済になる。失敗した《攻撃》への対応はできない。"
+    },
+    {
+      "ID": "na_20_kanawe_o_p_1",
       "Name": "殺陣",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3138,6 +3553,7 @@
       "Will": false
     },
     {
+      "ID": "na_20_kanawe_o_p_1_w",
       "Name": "殺陣",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3148,6 +3564,7 @@
       "Will": true
     },
     {
+      "ID": "na_20_kanawe_o_p_2",
       "Name": "桜飛沫",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3158,6 +3575,7 @@
       "Will": false
     },
     {
+      "ID": "na_20_kanawe_o_p_2_w",
       "Name": "桜飛沫",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3168,6 +3586,7 @@
       "Will": true
     },
     {
+      "ID": "na_20_kanawe_o_p_3",
       "Name": "鼓動",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3178,6 +3597,7 @@
       "Will": false
     },
     {
+      "ID": "na_20_kanawe_o_p_3_w",
       "Name": "鼓動",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3188,6 +3608,7 @@
       "Will": true
     },
     {
+      "ID": "na_20_kanawe_o_p_4",
       "Name": "明転",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3198,6 +3619,7 @@
       "Will": false
     },
     {
+      "ID": "na_20_kanawe_o_p_4_w",
       "Name": "明転",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3208,6 +3630,7 @@
       "Will": true
     },
     {
+      "ID": "na_20_kanawe_o_p_5",
       "Name": "粒立て",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3218,6 +3641,7 @@
       "Will": false
     },
     {
+      "ID": "na_20_kanawe_o_p_5_w",
       "Name": "粒立て",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3228,6 +3652,7 @@
       "Will": true
     },
     {
+      "ID": "na_20_kanawe_o_p_6",
       "Name": "位置取り",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3238,6 +3663,7 @@
       "Will": false
     },
     {
+      "ID": "na_20_kanawe_o_p_6_w",
       "Name": "位置取り",
       "Owner": "カナヱ",
       "Category": "Normal",
@@ -3248,6 +3674,7 @@
       "Will": true
     },
     {
+      "ID": "na_21_kamuwi_o_s_1_ex1",
       "Name": "暁",
       "Owner": "カムヰ",
       "Category": "Special",
@@ -3259,6 +3686,7 @@
       "Cost": "6"
     },
     {
+      "ID": "na_22_renri_o_s_4_ex1",
       "Name": "刻まれし衣",
       "Owner": "レンリ",
       "Category": "Special",
@@ -3268,6 +3696,7 @@
       "Cost": "X"
     },
     {
+      "ID": "na_22_kiriko_o_s_4",
       "Name": "御剱桐子の巫女神楽",
       "Owner": "レンリ",
       "Category": "Special",
